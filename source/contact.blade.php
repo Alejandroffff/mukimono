@@ -14,16 +14,19 @@
         {{-- 1. Cabecera de Página (sin clases) --}}
         <header>
             @include('_layouts.navbar')
-            <h1>
+            <div class="pd12">
+                   <h1>
                 Soporte y Colaboración
             </h1>
             <p>
                 Conéctese con el equipo de MUKIMONO CSS y apoye nuestro desarrollo.
             </p>
+            </div>
+         
         </header>
 
         {{-- 2. Grid de Opciones de Contacto (sin clases) --}}
-        <section>
+        <section class="pd12tb fx10 pd12x">
             
             {{-- Tarjeta 1: Contacto Directo (sin clases) --}}
             <div>
@@ -41,10 +44,10 @@
                 <h3>Comunidad y Código</h3>
                 <ul>
                     <li>
-                        <a href="#">GitHub (Código Fuente)</a>
+                        <a href="#" class="lb32">GitHub (Código Fuente)</a>
                     </li>
                     <li>
-                        <a href="#">Twitter/X (Noticias Oficiales)</a>
+                        <a href="#" class="lb32">Twitter/X (Noticias Oficiales)</a>
                     </li>
                 </ul>
             </div>
@@ -55,7 +58,7 @@
                 <p>
                     MUKIMONO CSS es gratuito y de código abierto. Su apoyo es vital para mantener el proyecto.
                 </p>
-                <a href="#">
+                <a href="#" class="lb32">
                     Realizar una Donación
                 </a>
             </div>

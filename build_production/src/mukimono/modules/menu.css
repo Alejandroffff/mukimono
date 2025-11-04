@@ -1,0 +1,90 @@
+/*============================
+    Menu Widths (Numerical)
+============================*/
+
+/* 64 Width Menu */
+.mn64 {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  max-width: 64px !important;
+  color: inherit;
+}
+
+.mn64 ul,
+.mn64 ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  color: inherit;
+}
+
+/* 200 Width Menu */
+.mn200 {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  max-width: 200px !important;
+  color: inherit;
+}
+
+.mn200 ul,
+.mn200 ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  color: inherit;
+}
+
+/* 280 Width Menu */
+.mn280 {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  max-width: 280px !important;
+  color: inherit;
+}
+
+.mn280 ul,
+.mn280 ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  color: inherit;
+}

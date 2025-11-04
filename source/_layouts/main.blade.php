@@ -6,16 +6,26 @@
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->description }}">
         <title>{{ $page->title }}</title>
-        
-        {{-- CORRECCIÓN: Se eliminó '/build_local' de la ruta, ya que Laragon ahora apunta a 'build_local' --}}
-        <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/build/css/main.css">
-        <script defer src="{{ $page->baseUrl }}/assets/build/js/main.js"></script>
+
+        {{-- MUKIMONO: Favicon --}}
+        <link rel="icon" type="image/x-icon" href="{{ $page->baseUrl }}/assets/images/logo.ico">
+        <link rel="shortcut icon" href="{{ $page->baseUrl }}/assets/images/logo.ico" type="image/x-icon">
+
+        {{-- MUKIMONO: Cache-Busting para CSS --}}
+        <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/build/css/main.css?v={{ time() }}">
+
+        {{-- MUKIMONO: Cache-Busting para JS --}}
+        <script defer src="{{ $page->baseUrl }}/assets/build/js/main.js?v={{ time() }}"></script>
     </head>
     
-    {{-- BODY (Clases eliminadas) --}}
-    <body class="mukimono tma_pri">
-        @yield('body')
-        {{-- Inclusión del Footer --}}
-        @include('_layouts.footer')
+    {{-- BODY (Estética profesional y elegante) --}}
+    <body class="mukimono tma_d1">
+        <div class="fx2">
+            <div class="pg1440">
+                @yield('body')
+                {{-- Inclusión del Footer --}}
+                @include('_layouts.footer')
+            </div> 
+        </div>
     </body>
 </html>

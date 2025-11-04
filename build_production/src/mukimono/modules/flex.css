@@ -1,0 +1,432 @@
+/*****************************
+    Flex Containers Base
+*****************************/
+.fx {
+  display: flex;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/*****************************
+    Flex Direction
+*****************************/
+.fx1,
+.fx1x > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row !important;
+}
+.fx2,
+.fx2x > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse !important;
+}
+.fx3,
+.fx3x > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column !important;
+}
+.fx4,
+.fx4x > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse !important;
+}
+
+/*****************************
+    Flex Wrap
+*****************************/
+.fx5,
+.fx5x > * {
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+.fx6,
+.fx6x > * {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+.fx7,
+.fx7x > * {
+  display: flex;
+  flex-wrap: wrap-reverse !important;
+}
+
+/*****************************
+    Justify Content
+*****************************/
+.fx8,
+.fx8x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start !important;
+}
+.fx9,
+.fx9x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end !important;
+}
+.fx10,
+.fx10x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
+.fx11,
+.fx11x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around !important;
+}
+.fx12,
+.fx12x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly !important;
+}
+.fx13,
+.fx13x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+}
+
+/*****************************
+    Align Items
+*****************************/
+.fx14,
+.fx14x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch !important;
+}
+.fx15,
+.fx15x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline !important;
+}
+.fx16,
+.fx16x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center !important;
+}
+.fx17,
+.fx17x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start !important;
+}
+.fx18,
+.fx18x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end !important;
+}
+
+/*****************************
+    Align Content
+*****************************/
+.fx19,
+.fx19x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch !important;
+}
+.fx20,
+.fx20x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center !important;
+}
+.fx21,
+.fx21x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start !important;
+}
+.fx22,
+.fx22x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end !important;
+}
+.fx23,
+.fx23x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around !important;
+}
+.fx24,
+.fx24x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly !important;
+}
+.fx25,
+.fx25x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between !important;
+}
+
+/*****************************
+    Flex Grow / Shrink / Basis
+*****************************/
+.fx26,
+.fx26x > * {
+  display: flex;
+  flex-grow: 1 !important;
+}
+.fx27,
+.fx27x > * {
+  display: flex;
+  flex-grow: 0 !important;
+}
+.fx28,
+.fx28x > * {
+  display: flex;
+  flex-shrink: 1 !important;
+}
+.fx29,
+.fx29x > * {
+  display: flex;
+  flex-shrink: 0 !important;
+}
+.fx30,
+.fx30x > * {
+  display: flex;
+  flex-basis: auto !important;
+}
+.fx31,
+.fx31x > * {
+  display: flex;
+  flex-basis: 0 !important;
+}
+
+/*****************************
+    Align Self
+*****************************/
+.fx32,
+.fx32x > * {
+  display: flex;
+  align-self: auto !important;
+}
+.fx33,
+.fx33x > * {
+  display: flex;
+  align-self: stretch !important;
+}
+.fx34,
+.fx34x > * {
+  display: flex;
+  align-self: baseline !important;
+}
+.fx35,
+.fx35x > * {
+  display: flex;
+  align-self: center !important;
+}
+.fx36,
+.fx36x > * {
+  display: flex;
+  align-self: flex-start !important;
+}
+.fx37,
+.fx37x > * {
+  display: flex;
+  align-self: flex-end !important;
+}
+
+/*****************************
+    Order
+*****************************/
+.fx38,
+.fx38x > * {
+  display: flex;
+  order: 0 !important;
+}
+.fx39,
+.fx39x > * {
+  display: flex;
+  order: 1 !important;
+}
+.fx40,
+.fx40x > * {
+  display: flex;
+  order: 2 !important;
+}
+.fx41,
+.fx41x > * {
+  display: flex;
+  order: 3 !important;
+}
+
+/*****************************
+    Gap (solo contenedor)
+*****************************/
+.fx42 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.fx43 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.fx44 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.fx45 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/*****************************
+    Flex Items Base
+*****************************/
+.ifx {
+  box-sizing: border-box;
+}
+
+/*****************************
+    Flex Grow
+*****************************/
+.ifx1,
+.ifx1x > * {
+  flex-grow: 0 !important;
+}
+.ifx2,
+.ifx2x > * {
+  flex-grow: 1 !important;
+}
+.ifx3,
+.ifx3x > * {
+  flex-grow: 2 !important;
+}
+
+/*****************************
+    Flex Shrink
+*****************************/
+.ifx4,
+.ifx4x > * {
+  flex-shrink: 0 !important;
+}
+.ifx5,
+.ifx5x > * {
+  flex-shrink: 1 !important;
+}
+
+/*****************************
+    Flex Basis
+*****************************/
+.ifx6,
+.ifx6x > * {
+  flex-basis: auto !important;
+}
+.ifx7,
+.ifx7x > * {
+  flex-basis: 0 !important;
+}
+.ifx8,
+.ifx8x > * {
+  flex-basis: 25% !important;
+}
+.ifx9,
+.ifx9x > * {
+  flex-basis: 50% !important;
+}
+.ifx10,
+.ifx10x > * {
+  flex-basis: 75% !important;
+}
+.ifx11,
+.ifx11x > * {
+  flex-basis: 100% !important;
+}
+
+/*****************************
+    Flex (abreviada)
+*****************************/
+.ifx12,
+.ifx12x > * {
+  flex: 0 1 auto !important;
+}
+.ifx13,
+.ifx13x > * {
+  flex: 1 1 auto !important;
+}
+.ifx14,
+.ifx14x > * {
+  flex: 1 0 0 !important;
+}
+.ifx15,
+.ifx15x > * {
+  flex: 2 1 0 !important;
+}
+
+/*****************************
+    Align Self
+*****************************/
+.ifx16,
+.ifx16x > * {
+  align-self: auto !important;
+}
+.ifx17,
+.ifx17x > * {
+  align-self: stretch !important;
+}
+.ifx18,
+.ifx18x > * {
+  align-self: flex-start !important;
+}
+.ifx19,
+.ifx19x > * {
+  align-self: flex-end !important;
+}
+.ifx20,
+.ifx20x > * {
+  align-self: center !important;
+}
+.ifx21,
+.ifx21x > * {
+  align-self: baseline !important;
+}
+
+/*****************************
+    Order
+*****************************/
+.ifx22,
+.ifx22x > * {
+  order: 0 !important;
+}
+.ifx23,
+.ifx23x > * {
+  order: 1 !important;
+}
+.ifx24,
+.ifx24x > * {
+  order: 2 !important;
+}
+.ifx25,
+.ifx25x > * {
+  order: 3 !important;
+}
+.ifx26,
+.ifx26x > * {
+  order: 4 !important;
+}
+.ifx27,
+.ifx27x > * {
+  order: 5 !important;
+}

@@ -1,0 +1,140 @@
+/*============================
+    Display Utilities - Hide / Show (Variables)
+============================*/
+
+/* Ocultar siempre */
+.hd {
+  display: none !important;
+}
+
+/* =============================
+   Base hidden classes for inheritance
+============================= */
+.hdi321,
+.hda320,
+.hdi481,
+.hda480,
+.hdi641,
+.hda640,
+.hdi769,
+.hda768,
+.hdi961,
+.hda960,
+.hdi1201,
+.hda1200 {
+  color: inherit;
+}
+
+/* =============================
+   Variables globales
+============================= */
+:root {
+  --hide: none !important;
+}
+
+/* ==============================
+   HDA: max-width (ocultar hasta cierto tamaño)
+============================== */
+@media screen and (max-width: 320px) {
+  .hda320 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hda480 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hda640 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hda768 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  .hda960 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hda1200 {
+    display: var(--hide) !important;
+  }
+}
+
+/* ==============================
+   HDI: min-width (ocultar desde cierto tamaño)
+============================== */
+@media screen and (min-width: 321px) {
+  .hdi321 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 481px) {
+  .hdi481 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 641px) {
+  .hdi641 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hdi769 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 961px) {
+  .hdi961 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .hdi1201 {
+    display: var(--hide) !important;
+  }
+}
+
+/* ==============================
+   HD RANGES: min + max (solo para rangos específicos)
+============================== */
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .hd0x320 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .hd321x480 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  .hd481x640 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .hd641x768 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .hd769x960 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+  .hd961x1200 {
+    display: var(--hide) !important;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .hdi1201x {
+    display: var(--hide) !important;
+  }
+}

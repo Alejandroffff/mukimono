@@ -154,14 +154,3 @@
   min-height: 128px;
   padding: 0 16px;
 }
-
-/*=========================================================
-  Clase opcional: Forzar medidas si algún framework sobrescribe
-=========================================================*/
-.lb-force {
-  min-height: inherit !important;
-  padding: inherit !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}

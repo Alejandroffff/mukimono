@@ -1,0 +1,219 @@
+/*============================
+    Input Mix Styles (Dark Elegant)
+============================*/
+
+/*----------------------------
+    Inputs: 16px - 64px
+----------------------------*/
+.ip16,
+.ip16x > :is(input, textarea, select),
+.ip16xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 12px; /* mínimo de texto */
+  padding: 0 8px;
+  height: 16px;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ip24,
+.ip24x > :is(input, textarea, select),
+.ip24xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 14px;
+  padding: 0 8px;
+  height: 24px;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ip32,
+.ip32x > :is(input, textarea, select),
+.ip32xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 32px;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ip40,
+.ip40x > :is(input, textarea, select),
+.ip40xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 18px;
+  padding: 0 12px;
+  height: 40px;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ip48,
+.ip48x > :is(input, textarea, select),
+.ip48xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 20px;
+  padding: 0 12px;
+  height: 48px;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ip56,
+.ip56x > :is(input, textarea, select),
+.ip56xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 22px;
+  padding: 0 12px;
+  height: 56px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ip64,
+.ip64x > :is(input, textarea, select),
+.ip64xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 24px;
+  padding: 0 12px;
+  height: 64px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*============================
+    Checkbox Sizes (Dark Elegant)
+============================*/
+.ckb16,
+.ckb16x > input[type="checkbox"],
+.ckb16xx input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.ckb24,
+.ckb24x > input[type="checkbox"],
+.ckb24xx input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.ckb32,
+.ckb32x > input[type="checkbox"],
+.ckb32xx input[type="checkbox"] {
+  width: 32px;
+  height: 32px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ckb40,
+.ckb40x > input[type="checkbox"],
+.ckb40xx input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ckb48,
+.ckb48x > input[type="checkbox"],
+.ckb48xx input[type="checkbox"] {
+  width: 48px;
+  height: 48px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.ckb56,
+.ckb56x > input[type="checkbox"],
+.ckb56xx input[type="checkbox"] {
+  width: 56px;
+  height: 56px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.ckb64,
+.ckb64x > input[type="checkbox"],
+.ckb64xx input[type="checkbox"] {
+  width: 64px;
+  height: 64px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,97 @@
+/* ==========================
+   MUKIMONO Themes (TM) - Tonos Oscuros Mejorados
+   ========================== */
+
+/* TEMA A: Azul Oscuro / Navy (tma) */
+.tma_pri {
+   color: #f0f0f0 !important;
+   background-color: #102A43 !important;
+}
+
+.tma_sec {
+   color: #97AAB9 !important;
+   background-color: #1C3C58 !important;
+}
+
+.tma_sfc {
+   background-color: #1C3C58 !important;
+}
+
+.tma_acc {
+   color: #000000 !important;
+   background-color: #DAA520 !important;
+}
+
+.tma_suc {
+   color: #f0f0f0 !important;
+   background-color: #38761D !important;
+}
+
+.tma_err {
+   color: #f0f0f0 !important;
+   background-color: #CC0000 !important;
+}
+
+/* TEMA B: Ultra Dark / Negro (tmb) */
+.tmb_pri {
+   color: #F0F0F0 !important;
+   background-color: #121212 !important;
+}
+
+.tmb_sec {
+   color: #A0A0A0 !important;
+   background-color: #1F1F1F !important;
+}
+
+.tmb_sfc {
+   background-color: #1F1F1F !important;
+}
+
+.tmb_acc {
+   color: #F0F0F0 !important;
+   background-color: #0077B6 !important;
+}
+
+.tmb_suc {
+   color: #F0F0F0 !important;
+   background-color: #558B2F !important;
+}
+
+.tmb_err {
+   color: #F0F0F0 !important;
+   background-color: #D50000 !important;
+}
+
+/* TEMA C: Chocolate / Marrón Oscuro (tmc) */
+.tmc_pri {
+   color: #EFEBE9 !important;
+   background-color: #3E2723 !important;
+}
+
+.tmc_sec {
+   color: #A1887F !important;
+   background-color: #4E342E !important;
+}
+
+.tmc_b {
+   background-color: #3E2723 !important;
+}
+
+.tmc_sfc {
+   background-color: #4E342E !important;
+}
+
+.tmc_acc {
+   color: #000000 !important;
+   background-color: #D4AF37 !important;
+}
+
+.tmc_suc {
+   color: #EFEBE9 !important;
+   background-color: #1B5E20 !important;
+}
+
+.tmc_err {
+   color: #EFEBE9 !important;
+   background-color: #640000 !important;
+}

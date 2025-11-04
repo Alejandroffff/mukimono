@@ -11,13 +11,13 @@
     line-height: 1.6;
     
     /* Aplicando variables al base del framework */
-    color: var(--color-primary); 
-    background-color: var(--color-background);
-
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
 }
 
 /* 2. Universal Reset (Margin/Padding/Box-Sizing) */
@@ -49,7 +49,6 @@
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    color: var(--color-primary); 
 }
 
 .mukimono h1 { font-size: 36px; font-weight: 700; }
@@ -68,7 +67,6 @@
 .mukimono label {
     font-weight: 400;
     font-size: 16px;
-    color: var(--color-primary); 
 }
 
 /* 5. Image and Media Reset */
@@ -106,7 +104,6 @@
 
 .mukimono a {
     text-decoration: none;
-    color: var(--color-accent); 
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -125,152 +122,310 @@
 
 .mukimono blockquote {
     font-style: italic;
-    color: var(--color-secondary); 
 }
 
 /* ==========================
-   MUKIMONO Themes (TM) - Todos los Tonos Oscuros
-   ========================== */
+   MUKIMONO Themes (TM) - Escala de 10 Tonos Completa (d1 a d10)
+   ========================== */
 
-/* ----------------------------------------------------
-   TEMA A: Azul Oscuro / Navy (tma) - TONOS MATTE
-   ---------------------------------------------------- */
+/* ------------------------------------- */
 
-/* CLASE PRINCIPAL (Fondo de Página + Texto Claro) */
+/* TEMA A: Azul Oscuro / Navy (tma) - Elegante */
 
-.tma_pri { 
-    color: #f0f0f0;          
-    background-color: #102A43; 
+/* ------------------------------------- */
+
+/* D1 a D6: Degradado principal */
+
+.tma_d1,
+.tma_d1x>*,
+.tma_d1hv:hover,
+.tma_d1xhv *:hover {
+   color: #EBEBEB !important;
+   background-color: #172433 !important;
 }
 
-/* CLASE SECUNDARIA (Fondo de Superficie + Texto Sutil) */
-
-.tma_sec { 
-    color: #97AAB9;          
-    background-color: #1C3C58; 
+.tma_d2,
+.tma_d2x>*,
+.tma_d2hv:hover,
+.tma_d2xhv *:hover {
+   color: #EBEBEB !important;
+   background-color: #1A293B !important;
 }
 
-/* UTILIDAD: Solo Color de Fondo Superficie */
-
-.tma_sfc { 
-    background-color: #1C3C58; 
+.tma_d3,
+.tma_d3x>*,
+.tma_d3hv:hover,
+.tma_d3xhv *:hover {
+   color: #EBEBEB !important;
+   background-color: #1D2E45 !important;
 }
 
-/* UTILIDAD: Acento (Accent) - Matte */
-
-.tma_acc { 
-    color: #000000;          
-    background-color: #DAA520; /* Oro Viejo/Matte */
+.tma_d4,
+.tma_d4x>*,
+.tma_d4hv:hover,
+.tma_d4xhv *:hover {
+   color: #AABECF !important;
+   background-color: #233751 !important;
 }
 
-/* UTILIDAD: Éxito (Success) - Matte */
-
-.tma_suc { 
-    color: #f0f0f0;          
-    background-color: #38761D; /* Verde Bosque Oscuro/Matte */
+.tma_d5,
+.tma_d5x>*,
+.tma_d5hv:hover,
+.tma_d5xhv *:hover {
+   color: #AABECF !important;
+   background-color: #273E5B !important;
 }
 
-/* UTILIDAD: Error (Error) - Matte */
-
-.tma_err { 
-    color: #f0f0f0;          
-    background-color: #CC0000; /* Rojo Borgoña/Matte */
+.tma_d6,
+.tma_d6x>*,
+.tma_d6hv:hover,
+.tma_d6xhv *:hover {
+   color: #AABECF !important;
+   background-color: #2C4566 !important;
 }
 
-/* ----------------------------------------------------
-   TEMA B: Ultra Dark / Negro (tmb)
-   ---------------------------------------------------- */
+/* D7: Tono más claro del degradado */
 
-/* CLASE PRINCIPAL (Fondo de Página NEGRO PURO + Texto Claro Brillante) */
-
-.tmb_pri { 
-    color: #F0F0F0;         
-    background-color: #121212; /* Fondo BASE (Casi negro) */
+.tma_d7,
+.tma_d7x>*,
+.tma_d7hv:hover,
+.tma_d7xhv *:hover {
+   color: #AABECF !important;
+   background-color: #314E73 !important;
+   /* Más Claro */
 }
 
-/* CLASE SECUNDARIA (Fondo de Superficie Apenas Más Claro + Texto Sutil) */
+/* D8: Acento (Anteriormente _acc) */
 
-.tmb_sec { 
-    color: #A0A0A0;         
-    background-color: #1F1F1F; /* Fondo de superficie (Muy oscuro) */
+.tma_d8,
+.tma_d8x>*,
+.tma_d8hv:hover,
+.tma_d8xhv *:hover {
+   color: #000000 !important;
+   background-color: #F8D879 !important;
+   /* Dorado */
 }
 
-/* UTILIDAD: Solo Color de Fondo Superficie */
+/* D9: Éxito (Anteriormente _suc) */
 
-.tmb_sfc { 
-    background-color: #1F1F1F; 
+.tma_d9,
+.tma_d9x>*,
+.tma_d9hv:hover,
+.tma_d9xhv *:hover {
+   color: #EBEBEB !important;
+   background-color: #2E7D32 !important;
+   /* Verde Esmeralda */
 }
 
-/* UTILIDAD: Acento (Accent) */
+/* D10: Error (Anteriormente _err) */
 
-.tmb_acc { 
-    color: #121212;         
-    background-color: #00BFFF; /* Azul Cielo Brillante (Alto contraste extremo) */
+.tma_d10,
+.tma_d10x>*,
+.tma_d10hv:hover,
+.tma_d10xhv *:hover {
+   color: #EBEBEB !important;
+   background-color: #C62828 !important;
+   /* Rojo Serio */
 }
 
-/* UTILIDAD: Éxito (Success) */
+/* ------------------------------------- */
 
-.tmb_suc { 
-    color: #F0F0F0;         
-    background-color: #00C853; 
+/* TEMA B: Ultra Dark / Negro (tmb) - Elegante */
+
+/* ------------------------------------- */
+
+/* D1 a D6: Degradado principal */
+
+.tmb_d1,
+.tmb_d1x>*,
+.tmb_d1hv:hover,
+.tmb_d1xhv *:hover {
+   color: #E5E5E5 !important;
+   background-color: #1A1A1A !important;
 }
 
-/* UTILIDAD: Error (Error) */
-
-.tmb_err { 
-    color: #F0F0F0;         
-    background-color: #D50000; 
+.tmb_d2,
+.tmb_d2x>*,
+.tmb_d2hv:hover,
+.tmb_d2xhv *:hover {
+   color: #E5E5E5 !important;
+   background-color: #212121 !important;
 }
 
-/* ----------------------------------------------------
-   TEMA C: Chocolate / Marrón Oscuro (tmc) - TONOS MATTE
-   ---------------------------------------------------- */
-
-/* CLASE PRINCIPAL (Fondo de Página Marrón Profundo + Texto Hueso) */
-
-.tmc_pri { 
-    color: #EFEBE9;          
-    background-color: #3E2723; /* Fondo BASE */
+.tmb_d3,
+.tmb_d3x>*,
+.tmb_d3hv:hover,
+.tmb_d3xhv *:hover {
+   color: #E5E5E5 !important;
+   background-color: #282828 !important;
 }
 
-/* CLASE SECUNDARIA (Fondo de Superficie Marrón + Texto Sutil) */
-
-.tmc_sec { 
-    color: #A1887F;          
-    background-color: #4E342E; /* Fondo de superficie */
+.tmb_d4,
+.tmb_d4x>*,
+.tmb_d4hv:hover,
+.tmb_d4xhv *:hover {
+   color: #B0B0B0 !important;
+   background-color: #2E2E2E !important;
 }
 
-/* UTILIDAD: Solo Color de Fondo Base */
-
-.tmc_b { 
-    background-color: #3E2723; 
+.tmb_d5,
+.tmb_d5x>*,
+.tmb_d5hv:hover,
+.tmb_d5xhv *:hover {
+   color: #B0B0B0 !important;
+   background-color: #353535 !important;
 }
 
-/* UTILIDAD: Solo Color de Fondo Superficie */
-
-.tmc_sfc { 
-    background-color: #4E342E; 
+.tmb_d6,
+.tmb_d6x>*,
+.tmb_d6hv:hover,
+.tmb_d6xhv *:hover {
+   color: #B0B0B0 !important;
+   background-color: #3C3C3C !important;
 }
 
-/* UTILIDAD: Acento (Accent) - Matte */
+/* D7: Tono más claro del degradado */
 
-.tmc_acc { 
-    color: #000000;          
-    background-color: #D4AF37; /* Oro Viejo Profundo/Matte */
+.tmb_d7,
+.tmb_d7x>*,
+.tmb_d7hv:hover,
+.tmb_d7xhv *:hover {
+   color: #B0B0B0 !important;
+   background-color: #454545 !important;
+   /* Más Claro */
 }
 
-/* UTILIDAD: Éxito (Success) - Matte */
+/* D8: Acento */
 
-.tmc_suc { 
-    color: #EFEBE9;          
-    background-color: #38761D; /* Verde Bosque Profundo/Matte */
+.tmb_d8,
+.tmb_d8x>*,
+.tmb_d8hv:hover,
+.tmb_d8xhv *:hover {
+   color: #E5E5E5 !important;
+   background-color: #039BE5 !important;
+   /* Azul de negocios */
 }
 
-/* UTILIDAD: Error (Error) - Matte */
+/* D9: Éxito */
 
-.tmc_err { 
-    color: #EFEBE9;          
-    background-color: #880000; /* Rojo Oscuro/Ladrillo/Matte */
+.tmb_d9,
+.tmb_d9x>*,
+.tmb_d9hv:hover,
+.tmb_d9xhv *:hover {
+   color: #E5E5E5 !important;
+   background-color: #4CAF50 !important;
+   /* Verde clásico */
+}
+
+/* D10: Error */
+
+.tmb_d10,
+.tmb_d10x>*,
+.tmb_d10hv:hover,
+.tmb_d10xhv *:hover {
+   color: #E5E5E5 !important;
+   background-color: #D32F2F !important;
+   /* Rojo moderno */
+}
+
+/* ------------------------------------- */
+
+/* TEMA C: Chocolate / Marrón Oscuro (tmc) - Elegante */
+
+/* ------------------------------------- */
+
+/* D1 a D6: Degradado principal */
+
+.tmc_d1,
+.tmc_d1x>*,
+.tmc_d1hv:hover,
+.tmc_d1xhv *:hover {
+   color: #EDECEB !important;
+   background-color: #281E1C !important;
+}
+
+.tmc_d2,
+.tmc_d2x>*,
+.tmc_d2hv:hover,
+.tmc_d2xhv *:hover {
+   color: #EDECEB !important;
+   background-color: #2F2422 !important;
+}
+
+.tmc_d3,
+.tmc_d3x>*,
+.tmc_d3hv:hover,
+.tmc_d3xhv *:hover {
+   color: #EDECEB !important;
+   background-color: #382B29 !important;
+}
+
+.tmc_d4,
+.tmc_d4x>*,
+.tmc_d4hv:hover,
+.tmc_d4xhv *:hover {
+   color: #B5A09D !important;
+   background-color: #443734 !important;
+}
+
+.tmc_d5,
+.tmc_d5x>*,
+.tmc_d5hv:hover,
+.tmc_d5xhv *:hover {
+   color: #B5A09D !important;
+   background-color: #504441 !important;
+}
+
+.tmc_d6,
+.tmc_d6x>*,
+.tmc_d6hv:hover,
+.tmc_d6xhv *:hover {
+   color: #B5A09D !important;
+   background-color: #5E5350 !important;
+}
+
+/* D7: Tono más claro del degradado */
+
+.tmc_d7,
+.tmc_d7x>*,
+.tmc_d7hv:hover,
+.tmc_d7xhv *:hover {
+   color: #B5A09D !important;
+   background-color: #6A605C !important;
+   /* Más Claro */
+}
+
+/* D8: Acento */
+
+.tmc_d8,
+.tmc_d8x>*,
+.tmc_d8hv:hover,
+.tmc_d8xhv *:hover {
+   color: #000000 !important;
+   background-color: #FFC107 !important;
+   /* Dorado */
+}
+
+/* D9: Éxito */
+
+.tmc_d9,
+.tmc_d9x>*,
+.tmc_d9hv:hover,
+.tmc_d9xhv *:hover {
+   color: #EDECEB !important;
+   background-color: #388E3C !important;
+   /* Verde Profundo */
+}
+
+/* D10: Error */
+
+.tmc_d10,
+.tmc_d10x>*,
+.tmc_d10hv:hover,
+.tmc_d10xhv *:hover {
+   color: #EDECEB !important;
+   background-color: #B71C1C !important;
+   /* Rojo Ladrillo */
 }
 
 /*============================
@@ -280,40 +435,40 @@
 /* Estilos base compartidos */
 
 .bt16,
-.bt16x > button,
+.bt16x>button,
 .bt16xx button,
 .bt24,
-.bt24x > button,
+.bt24x>button,
 .bt24xx button,
 .bt32,
-.bt32x > button,
+.bt32x>button,
 .bt32xx button,
 .bt40,
-.bt40x > button,
+.bt40x>button,
 .bt40xx button,
 .bt48,
-.bt48x > button,
+.bt48x>button,
 .bt48xx button,
 .bt56,
-.bt56x > button,
+.bt56x>button,
 .bt56xx button,
 .bt64,
-.bt64x > button,
+.bt64x>button,
 .bt64xx button,
 .bt72,
-.bt72x > button,
+.bt72x>button,
 .bt72xx button,
 .bt80,
-.bt80x > button,
+.bt80x>button,
 .bt80xx button,
 .bt96,
-.bt96x > button,
+.bt96x>button,
 .bt96xx button,
 .bt112,
-.bt112x > button,
+.bt112x>button,
 .bt112xx button,
 .bt128,
-.bt128x > button,
+.bt128x>button,
 .bt128xx button {
   border: 0;
   display: inline-flex;
@@ -328,90 +483,125 @@
   cursor: pointer;
 }
 
-/* Alturas y padding unificado */
+/* Tamaños predefinidos */
 
 .bt16,
-.bt16x > button,
+.bt16x>button,
 .bt16xx button {
   height: 16px;
-  padding: 0 2px;
-}
-
-.bt24,
-.bt24x > button,
-.bt24xx button {
-  height: 24px;
-  padding: 0 3px;
-}
-
-.bt32,
-.bt32x > button,
-.bt32xx button {
-  height: 32px;
+  min-height: 16px;
+  line-height: 16px;
   padding: 0 4px;
 }
 
-.bt40,
-.bt40x > button,
-.bt40xx button {
-  height: 40px;
-  padding: 0 5px;
-}
-
-.bt48,
-.bt48x > button,
-.bt48xx button {
-  height: 48px;
-  padding: 0 6px;
-}
-
-.bt56,
-.bt56x > button,
-.bt56xx button {
-  height: 56px;
-  padding: 0 7px;
-}
-
-.bt64,
-.bt64x > button,
-.bt64xx button {
-  height: 64px;
+.bt24,
+.bt24x>button,
+.bt24xx button {
+  height: 24px;
+  min-height: 24px;
+  line-height: 24px;
   padding: 0 8px;
 }
 
-.bt72,
-.bt72x > button,
-.bt72xx button {
-  height: 72px;
-  padding: 0 9px;
-}
-
-.bt80,
-.bt80x > button,
-.bt80xx button {
-  height: 80px;
-  padding: 0 10px;
-}
-
-.bt96,
-.bt96x > button,
-.bt96xx button {
-  height: 96px;
+.bt32,
+.bt32x>button,
+.bt32xx button {
+  height: 32px;
+  min-height: 32px;
+  line-height: 32px;
   padding: 0 12px;
 }
 
+.bt40,
+.bt40x>button,
+.bt40xx button {
+  height: 40px;
+  min-height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+}
+
+.bt48,
+.bt48x>button,
+.bt48xx button {
+  height: 48px;
+  min-height: 48px;
+  line-height: 48px;
+  padding: 0 20px;
+}
+
+.bt56,
+.bt56x>button,
+.bt56xx button {
+  height: 56px;
+  min-height: 56px;
+  line-height: 56px;
+  padding: 0 24px;
+}
+
+.bt64,
+.bt64x>button,
+.bt64xx button {
+  height: 64px;
+  min-height: 64px;
+  line-height: 64px;
+  padding: 0 28px;
+}
+
+.bt72,
+.bt72x>button,
+.bt72xx button {
+  height: 72px;
+  min-height: 72px;
+  line-height: 72px;
+  padding: 0 32px;
+}
+
+.bt80,
+.bt80x>button,
+.bt80xx button {
+  height: 80px;
+  min-height: 80px;
+  line-height: 80px;
+  padding: 0 36px;
+}
+
+.bt96,
+.bt96x>button,
+.bt96xx button {
+  height: 96px;
+  min-height: 96px;
+  line-height: 96px;
+  padding: 0 40px;
+}
+
 .bt112,
-.bt112x > button,
+.bt112x>button,
 .bt112xx button {
   height: 112px;
-  padding: 0 14px;
+  min-height: 112px;
+  line-height: 112px;
+  padding: 0 48px;
 }
 
 .bt128,
-.bt128x > button,
+.bt128x>button,
 .bt128xx button {
   height: 128px;
-  padding: 0 16px;
+  min-height: 128px;
+  line-height: 128px;
+  padding: 0 56px;
+}
+
+/*=========================================================
+  Clase opcional: Forzar medidas si algún framework sobrescribe
+=========================================================*/
+
+.bt-force {
+  height: inherit !important;
+  min-height: inherit !important;
+  line-height: inherit !important;
+  padding: inherit !important;
 }
 
 /*============================
@@ -1544,126 +1734,126 @@
 /* Contenedor principal */
 
 .img16 {
-  height: 16px;
+  height: 16px !important;
   display: inline-block;
 }
 
 .img24 {
-  height: 24px;
+  height: 24px !important;
   display: inline-block;
 }
 
 .img32 {
-  height: 32px;
+  height: 32px !important;
   display: inline-block;
 }
 
 .img48 {
-  height: 48px;
+  height: 48px !important;
   display: inline-block;
 }
 
 .img64 {
-  height: 64px;
+  height: 64px !important;
   display: inline-block;
 }
 
 .img96 {
-  height: 96px;
+  height: 96px !important;
   display: inline-block;
 }
 
 .img128 {
-  height: 128px;
+  height: 128px !important;
   display: inline-block;
 }
 
 .img256 {
-  height: 256px;
+  height: 256px !important;
   display: inline-block;
 }
 
 /* Hijos directos de imgXXx */
 
 .img16x > img {
-  height: 16px;
+  height: 16px !important;
   width: auto;
 }
 
 .img24x > img {
-  height: 24px;
+  height: 24px !important;
   width: auto;
 }
 
 .img32x > img {
-  height: 32px;
+  height: 32px !important;
   width: auto;
 }
 
 .img48x > img {
-  height: 48px;
+  height: 48px !important;
   width: auto;
 }
 
 .img64x > img {
-  height: 64px;
+  height: 64px !important;
   width: auto;
 }
 
 .img96x > img {
-  height: 96px;
+  height: 96px !important;
   width: auto;
 }
 
 .img128x > img {
-  height: 128px;
+  height: 128px !important;
   width: auto;
 }
 
 .img256x > img {
-  height: 256px;
+  height: 256px !important;
   width: auto;
 }
 
 /* Todas las imágenes dentro (anidadas) */
 
 .img16xx img {
-  height: 16px;
+  height: 16px !important;
   width: auto;
 }
 
 .img24xx img {
-  height: 24px;
+  height: 24px !important;
   width: auto;
 }
 
 .img32xx img {
-  height: 32px;
+  height: 32px !important;
   width: auto;
 }
 
 .img48xx img {
-  height: 48px;
+  height: 48px !important;
   width: auto;
 }
 
 .img64xx img {
-  height: 64px;
+  height: 64px !important;
   width: auto;
 }
 
 .img96xx img {
-  height: 96px;
+  height: 96px !important;
   width: auto;
 }
 
 .img128xx img {
-  height: 128px;
+  height: 128px !important;
   width: auto;
 }
 
 .img256xx img {
-  height: 256px;
+  height: 256px !important;
   width: auto;
 }
 
@@ -2528,6 +2718,18 @@
 .lb128xx a {
   min-height: 128px;
   padding: 0 16px;
+}
+
+/*=========================================================
+  Clase opcional: Forzar medidas si algún framework sobrescribe
+=========================================================*/
+
+.lb-force {
+  min-height: inherit !important;
+  padding: inherit !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 /*****************************

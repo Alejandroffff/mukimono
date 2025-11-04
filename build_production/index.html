@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="/">
+        <meta name="description" content="MUKIMONO CSS: Marco de trabajo CSS gratuito, minimalista y profesional para interfaces de alto contraste.">
+        <title>MUKIMONO CSS - Framework CSS Simple y Elegante</title>
+        
+        
+        <link rel="stylesheet" href="/assets/build/css/main.css">
+        <script defer src="/assets/build/js/main.js"></script>
+    </head>
+    
+    
+    <body class="mukimono tma_pri">
+        <div class="fx2">
+            <div class="pg1440">
+            
+    
+    <div>
+
+        
+        <header>
+            <nav class="navbar-main-container tma_sec pd8lr" id="navbar-main-nav">
+    <div class="navbar-main-wrapper">
+        <div class="navbar-main-logo-area">
+            <a href="/" class="lb48">
+                <span class="navbar-main-title">Mukimono Css</span>
+            </a>
+        </div>
+        
+        <div class="navbar-main-right-group">
+            
+            <ul id="navbar-main-primary-list" class="navbar-main-primary-list">
+                <li class="navbar-main-item">
+                    <a 
+                        href="/" 
+                        class="navbar-main-link lb48  navbar-main-link-active "
+                    >
+                        Inicio
+                    </a>
+                </li>
+                <li class="navbar-main-item">
+                    <a 
+                        href="/contact" 
+                        class="navbar-main-link lb48 "
+                    >
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+
+            <button 
+                type="button" 
+                class="navbar-main-toggle-button bt48 wi48" 
+                aria-controls="navbar-main-secondary-list" 
+                aria-expanded="false" 
+                id="navbar-main-toggle"
+            >
+                
+                ☰
+            </button>
+            
+            <ul id="navbar-main-secondary-list" class="navbar-main-secondary-list tma_sec">
+                <li class="navbar-main-item">
+                    <a 
+                        href="/alert" 
+                        class="navbar-main-link lb48 "
+                    >
+                        Alert
+                    </a>
+                </li>
+                <li class="navbar-main-item">
+                    <a 
+                        href="/animation" 
+                        class="navbar-main-link lb48 "
+                    >
+                        Animation
+                    </a>
+                </li>
+                <li class="navbar-main-item">
+                    <a 
+                        href="/blur" 
+                        class="navbar-main-link lb48 "
+                    >
+                        Blur
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </div>
+    
+    
+    <style>
+        /* Estilos Base Mínimos (Solo disposición) */
+        .navbar-main-wrapper {
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            /* Necesario para posicionar el dropdown en móvil si la barra es relativa */
+            position: relative; 
+        }
+
+        .navbar-main-title {
+            text-decoration: none;
+        }
+        
+        /* Grupo de la Derecha: Contenedor para el posicionamiento relativo del dropdown */
+        .navbar-main-right-group {
+            display: flex; 
+            align-items: center;
+            /* Necesario para posicionar el dropdown absolutamente respecto a este grupo en escritorio */
+            position: relative; 
+        }
+
+        /* 💻 COMPORTAMIENTO EN ESCRITORIO (Mayor de 768px) */
+        
+        /* 1. Menú Principal: Horizontal */
+        .navbar-main-primary-list {
+            display: flex; 
+            list-style: none;
+        }
+        
+        /* 2. Botón de Toggle: Siempre visible */
+        .navbar-main-toggle-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: block; 
+        }
+        
+        /* 3. Menú Secundario: Comportamiento de Dropdown en Escritorio */
+        .navbar-main-secondary-list {
+            /* Debe ser absoluto respecto a navbar-main-right-group */
+            position: absolute;
+            top: 100%; /* Justo debajo del navbar */
+            right: 0;
+            width: 200px; /* Ancho fijo para el dropdown */
+            list-style: none;
+            z-index: 1000;
+            
+            /* Oculto por defecto con transición */
+            display: block;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.3s ease;
+        }
+
+        /* Enlaces del dropdown en escritorio */
+        .navbar-main-secondary-list .navbar-main-item {
+            display: block;
+        }
+        .navbar-main-secondary-list .navbar-main-link {
+            padding: 10px 15px;
+            display: block;
+            text-decoration: none;
+        }
+        
+        /* El estado 'is-open' controlado por JS */
+        .navbar-main-secondary-list.navbar-main-is-open {
+            height: auto; 
+            max-height: 500px; 
+        }
+
+
+        /* 📱 COMPORTAMIENTO EN MÓVIL (Menor o igual a 768px) */
+        @media (max-width: 768px) {
+
+            /* 3. Menú Secundario: Ahora se expande a full width */
+            .navbar-main-secondary-list {
+                position: absolute; 
+                top: 60px; /* Posicionado debajo de la barra */
+                left: 0;
+                right: 0;
+                width: auto; /* Full width en móvil */
+                
+                /* Reutiliza el display: block, height: 0, etc. */
+            }
+            
+            .navbar-main-link-active {
+                border-bottom: none; 
+            }
+        }
+    </style>
+    
+    
+    <script>
+        // Obtener el botón y la lista de navegación SECUNDARIA
+        const menuToggleButton = document.getElementById('navbar-main-toggle');
+        const navigationMenuList = document.getElementById('navbar-main-secondary-list'); 
+        
+        // Clase que activa el menú vertical
+        const OPEN_CLASS = 'navbar-main-is-open';
+
+        // Función para alternar el menú
+        function toggleMenu() {
+            // 1. Alternar la clase de apertura en la lista 
+            navigationMenuList.classList.toggle(OPEN_CLASS);
+
+            // 2. Determinar si el menú está abierto
+            const isExpanded = navigationMenuList.classList.contains(OPEN_CLASS);
+            
+            // 3. Actualizar el atributo ARIA para accesibilidad
+            menuToggleButton.setAttribute('aria-expanded', isExpanded);
+            
+            // 4. Cambiar el texto/ícono del botón para indicar el estado
+            menuToggleButton.textContent = isExpanded ? '✕' : '☰';
+        }
+
+        // Asignar el listener de evento al botón
+        menuToggleButton.addEventListener('click', toggleMenu);
+    </script>
+</nav>            <div class="pd12">
+                <h1>
+                MUKIMONO <span>CSS</span>
+                </h1>
+                <p>
+                    Marco de trabajo CSS simple, rápido y profesional.
+                </p> 
+            </div>
+           
+        </header>
+
+        <div class="pd12x">
+            
+            <section>
+                <h2>Enfoque Minimalista</h2>
+                <p>
+                    <strong>MUKIMONO CSS</strong> es un <strong>framework gratuito y de código abierto</strong> diseñado para la ingeniería de interfaces de usuario. Su arquitectura minimalista permite construir sitios elegantes y funcionales con la máxima eficiencia y el menor código posible. Obtén **alto contraste**, **velocidad** y un **diseño serio y limpio** en cada proyecto.
+                </p>
+            </section>
+
+            
+            <div>
+                <a href="/guia" class="lb48 tma_suc rd3">
+                    Comenzar con la Guía
+                </a>
+            </div>
+        </div>
+      
+
+    </div>
+
+            
+            <footer class="pd12tb">
+    <div class="fx2 fx10">
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Mukimono Css</h3>
+            <p class="fs14">
+                Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
+            </p>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Navegación</h3>
+            <ul>
+                <li>
+                    
+                    <a href="/" class="lb40">Inicio</a>
+                </li>
+                <li>
+                    
+                    <a href="/contacto"  class="lb40">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Contacto</h3>
+            <p class="fs14">Email: info@mukimono.com</p>
+            <p>Soporte: +507 555-5555</p>
+        </div>
+
+    </div>
+
+    
+    <div class="pd12 tac">
+        <p class="fs14">
+            &copy; 2025 MUKIMONO. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>            </div> 
+        </div>
+    </body>
+</html>

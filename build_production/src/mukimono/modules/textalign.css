@@ -1,0 +1,40 @@
+/* ============================= */
+/* Alineación horizontal (.ta*)  */
+/* ============================= */
+.tal {
+  text-align: left !important;
+} /* Left */
+.tar {
+  text-align: right !important;
+} /* Right */
+.tac {
+  text-align: center !important;
+} /* Center */
+.taj {
+  text-align: justify !important;
+} /* Justify */
+.tas {
+  text-align: start !important;
+} /* Start */
+.tae {
+  text-align: end !important;
+} /* End */
+.tam {
+  text-align: match-parent !important;
+} /* Match parent */
+
+/* ============================= */
+/* Alineación vertical (.tva*)   */
+/* ============================= */
+.tvat {
+  vertical-align: top !important;
+} /* Top */
+.tvam {
+  vertical-align: middle !important;
+} /* Middle */
+.tvab {
+  vertical-align: bottom !important;
+} /* Bottom */
+.tvabn {
+  vertical-align: baseline !important;
+} /* Baseline */

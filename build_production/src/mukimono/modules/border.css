@@ -1,0 +1,310 @@
+/*============================
+  Border Utilities (with side-specific styles)
+============================*/
+
+.bd,
+.bdx > * {
+  border: 0;
+}
+
+/* --- All sides --- */
+.bd1,
+.bd1x > * {
+  border-width: 1px;
+  border-style: solid;
+  border-color: currentColor;
+}
+.bd2,
+.bd2x > * {
+  border-width: 2px;
+  border-style: solid;
+  border-color: currentColor;
+}
+.bd3,
+.bd3x > * {
+  border-width: 3px;
+  border-style: solid;
+  border-color: currentColor;
+}
+.bd4,
+.bd4x > * {
+  border-width: 4px;
+  border-style: solid;
+  border-color: currentColor;
+}
+.bd5,
+.bd5x > * {
+  border-width: 5px;
+  border-style: solid;
+  border-color: currentColor;
+}
+.bd6,
+.bd6x > * {
+  border-width: 6px;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+/* --- Top only --- */
+.bd1t,
+.bd1tx > * {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+.bd2t,
+.bd2tx > * {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+.bd3t,
+.bd3tx > * {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+.bd4t,
+.bd4tx > * {
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+.bd5t,
+.bd5tx > * {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+.bd6t,
+.bd6tx > * {
+  border-top-width: 6px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+
+/* --- Bottom only --- */
+.bd1b,
+.bd1bx > * {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd2b,
+.bd2bx > * {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd3b,
+.bd3bx > * {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd4b,
+.bd4bx > * {
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd5b,
+.bd5bx > * {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd6b,
+.bd6bx > * {
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+/* --- Right only --- */
+.bd1r,
+.bd1rx > * {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd2r,
+.bd2rx > * {
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd3r,
+.bd3rx > * {
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd4r,
+.bd4rx > * {
+  border-right-width: 4px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd5r,
+.bd5rx > * {
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd6r,
+.bd6rx > * {
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+/* --- Left only --- */
+.bd1l,
+.bd1lx > * {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+.bd2l,
+.bd2lx > * {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+.bd3l,
+.bd3lx > * {
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+.bd4l,
+.bd4lx > * {
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+.bd5l,
+.bd5lx > * {
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+.bd6l,
+.bd6lx > * {
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+
+/* --- Top & Bottom --- */
+.bd1tb,
+.bd1tbx > * {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd2tb,
+.bd2tbx > * {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd3tb,
+.bd3tbx > * {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd4tb,
+.bd4tbx > * {
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd5tb,
+.bd5tbx > * {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.bd6tb,
+.bd6tbx > * {
+  border-top-width: 6px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+/* --- Left & Right --- */
+.bd1lr,
+.bd1lrx > * {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd2lr,
+.bd2lrx > * {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd3lr,
+.bd3lrx > * {
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd4lr,
+.bd4lrx > * {
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 4px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd5lr,
+.bd5lrx > * {
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+.bd6lr,
+.bd6lrx > * {
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}

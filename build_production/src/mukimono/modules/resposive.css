@@ -1,0 +1,74 @@
+/*============================
+    Responsive Width Utilities
+============================*/
+
+/*============================
+   Default / Desktop Widths
+============================*/
+
+/* 100% → bloque completo */
+.rps100 {
+  width: 100%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+/* Mitades (2 columnas) */
+.rps50 {
+  width: 50%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+/* Tercios (3 columnas) */
+.rps33 {
+  width: 33.33%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+.rps66 {
+  width: 66.66%;
+}
+
+/* Cuartos (4 columnas) */
+.rps25 {
+  width: 25%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+.rps75 {
+  width: 75%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+/* Quintos (5 columnas o layouts proporcionales) */
+.rps20 {
+  width: 20%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+.rps40 {
+  width: 40%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+.rps60 {
+  width: 60%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+.rps80 {
+  width: 80%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}

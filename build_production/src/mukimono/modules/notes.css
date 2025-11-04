@@ -1,0 +1,203 @@
+/*============================
+  Modern Note Styles Extended (Mate Version)
+============================*/
+
+/* Base styles for all notes */
+.nt1,
+.nt2,
+.nt3,
+.nt4,
+.nt5,
+.nt6,
+.nt7,
+.nt8,
+.nt9,
+.nt10 {
+  padding: 1rem 1.25rem;
+  margin: 0 0 1rem 0;
+  border: 0;
+  border-left-width: 6px;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  background-blend-mode: multiply;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Colors for each note type - matte, soft */
+.nt1 {
+  background-color: #d0f0e0;
+  border-left-color: #34a37f;
+  color: #065f46;
+}
+.nt2 {
+  background-color: #dbe9f8;
+  border-left-color: #3b82f6;
+  color: #1e3a8a;
+}
+.nt3 {
+  background-color: #fffbe0;
+  border-left-color: #facc15;
+  color: #744210;
+}
+.nt4 {
+  background-color: #fdeaea;
+  border-left-color: #ef4444;
+  color: #822727;
+}
+.nt5 {
+  background-color: #f4f5f7;
+  border-left-color: #9ca3af;
+  color: #4b5563;
+}
+.nt6 {
+  background-color: #f3e6f9;
+  border-left-color: #a855f7;
+  color: #5b2c91;
+}
+.nt7 {
+  background-color: #d8fbfa;
+  border-left-color: #06b6d4;
+  color: #0c7189;
+}
+.nt8 {
+  background-color: #fff4e8;
+  border-left-color: #f97316;
+  color: #78350f;
+}
+.nt9 {
+  background-color: #f0edfb;
+  border-left-color: #8b5cf6;
+  color: #5b21b6;
+}
+.nt10 {
+  background-color: #d0f5f1;
+  border-left-color: #14b8a6;
+  color: #115e59;
+}
+
+/* Typography inside notes */
+.nt1 h1,
+.nt2 h1,
+.nt3 h1,
+.nt4 h1,
+.nt5 h1,
+.nt6 h1,
+.nt7 h1,
+.nt8 h1,
+.nt9 h1,
+.nt10 h1 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+.nt1 h2,
+.nt2 h2,
+.nt3 h2,
+.nt4 h2,
+.nt5 h2,
+.nt6 h2,
+.nt7 h2,
+.nt8 h2,
+.nt9 h2,
+.nt10 h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+.nt1 p,
+.nt2 p,
+.nt3 p,
+.nt4 p,
+.nt5 p,
+.nt6 p,
+.nt7 p,
+.nt8 p,
+.nt9 p,
+.nt10 p {
+  margin: 0 0 0.75rem 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+.nt1 code,
+.nt2 code,
+.nt3 code,
+.nt4 code,
+.nt5 code,
+.nt6 code,
+.nt7 code,
+.nt8 code,
+.nt9 code,
+.nt10 code {
+  font-family: "Fira Code", monospace;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+.nt1 div,
+.nt2 div,
+.nt3 div,
+.nt4 div,
+.nt5 div,
+.nt6 div,
+.nt7 div,
+.nt8 div,
+.nt9 div,
+.nt10 div {
+  margin-top: 0.5rem;
+}
+
+/* Lists inside notes */
+.nt1 ul,
+.nt2 ul,
+.nt3 ul,
+.nt4 ul,
+.nt5 ul,
+.nt6 ul,
+.nt7 ul,
+.nt8 ul,
+.nt9 ul,
+.nt10 ul,
+.nt1 ol,
+.nt2 ol,
+.nt3 ol,
+.nt4 ol,
+.nt5 ol,
+.nt6 ol,
+.nt7 ol,
+.nt8 ol,
+.nt9 ol,
+.nt10 ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+.nt1 li,
+.nt2 li,
+.nt3 li,
+.nt4 li,
+.nt5 li,
+.nt6 li,
+.nt7 li,
+.nt8 li,
+.nt9 li,
+.nt10 li {
+  margin-bottom: 0.25rem;
+}
+
+/* Optional hover effect */
+.nt1:hover,
+.nt2:hover,
+.nt3:hover,
+.nt4:hover,
+.nt5:hover,
+.nt6:hover,
+.nt7:hover,
+.nt8:hover,
+.nt9:hover,
+.nt10:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
