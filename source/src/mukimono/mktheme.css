@@ -1,0 +1,123 @@
+/* ==========================
+   MUKIMONO Themes (TM) - Todos los Tonos Oscuros
+   ========================== */
+
+/* ----------------------------------------------------
+   TEMA A: Azul Oscuro / Navy (tma) - TONOS MATTE
+   ---------------------------------------------------- */
+
+/* CLASE PRINCIPAL (Fondo de Página + Texto Claro) */
+.tma_pri { 
+    color: #f0f0f0;          
+    background-color: #102A43; 
+}
+
+/* CLASE SECUNDARIA (Fondo de Superficie + Texto Sutil) */
+.tma_sec { 
+    color: #97AAB9;          
+    background-color: #1C3C58; 
+}
+
+/* UTILIDAD: Solo Color de Fondo Superficie */
+.tma_sfc { 
+    background-color: #1C3C58; 
+}
+
+/* UTILIDAD: Acento (Accent) - Matte */
+.tma_acc { 
+    color: #000000;          
+    background-color: #DAA520; /* Oro Viejo/Matte */
+}
+/* UTILIDAD: Éxito (Success) - Matte */
+.tma_suc { 
+    color: #f0f0f0;          
+    background-color: #38761D; /* Verde Bosque Oscuro/Matte */
+}
+/* UTILIDAD: Error (Error) - Matte */
+.tma_err { 
+    color: #f0f0f0;          
+    background-color: #CC0000; /* Rojo Borgoña/Matte */
+}
+
+/* ----------------------------------------------------
+   TEMA B: Ultra Dark / Negro (tmb)
+   ---------------------------------------------------- */
+
+/* CLASE PRINCIPAL (Fondo de Página NEGRO PURO + Texto Claro Brillante) */
+.tmb_pri { 
+    color: #F0F0F0;         
+    background-color: #121212; /* Fondo BASE (Casi negro) */
+}
+
+/* CLASE SECUNDARIA (Fondo de Superficie Apenas Más Claro + Texto Sutil) */
+.tmb_sec { 
+    color: #A0A0A0;         
+    background-color: #1F1F1F; /* Fondo de superficie (Muy oscuro) */
+}
+
+/* UTILIDAD: Solo Color de Fondo Superficie */
+.tmb_sfc { 
+    background-color: #1F1F1F; 
+}
+
+/* UTILIDAD: Acento (Accent) */
+.tmb_acc { 
+    color: #121212;         
+    background-color: #00BFFF; /* Azul Cielo Brillante (Alto contraste extremo) */
+}
+
+/* UTILIDAD: Éxito (Success) */
+.tmb_suc { 
+    color: #F0F0F0;         
+    background-color: #00C853; 
+}
+
+/* UTILIDAD: Error (Error) */
+.tmb_err { 
+    color: #F0F0F0;         
+    background-color: #D50000; 
+}
+
+/* ----------------------------------------------------
+   TEMA C: Chocolate / Marrón Oscuro (tmc) - TONOS MATTE
+   ---------------------------------------------------- */
+
+/* CLASE PRINCIPAL (Fondo de Página Marrón Profundo + Texto Hueso) */
+.tmc_pri { 
+    color: #EFEBE9;          
+    background-color: #3E2723; /* Fondo BASE */
+}
+
+/* CLASE SECUNDARIA (Fondo de Superficie Marrón + Texto Sutil) */
+.tmc_sec { 
+    color: #A1887F;          
+    background-color: #4E342E; /* Fondo de superficie */
+}
+
+/* UTILIDAD: Solo Color de Fondo Base */
+.tmc_b { 
+    background-color: #3E2723; 
+}
+
+/* UTILIDAD: Solo Color de Fondo Superficie */
+.tmc_sfc { 
+    background-color: #4E342E; 
+}
+
+/* UTILIDAD: Acento (Accent) - Matte */
+.tmc_acc { 
+    color: #000000;          
+    background-color: #D4AF37; /* Oro Viejo Profundo/Matte */
+}
+
+/* UTILIDAD: Éxito (Success) - Matte */
+.tmc_suc { 
+    color: #EFEBE9;          
+    background-color: #38761D; /* Verde Bosque Profundo/Matte */
+}
+
+/* UTILIDAD: Error (Error) - Matte */
+.tmc_err { 
+    color: #EFEBE9;          
+    background-color: #880000; /* Rojo Oscuro/Ladrillo/Matte */
+}

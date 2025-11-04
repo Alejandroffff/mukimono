@@ -1,0 +1,238 @@
+/*============================
+  VARIABLES DE TIEMPO
+============================*/
+:root {
+  --t-05: 0.5s;
+  --t-1: 1s;
+  --t-2: 2s;
+}
+
+/*============================
+  KEYFRAMES BASE
+============================*/
+/* Rotaciones */
+@keyframes rot-r {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rot-l {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Fade */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*============================
+  1️⃣ ROTACIONES AUTOMÁTICAS
+============================*/
+/* Derecha */
+.ani_ro_au_05r {
+  animation: rot-r var(--t-05) linear infinite;
+  transform-origin: center;
+}
+.ani_ro_au_1r {
+  animation: rot-r var(--t-1) linear infinite;
+  transform-origin: center;
+}
+.ani_ro_au_2r {
+  animation: rot-r var(--t-2) linear infinite;
+  transform-origin: center;
+}
+
+/* Izquierda */
+.ani_ro_au_05l {
+  animation: rot-l var(--t-05) linear infinite;
+  transform-origin: center;
+}
+.ani_ro_au_1l {
+  animation: rot-l var(--t-1) linear infinite;
+  transform-origin: center;
+}
+.ani_ro_au_2l {
+  animation: rot-l var(--t-2) linear infinite;
+  transform-origin: center;
+}
+
+/* Pausa en hover */
+.ani_ro_au_05r:hover,
+.ani_ro_au_1r:hover,
+.ani_ro_au_2r:hover,
+.ani_ro_au_05l:hover,
+.ani_ro_au_1l:hover,
+.ani_ro_au_2l:hover {
+  animation-play-state: paused;
+}
+
+/*============================
+  2️⃣ FADE AUTOMÁTICOS
+============================*/
+/* Fade in */
+.ani_fin_au_05 {
+  animation: fade-in var(--t-05) ease-in-out forwards;
+}
+.ani_fin_au_1 {
+  animation: fade-in var(--t-1) ease-in-out forwards;
+}
+.ani_fin_au_2 {
+  animation: fade-in var(--t-2) ease-in-out forwards;
+}
+
+/* Fade out */
+.ani_fout_au_05 {
+  animation: fade-out var(--t-05) ease-in-out forwards;
+}
+.ani_fout_au_1 {
+  animation: fade-out var(--t-1) ease-in-out forwards;
+}
+.ani_fout_au_2 {
+  animation: fade-out var(--t-2) ease-in-out forwards;
+}
+
+/*============================
+  3️⃣ ESCALAS HOVER
+============================*/
+/* AGRANDAR (ma) */
+/* Pequeño +5% */
+.ani_sc_ma_sm_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+.ani_sc_ma_sm_05:hover {
+  transform: scale(1.05);
+}
+.ani_sc_ma_sm_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+.ani_sc_ma_sm_1:hover {
+  transform: scale(1.05);
+}
+.ani_sc_ma_sm_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+.ani_sc_ma_sm_2:hover {
+  transform: scale(1.05);
+}
+
+/* Mediano +10% */
+.ani_sc_ma_md_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+.ani_sc_ma_md_05:hover {
+  transform: scale(1.1);
+}
+.ani_sc_ma_md_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+.ani_sc_ma_md_1:hover {
+  transform: scale(1.1);
+}
+.ani_sc_ma_md_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+.ani_sc_ma_md_2:hover {
+  transform: scale(1.1);
+}
+
+/* Grande +15% */
+.ani_sc_ma_lg_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+.ani_sc_ma_lg_05:hover {
+  transform: scale(1.15);
+}
+.ani_sc_ma_lg_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+.ani_sc_ma_lg_1:hover {
+  transform: scale(1.15);
+}
+.ani_sc_ma_lg_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+.ani_sc_ma_lg_2:hover {
+  transform: scale(1.15);
+}
+
+/* REDUCIR (mi) */
+/* Pequeño -5% */
+.ani_sc_mi_sm_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+.ani_sc_mi_sm_05:hover {
+  transform: scale(0.95);
+}
+.ani_sc_mi_sm_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+.ani_sc_mi_sm_1:hover {
+  transform: scale(0.95);
+}
+.ani_sc_mi_sm_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+.ani_sc_mi_sm_2:hover {
+  transform: scale(0.95);
+}
+
+/* Mediano -10% */
+.ani_sc_mi_md_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+.ani_sc_mi_md_05:hover {
+  transform: scale(0.9);
+}
+.ani_sc_mi_md_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+.ani_sc_mi_md_1:hover {
+  transform: scale(0.9);
+}
+.ani_sc_mi_md_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+.ani_sc_mi_md_2:hover {
+  transform: scale(0.9);
+}
+
+/* Grande -15% */
+.ani_sc_mi_lg_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+.ani_sc_mi_lg_05:hover {
+  transform: scale(0.85);
+}
+.ani_sc_mi_lg_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+.ani_sc_mi_lg_1:hover {
+  transform: scale(0.85);
+}
+.ani_sc_mi_lg_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+.ani_sc_mi_lg_2:hover {
+  transform: scale(0.85);
+}

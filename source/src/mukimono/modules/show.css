@@ -1,0 +1,319 @@
+/*============================
+    Bloques base
+============================*/
+.swb,
+.swbx > * {
+  display: block;
+}
+.swib,
+.swibx > * {
+  display: inline-block;
+}
+.swf,
+.swfx > * {
+  display: flex;
+}
+.swif,
+.swifx > * {
+  display: inline-flex;
+}
+
+/*============================
+    Display Utilities Responsive
+============================*/
+
+/* Helper macro to define display types */
+:root {
+  --display-block: block !important;
+  --display-inline-block: inline-block !important;
+  --display-flex: flex !important;
+  --display-inline-flex: inline-flex !important;
+}
+
+/* === Max-width breakpoints === */
+@media screen and (max-width: 320px) {
+  .swba320 {
+    display: var(--display-block);
+  }
+  .swiba320 {
+    display: var(--display-inline-block);
+  }
+  .swfa320 {
+    display: var(--display-flex);
+  }
+  .swifa320 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swba480 {
+    display: var(--display-block);
+  }
+  .swiba480 {
+    display: var(--display-inline-block);
+  }
+  .swfa480 {
+    display: var(--display-flex);
+  }
+  .swifa480 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .swba640 {
+    display: var(--display-block);
+  }
+  .swiba640 {
+    display: var(--display-inline-block);
+  }
+  .swfa640 {
+    display: var(--display-flex);
+  }
+  .swifa640 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swba768 {
+    display: var(--display-block);
+  }
+  .swiba768 {
+    display: var(--display-inline-block);
+  }
+  .swfa768 {
+    display: var(--display-flex);
+  }
+  .swifa768 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .swba1024 {
+    display: var(--display-block);
+  }
+  .swiba1024 {
+    display: var(--display-inline-block);
+  }
+  .swfa1024 {
+    display: var(--display-flex);
+  }
+  .swifa1024 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .swba1280 {
+    display: var(--display-block);
+  }
+  .swiba1280 {
+    display: var(--display-inline-block);
+  }
+  .swfa1280 {
+    display: var(--display-flex);
+  }
+  .swifa1280 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .swba1440 {
+    display: var(--display-block);
+  }
+  .swiba1440 {
+    display: var(--display-inline-block);
+  }
+  .swfa1440 {
+    display: var(--display-flex);
+  }
+  .swifa1440 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .swba1920 {
+    display: var(--display-block);
+  }
+  .swiba1920 {
+    display: var(--display-inline-block);
+  }
+  .swfa1920 {
+    display: var(--display-flex);
+  }
+  .swifa1920 {
+    display: var(--display-inline-flex);
+  }
+}
+
+/* === Min-width breakpoints === */
+@media screen and (min-width: 321px) {
+  .swbi321 {
+    display: var(--display-block);
+  }
+  .swibi321 {
+    display: var(--display-inline-block);
+  }
+  .swfi321 {
+    display: var(--display-flex);
+  }
+  .swifi321 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .swbi641 {
+    display: var(--display-block);
+  }
+  .swibi641 {
+    display: var(--display-inline-block);
+  }
+  .swfi641 {
+    display: var(--display-flex);
+  }
+  .swifi641 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .swbi961 {
+    display: var(--display-block);
+  }
+  .swibi961 {
+    display: var(--display-inline-block);
+  }
+  .swfi961 {
+    display: var(--display-flex);
+  }
+  .swifi961 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .swbi1201 {
+    display: var(--display-block);
+  }
+  .swibi1201 {
+    display: var(--display-inline-block);
+  }
+  .swfi1201 {
+    display: var(--display-flex);
+  }
+  .swifi1201 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .swbi1921 {
+    display: var(--display-block);
+  }
+  .swibi1921 {
+    display: var(--display-inline-block);
+  }
+  .swfi1921 {
+    display: var(--display-flex);
+  }
+  .swifi1921 {
+    display: var(--display-inline-flex);
+  }
+}
+
+/* === Range X–Y breakpoints === */
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  .swb321x640 {
+    display: var(--display-block);
+  }
+  .swib321x640 {
+    display: var(--display-inline-block);
+  }
+  .swf321x640 {
+    display: var(--display-flex);
+  }
+  .swif321x640 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .swb641x768 {
+    display: var(--display-block);
+  }
+  .swib641x768 {
+    display: var(--display-inline-block);
+  }
+  .swf641x768 {
+    display: var(--display-flex);
+  }
+  .swif641x768 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .swb769x1024 {
+    display: var(--display-block);
+  }
+  .swib769x1024 {
+    display: var(--display-inline-block);
+  }
+  .swf769x1024 {
+    display: var(--display-flex);
+  }
+  .swif769x1024 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .swb1025x1280 {
+    display: var(--display-block);
+  }
+  .swib1025x1280 {
+    display: var(--display-inline-block);
+  }
+  .swf1025x1280 {
+    display: var(--display-flex);
+  }
+  .swif1025x1280 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .swb1281x1440 {
+    display: var(--display-block);
+  }
+  .swib1281x1440 {
+    display: var(--display-inline-block);
+  }
+  .swf1281x1440 {
+    display: var(--display-flex);
+  }
+  .swif1281x1440 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .swb1441x1920 {
+    display: var(--display-block);
+  }
+  .swib1441x1920 {
+    display: var(--display-inline-block);
+  }
+  .swf1441x1920 {
+    display: var(--display-flex);
+  }
+  .swif1441x1920 {
+    display: var(--display-inline-flex);
+  }
+}

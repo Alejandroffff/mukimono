@@ -1,0 +1,18 @@
+{
+    "private": true,
+    "scripts": {
+        "copy:htaccess": "node -e \"require('fs').copyFileSync('.htaccess', 'build_local/.htaccess');\"",
+        "dev": "npm run css:dev && npm run copy:htaccess && npm run development",
+        "development": "jigsaw build",
+        "prod": "npm run css:prod && npm run copy:htaccess && npm run production",
+        "production": "jigsaw build production",
+        "css:dev": "postcss source/src/mukimono/style.css --use postcss-import -o source/assets/build/css/main.css --map",
+        "css:prod": "postcss source/src/mukimono/style.css --use postcss-import,autoprefixer -o source/assets/build/css/main.css",
+        "watch": "postcss source/src/mukimono/style.css --use postcss-import -o source/assets/build/css/main.css --watch --map"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "postcss-cli": "^11.0.0",
+        "postcss-import": "^16.1.1" 
+    }
+}

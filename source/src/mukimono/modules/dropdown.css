@@ -1,0 +1,41 @@
+/*============================
+    Dropdown Containers
+============================*/
+.dd1,
+.dd2 {
+  position: relative; /* Set relative positioning for dropdown positioning */
+  display: inline-block; /* Display inline-block for proper layout */
+  z-index: 2; /* Layer above other elements */
+}
+
+/*============================
+    Dropdown Menus
+============================*/
+.dd1 > div,
+.dd2 > div {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position relative to parent */
+  background-color: #f9f9f9; /* Light background for dropdown */
+  min-width: 160px; /* Minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  z-index: 1; /* Ensure dropdown is below the parent */
+}
+
+/*============================
+    Dropdown Positioning
+============================*/
+.dd1 > div {
+  left: 0; /* Align dropdown to left */
+}
+
+.dd2 > div {
+  right: 0; /* Align dropdown to right */
+}
+
+/*============================
+    Show Dropdown on Hover
+============================*/
+.dd1:hover > div,
+.dd2:hover > div {
+  display: block; /* Show dropdown when hovering parent */
+}

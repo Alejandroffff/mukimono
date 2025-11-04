@@ -1,0 +1,179 @@
+/* ============================= */
+/* ANCHOS FIJOS PEQUEÑOS Y MEDIANOS */
+/* ============================= */
+
+/* 12px */
+.wa12,
+.wa12x > * {
+  width: 100%;
+  max-width: 12px !important;
+}
+.wi12,
+.wi12x > * {
+  width: 100%;
+  min-width: 12px !important;
+}
+
+/* 16px */
+.wa16,
+.wa16x > * {
+  width: 100%;
+  max-width: 16px !important;
+}
+.wi16,
+.wi16x > * {
+  width: 100%;
+  min-width: 16px !important;
+}
+
+/* 24px */
+.wa24,
+.wa24x > * {
+  width: 100%;
+  max-width: 24px !important;
+}
+.wi24,
+.wi24x > * {
+  width: 100%;
+  min-width: 24px !important;
+}
+
+/* 32px */
+.wa32,
+.wa32x > * {
+  width: 100%;
+  max-width: 32px !important;
+}
+.wi32,
+.wi32x > * {
+  width: 100%;
+  min-width: 32px !important;
+}
+
+/* 40px */
+.wa40,
+.wa40x > * {
+  width: 100%;
+  max-width: 40px !important;
+}
+.wi40,
+.wi40x > * {
+  width: 100%;
+  min-width: 40px !important;
+}
+
+/* 48px */
+.wa48,
+.wa48x > * {
+  width: 100%;
+  max-width: 48px !important;
+}
+.wi48,
+.wi48x > * {
+  width: 100%;
+  min-width: 48px !important;
+}
+
+/* 56px */
+.wa56,
+.wa56x > * {
+  width: 100%;
+  max-width: 56px !important;
+}
+.wi56,
+.wi56x > * {
+  width: 100%;
+  min-width: 56px !important;
+}
+
+/* 64px */
+.wa64,
+.wa64x > * {
+  width: 100%;
+  max-width: 64px !important;
+}
+.wi64,
+.wi64x > * {
+  width: 100%;
+  min-width: 64px !important;
+}
+
+/* 80px */
+.wa80,
+.wa80x > * {
+  width: 100%;
+  max-width: 80px !important;
+}
+.wi80,
+.wi80x > * {
+  width: 100%;
+  min-width: 80px !important;
+}
+
+/* 96px */
+.wa96,
+.wa96x > * {
+  width: 100%;
+  max-width: 96px !important;
+}
+.wi96,
+.wi96x > * {
+  width: 100%;
+  min-width: 96px !important;
+}
+
+/* 128px */
+.wa128,
+.wa128x > * {
+  width: 100%;
+  max-width: 128px !important;
+}
+.wi128,
+.wi128x > * {
+  width: 100%;
+  min-width: 128px !important;
+}
+
+/* 256px */
+.wa256,
+.wa256x > * {
+  width: 100%;
+  max-width: 256px !important;
+}
+.wi256,
+.wi256x > * {
+  width: 100%;
+  min-width: 256px !important;
+}
+/* ANCHOS RELATIVOS A PANTALLA */
+/* ============================= */
+.w100p,
+.w100px > * {
+  width: 100% !important;
+}
+.wi100p,
+.wi100px > * {
+  width: 100%;
+  min-width: 100% !important;
+}
+.wa100p,
+.wa100px > * {
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.wa100vw,
+.wa100vwx > * {
+  width: 100%;
+  max-width: 100vw !important;
+}
+.wi100vw,
+.wi100vwx > * {
+  width: 100%;
+  min-width: 100vw !important;
+}
+.wa100vwx,
+.wa100vwx > * {
+  width: 100%;
+  max-width: 100vw !important;
+}

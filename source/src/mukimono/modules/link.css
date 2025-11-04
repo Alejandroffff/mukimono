@@ -1,0 +1,156 @@
+/*============================
+  Link Button Base Styles
+============================*/
+
+/* Estilos base compartidos */
+.lb16,
+.lb16x > a,
+.lb16xx a,
+.lb24,
+.lb24x > a,
+.lb24xx a,
+.lb32,
+.lb32x > a,
+.lb32xx a,
+.lb40,
+.lb40x > a,
+.lb40xx a,
+.lb48,
+.lb48x > a,
+.lb48xx a,
+.lb56,
+.lb56x > a,
+.lb56xx a,
+.lb64,
+.lb64x > a,
+.lb64xx a,
+.lb72,
+.lb72x > a,
+.lb72xx a,
+.lb80,
+.lb80x > a,
+.lb80xx a,
+.lb88,
+.lb88x > a,
+.lb88xx a,
+.lb96,
+.lb96x > a,
+.lb96xx a,
+.lb104,
+.lb104x > a,
+.lb104xx a,
+.lb112,
+.lb112x > a,
+.lb112xx a,
+.lb120,
+.lb120x > a,
+.lb120xx a,
+.lb128,
+.lb128x > a,
+.lb128xx a {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* mismo centrado que los btXX */
+  align-items: center;
+  text-decoration: none;
+  font-size: inherit;
+  background-color: inherit;
+  color: inherit;
+  vertical-align: top;
+  cursor: pointer;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* Altura y padding unificado */
+.lb16,
+.lb16x > a,
+.lb16xx a {
+  min-height: 16px;
+  padding: 0 2px;
+}
+.lb24,
+.lb24x > a,
+.lb24xx a {
+  min-height: 24px;
+  padding: 0 3px;
+}
+.lb32,
+.lb32x > a,
+.lb32xx a {
+  min-height: 32px;
+  padding: 0 4px;
+}
+.lb40,
+.lb40x > a,
+.lb40xx a {
+  min-height: 40px;
+  padding: 0 5px;
+}
+.lb48,
+.lb48x > a,
+.lb48xx a {
+  min-height: 48px;
+  padding: 0 6px;
+}
+.lb56,
+.lb56x > a,
+.lb56xx a {
+  min-height: 56px;
+  padding: 0 7px;
+}
+.lb64,
+.lb64x > a,
+.lb64xx a {
+  min-height: 64px;
+  padding: 0 8px;
+}
+.lb72,
+.lb72x > a,
+.lb72xx a {
+  min-height: 72px;
+  padding: 0 9px;
+}
+.lb80,
+.lb80x > a,
+.lb80xx a {
+  min-height: 80px;
+  padding: 0 10px;
+}
+.lb88,
+.lb88x > a,
+.lb88xx a {
+  min-height: 88px;
+  padding: 0 11px;
+}
+.lb96,
+.lb96x > a,
+.lb96xx a {
+  min-height: 96px;
+  padding: 0 12px;
+}
+.lb104,
+.lb104x > a,
+.lb104xx a {
+  min-height: 104px;
+  padding: 0 13px;
+}
+.lb112,
+.lb112x > a,
+.lb112xx a {
+  min-height: 112px;
+  padding: 0 14px;
+}
+.lb120,
+.lb120x > a,
+.lb120xx a {
+  min-height: 120px;
+  padding: 0 15px;
+}
+.lb128,
+.lb128x > a,
+.lb128xx a {
+  min-height: 128px;
+  padding: 0 16px;
+}

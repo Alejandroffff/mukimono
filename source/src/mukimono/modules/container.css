@@ -1,0 +1,71 @@
+/*============================
+    Container Width Variants
+============================*/
+
+/* Standard max-widths for responsive containers */
+.ctn1 {
+  max-width: 320px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+} /* móviles pequeños */
+.ctn2 {
+  max-width: 480px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+} /* móviles medianos */
+.ctn3 {
+  max-width: 768px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+} /* tablet / móviles grandes */
+.ctn4 {
+  max-width: 1024px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+} /* desktop pequeño */
+.ctn5 {
+  max-width: 1200px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+} /* desktop medio */
+.ctn6 {
+  max-width: 1440px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+} /* desktop grande */

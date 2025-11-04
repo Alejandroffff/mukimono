@@ -1,0 +1,115 @@
+/*============================
+    Panel Widths (Standard Sizes)
+============================*/
+
+/* 320px Panel - Mobile */
+.pn320,
+.pn320x > * {
+  width: 100%;
+  max-width: 320px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 480px Panel - Large Mobile */
+.pn480,
+.pn480x > * {
+  width: 100%;
+  max-width: 480px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 640px Panel - Medium Mobile */
+.pn640,
+.pn640x > * {
+  width: 100%;
+  max-width: 640px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 768px Panel - Tablet */
+.pn768,
+.pn768x > * {
+  width: 100%;
+  max-width: 768px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1024px Panel - Small Desktop */
+.pn1024,
+.pn1024x > * {
+  width: 100%;
+  max-width: 1024px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1280px Panel - Medium Desktop */
+.pn1280,
+.pn1280x > * {
+  width: 100%;
+  max-width: 1280px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1440px Panel - Large Desktop */
+.pn1440,
+.pn1440x > * {
+  width: 100%;
+  max-width: 1440px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1920px Panel - Full HD */
+.pn1920,
+.pn1920x > * {
+  width: 100%;
+  max-width: 1920px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}

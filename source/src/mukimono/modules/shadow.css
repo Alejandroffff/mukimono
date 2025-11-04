@@ -1,0 +1,236 @@
+/*----------------*/
+/* bsd1 - 1px */
+
+/* Gris 50 */
+.bsd1_50_05,
+.bsd1_50_05x > * {
+  box-shadow: 0px 0px 0px 1px rgba(50, 50, 50, 0.5);
+}
+.bsd1l_50_05,
+.bsd1l_50_05x > * {
+  box-shadow: -1px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+.bsd1r_50_05,
+.bsd1r_50_05x > * {
+  box-shadow: 1px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+.bsd1lr_50_05,
+.bsd1lr_50_05x > * {
+  box-shadow:
+    1px 0px 0px 0px rgba(50, 50, 50, 0.5),
+    -1px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+/* Gris 80 */
+.bsd1_80_05,
+.bsd1_80_05x > * {
+  box-shadow: 0px 0px 0px 1px rgba(80, 80, 80, 0.5);
+}
+.bsd1l_80_05,
+.bsd1l_80_05x > * {
+  box-shadow: -1px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+.bsd1r_80_05,
+.bsd1r_80_05x > * {
+  box-shadow: 1px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+.bsd1lr_80_05,
+.bsd1lr_80_05x > * {
+  box-shadow:
+    1px 0px 0px 0px rgba(80, 80, 80, 0.5),
+    -1px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+/* Gris 70 */
+.bsd1_70_05,
+.bsd1_70_05x > * {
+  box-shadow: 0px 0px 0px 1px rgba(70, 70, 70, 0.5);
+}
+.bsd1l_70_05,
+.bsd1l_70_05x > * {
+  box-shadow: -1px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+.bsd1r_70_05,
+.bsd1r_70_05x > * {
+  box-shadow: 1px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+.bsd1lr_70_05,
+.bsd1lr_70_05x > * {
+  box-shadow:
+    1px 0px 0px 0px rgba(70, 70, 70, 0.5),
+    -1px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+/*----------------*/
+/* bsd3 - 3px */
+
+/* Gris 50 */
+.bsd3_50_05,
+.bsd3_50_05x > * {
+  box-shadow: 0px 0px 0px 3px rgba(50, 50, 50, 0.5);
+}
+.bsd3l_50_05,
+.bsd3l_50_05x > * {
+  box-shadow: -3px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+.bsd3r_50_05,
+.bsd3r_50_05x > * {
+  box-shadow: 3px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+.bsd3lr_50_05,
+.bsd3lr_50_05x > * {
+  box-shadow:
+    3px 0px 0px 0px rgba(50, 50, 50, 0.5),
+    -3px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+/* Gris 80 */
+.bsd3_80_05,
+.bsd3_80_05x > * {
+  box-shadow: 0px 0px 0px 3px rgba(80, 80, 80, 0.5);
+}
+.bsd3l_80_05,
+.bsd3l_80_05x > * {
+  box-shadow: -3px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+.bsd3r_80_05,
+.bsd3r_80_05x > * {
+  box-shadow: 3px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+.bsd3lr_80_05,
+.bsd3lr_80_05x > * {
+  box-shadow:
+    3px 0px 0px 0px rgba(80, 80, 80, 0.5),
+    -3px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+/* Gris 70 */
+.bsd3_70_05,
+.bsd3_70_05x > * {
+  box-shadow: 0px 0px 0px 3px rgba(70, 70, 70, 0.5);
+}
+.bsd3l_70_05,
+.bsd3l_70_05x > * {
+  box-shadow: -3px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+.bsd3r_70_05,
+.bsd3r_70_05x > * {
+  box-shadow: 3px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+.bsd3lr_70_05,
+.bsd3lr_70_05x > * {
+  box-shadow:
+    3px 0px 0px 0px rgba(70, 70, 70, 0.5),
+    -3px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+/*----------------*/
+/* bsd5 - 5px */
+
+/* Gris 50 */
+.bsd5_50_05,
+.bsd5_50_05x > * {
+  box-shadow: 0px 0px 0px 5px rgba(50, 50, 50, 0.5);
+}
+.bsd5l_50_05,
+.bsd5l_50_05x > * {
+  box-shadow: -5px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+.bsd5r_50_05,
+.bsd5r_50_05x > * {
+  box-shadow: 5px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+.bsd5lr_50_05,
+.bsd5lr_50_05x > * {
+  box-shadow:
+    5px 0px 0px 0px rgba(50, 50, 50, 0.5),
+    -5px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+/* Gris 80 */
+.bsd5_80_05,
+.bsd5_80_05x > * {
+  box-shadow: 0px 0px 0px 5px rgba(80, 80, 80, 0.5);
+}
+.bsd5l_80_05,
+.bsd5l_80_05x > * {
+  box-shadow: -5px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+.bsd5r_80_05,
+.bsd5r_80_05x > * {
+  box-shadow: 5px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+.bsd5lr_80_05,
+.bsd5lr_80_05x > * {
+  box-shadow:
+    5px 0px 0px 0px rgba(80, 80, 80, 0.5),
+    -5px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+/* Gris 70 */
+.bsd5_70_05,
+.bsd5_70_05x > * {
+  box-shadow: 0px 0px 0px 5px rgba(70, 70, 70, 0.5);
+}
+.bsd5l_70_05,
+.bsd5l_70_05x > * {
+  box-shadow: -5px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+.bsd5r_70_05,
+.bsd5r_70_05x > * {
+  box-shadow: 5px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+.bsd5lr_70_05,
+.bsd5lr_70_05x > * {
+  box-shadow:
+    5px 0px 0px 0px rgba(70, 70, 70, 0.5),
+    -5px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+/*----------------*/
+/* Buttons - Soft Shadows Dark Grey (70,70,70) */
+
+.bsd_bt_1,
+.bsd_bt_1x > * {
+  box-shadow: 0px 2px 4px rgba(70, 70, 70, 0.1);
+}
+.bsd_bt_2,
+.bsd_bt_2x > * {
+  box-shadow: 0px 3px 5px rgba(70, 70, 70, 0.15);
+}
+.bsd_bt_3,
+.bsd_bt_3x > * {
+  box-shadow: 0px 4px 6px rgba(70, 70, 70, 0.2);
+}
+.bsd_bt_4,
+.bsd_bt_4x > * {
+  box-shadow: 0px 6px 8px rgba(70, 70, 70, 0.25);
+}
+.bsd_bt_5,
+.bsd_bt_5x > * {
+  box-shadow: 0px 8px 10px rgba(70, 70, 70, 0.3);
+}
+
+/*----------------*/
+/* Cards - Soft Shadows Dark Grey (70,70,70) */
+
+.bsd_cd1,
+.bsd_cd1x > * {
+  box-shadow: 0px 1px 3px rgba(70, 70, 70, 0.1);
+}
+.bsd_cd2,
+.bsd_cd2x > * {
+  box-shadow: 0px 2px 4px rgba(70, 70, 70, 0.15);
+}
+.bsd_cd3,
+.bsd_cd3x > * {
+  box-shadow: 0px 4px 6px rgba(70, 70, 70, 0.2);
+}
+.bsd_cd4,
+.bsd_cd4x > * {
+  box-shadow: 0px 6px 10px rgba(70, 70, 70, 0.25);
+}
+.bsd_cd5,
+.bsd_cd5x > * {
+  box-shadow: 0px 8px 12px rgba(70, 70, 70, 0.3);
+}

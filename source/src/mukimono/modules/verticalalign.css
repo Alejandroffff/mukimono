@@ -1,0 +1,73 @@
+/* ============================= */
+/* Alineación vertical (.va*)    */
+/* ============================= */
+
+/* Top */
+.vat,
+.vatx > * {
+  vertical-align: top !important;
+}
+
+/* Middle */
+.vamd,
+.vamdx > * {
+  vertical-align: middle !important;
+}
+
+/* Bottom */
+.vabt,
+.vabtx > * {
+  vertical-align: bottom !important;
+}
+
+/* Baseline */
+.vabs,
+.vabsx > * {
+  vertical-align: baseline !important;
+}
+
+/* Sub */
+.vasub,
+.vasubx > * {
+  vertical-align: sub !important;
+}
+
+/* Super */
+.vasup,
+.vasupx > * {
+  vertical-align: super !important;
+}
+
+/* Text Top */
+.vatt,
+.vattx > * {
+  vertical-align: text-top !important;
+}
+
+/* Text Bottom */
+.vatb,
+.vatbx > * {
+  vertical-align: text-bottom !important;
+}
+
+/* ============================= */
+/* Valores globales opcionales   */
+/* ============================= */
+
+/* Initial */
+.vaini,
+.vainix > * {
+  vertical-align: initial !important;
+}
+
+/* Inherit */
+.vainh,
+.vainhx > * {
+  vertical-align: inherit !important;
+}
+
+/* Unset */
+.vainu,
+.vainux > * {
+  vertical-align: unset !important;
+}

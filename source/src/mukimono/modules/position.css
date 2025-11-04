@@ -1,0 +1,170 @@
+/******************************/
+/* Position Utilities - pstNUM */
+/******************************/
+
+/*============================*/
+/* RELATIVE */
+/* pst1 → relative genérico */
+.pst1 {
+  position: relative;
+  width: 100%;
+}
+
+/*============================*/
+/* ABSOLUTE */
+/* pst2 → absolute genérico */
+.pst2 {
+  position: absolute;
+  width: 100%;
+}
+/* pst3 → absolute top-left */
+.pst3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* pst4 → absolute top-right */
+.pst4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* pst5 → absolute bottom-left */
+.pst5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* pst6 → absolute bottom-right */
+.pst6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* pst7 → absolute center */
+.pst7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* pst8 → absolute fullscreen */
+.pst8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*============================*/
+/* STICKY */
+/* pst9 → sticky genérico */
+.pst9 {
+  position: sticky;
+  width: 100%;
+}
+/* pst10 → sticky top */
+.pst10 {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+/* pst11 → sticky bottom */
+.pst11 {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+/* pst12 → sticky top-center */
+.pst12 {
+  position: sticky;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+/* pst13 → sticky bottom-center */
+.pst13 {
+  position: sticky;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+/*============================*/
+/* FIXED */
+/* pst14 → fixed genérico */
+.pst14 {
+  position: fixed;
+  width: 100%;
+}
+/* pst15 → fixed top */
+.pst15 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* pst16 → fixed bottom */
+.pst16 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* pst17 → fixed top-left */
+.pst17 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* pst18 → fixed top-right */
+.pst18 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+/* pst19 → fixed bottom-left */
+.pst19 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* pst20 → fixed bottom-right */
+.pst20 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+/* pst21 → fixed center */
+.pst21 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* pst22 → fixed fullscreen */
+.pst22 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+/******************************/

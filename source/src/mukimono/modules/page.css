@@ -1,0 +1,115 @@
+/*============================
+    Page Width Utilities (Standard Sizes)
+============================*/
+
+/* 320px Page Width - Mobile */
+.pg320,
+.pg320x > * {
+  width: 100%;
+  max-width: 320px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 480px Page Width - Large Mobile */
+.pg480,
+.pg480x > * {
+  width: 100%;
+  max-width: 480px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 640px Page Width - Medium Mobile */
+.pg640,
+.pg640x > * {
+  width: 100%;
+  max-width: 640px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 768px Page Width - Tablet */
+.pg768,
+.pg768x > * {
+  width: 100%;
+  max-width: 768px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1024px Page Width - Small Desktop */
+.pg1024,
+.pg1024x > * {
+  width: 100%;
+  max-width: 1024px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1280px Page Width - Medium Desktop */
+.pg1280,
+.pg1280x > * {
+  width: 100%;
+  max-width: 1280px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1440px Page Width - Large Desktop */
+.pg1440,
+.pg1440x > * {
+  width: 100%;
+  max-width: 1440px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1920px Page Width - Full HD */
+.pg1920,
+.pg1920x > * {
+  width: 100%;
+  max-width: 1920px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}

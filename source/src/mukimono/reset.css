@@ -1,0 +1,113 @@
+/* ==========================
+   Mukimono Base Styles (Estructura y texto)
+   ========================== */
+
+/* 1. Global Namespace and Base Typography 
+   Usa variables definidas en mktheme.css */
+.mukimono {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    
+    /* Aplicando variables al base del framework */
+    color: var(--color-primary); 
+    background-color: var(--color-background);
+
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Universal Reset (Margin/Padding/Box-Sizing) */
+.mukimono *,
+.mukimono *::before,
+.mukimono *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Structural Elements Reset */
+.mukimono ul,
+.mukimono ol {
+    list-style: none;
+}
+.mukimono table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 4. Typography Reset & Base Sizing */
+.mukimono h1, .mukimono h2, .mukimono h3, .mukimono h4, .mukimono h5, .mukimono h6,
+.mukimono p, .mukimono label, .mukimono figure, .mukimono blockquote {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-primary); 
+}
+
+.mukimono h1 { font-size: 36px; font-weight: 700; }
+.mukimono h2 { font-size: 30px; font-weight: 700; }
+.mukimono h3 { font-size: 24px; font-weight: 500; }
+.mukimono h4 { font-size: 20px; font-weight: 500; }
+.mukimono h5 { font-size: 18px; font-weight: 400; }
+.mukimono h6 { font-size: 16px; font-weight: 400; }
+
+.mukimono p,
+.mukimono label {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-primary); 
+}
+
+/* 5. Image and Media Reset */
+.mukimono img,
+.mukimono video,
+.mukimono picture {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+/* 6. Form Element Normalization */
+.mukimono button,
+.mukimono input,
+.mukimono select,
+.mukimono textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mukimono button {
+    cursor: pointer;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    padding: 0;
+}
+
+/* 7. Link Reset and Accessibility */
+.mukimono a {
+    text-decoration: none;
+    color: var(--color-accent); 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.mukimono a:focus {
+    outline: 2px solid var(--color-accent); 
+    outline-offset: 2px;
+}
+
+/* 8. Iframes and Other Elements */
+.mukimono iframe {
+    border: none;
+    box-sizing: border-box;
+}
+
+.mukimono blockquote {
+    font-style: italic;
+    color: var(--color-secondary); 
+}

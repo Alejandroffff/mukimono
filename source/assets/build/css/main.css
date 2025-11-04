@@ -1,0 +1,6708 @@
+/* ==========================
+   Mukimono Base Styles (Estructura y texto)
+   ========================== */
+
+/* 1. Global Namespace and Base Typography 
+   Usa variables definidas en mktheme.css */
+
+.mukimono {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    
+    /* Aplicando variables al base del framework */
+    color: var(--color-primary); 
+    background-color: var(--color-background);
+
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Universal Reset (Margin/Padding/Box-Sizing) */
+
+.mukimono *,
+.mukimono *::before,
+.mukimono *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Structural Elements Reset */
+
+.mukimono ul,
+.mukimono ol {
+    list-style: none;
+}
+
+.mukimono table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 4. Typography Reset & Base Sizing */
+
+.mukimono h1, .mukimono h2, .mukimono h3, .mukimono h4, .mukimono h5, .mukimono h6,
+.mukimono p, .mukimono label, .mukimono figure, .mukimono blockquote {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-primary); 
+}
+
+.mukimono h1 { font-size: 36px; font-weight: 700; }
+
+.mukimono h2 { font-size: 30px; font-weight: 700; }
+
+.mukimono h3 { font-size: 24px; font-weight: 500; }
+
+.mukimono h4 { font-size: 20px; font-weight: 500; }
+
+.mukimono h5 { font-size: 18px; font-weight: 400; }
+
+.mukimono h6 { font-size: 16px; font-weight: 400; }
+
+.mukimono p,
+.mukimono label {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-primary); 
+}
+
+/* 5. Image and Media Reset */
+
+.mukimono img,
+.mukimono video,
+.mukimono picture {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+/* 6. Form Element Normalization */
+
+.mukimono button,
+.mukimono input,
+.mukimono select,
+.mukimono textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mukimono button {
+    cursor: pointer;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    padding: 0;
+}
+
+/* 7. Link Reset and Accessibility */
+
+.mukimono a {
+    text-decoration: none;
+    color: var(--color-accent); 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.mukimono a:focus {
+    outline: 2px solid var(--color-accent); 
+    outline-offset: 2px;
+}
+
+/* 8. Iframes and Other Elements */
+
+.mukimono iframe {
+    border: none;
+    box-sizing: border-box;
+}
+
+.mukimono blockquote {
+    font-style: italic;
+    color: var(--color-secondary); 
+}
+
+/* ==========================
+   MUKIMONO Themes (TM) - Todos los Tonos Oscuros
+   ========================== */
+
+/* ----------------------------------------------------
+   TEMA A: Azul Oscuro / Navy (tma) - TONOS MATTE
+   ---------------------------------------------------- */
+
+/* CLASE PRINCIPAL (Fondo de Página + Texto Claro) */
+
+.tma_pri { 
+    color: #f0f0f0;          
+    background-color: #102A43; 
+}
+
+/* CLASE SECUNDARIA (Fondo de Superficie + Texto Sutil) */
+
+.tma_sec { 
+    color: #97AAB9;          
+    background-color: #1C3C58; 
+}
+
+/* UTILIDAD: Solo Color de Fondo Superficie */
+
+.tma_sfc { 
+    background-color: #1C3C58; 
+}
+
+/* UTILIDAD: Acento (Accent) - Matte */
+
+.tma_acc { 
+    color: #000000;          
+    background-color: #DAA520; /* Oro Viejo/Matte */
+}
+
+/* UTILIDAD: Éxito (Success) - Matte */
+
+.tma_suc { 
+    color: #f0f0f0;          
+    background-color: #38761D; /* Verde Bosque Oscuro/Matte */
+}
+
+/* UTILIDAD: Error (Error) - Matte */
+
+.tma_err { 
+    color: #f0f0f0;          
+    background-color: #CC0000; /* Rojo Borgoña/Matte */
+}
+
+/* ----------------------------------------------------
+   TEMA B: Ultra Dark / Negro (tmb)
+   ---------------------------------------------------- */
+
+/* CLASE PRINCIPAL (Fondo de Página NEGRO PURO + Texto Claro Brillante) */
+
+.tmb_pri { 
+    color: #F0F0F0;         
+    background-color: #121212; /* Fondo BASE (Casi negro) */
+}
+
+/* CLASE SECUNDARIA (Fondo de Superficie Apenas Más Claro + Texto Sutil) */
+
+.tmb_sec { 
+    color: #A0A0A0;         
+    background-color: #1F1F1F; /* Fondo de superficie (Muy oscuro) */
+}
+
+/* UTILIDAD: Solo Color de Fondo Superficie */
+
+.tmb_sfc { 
+    background-color: #1F1F1F; 
+}
+
+/* UTILIDAD: Acento (Accent) */
+
+.tmb_acc { 
+    color: #121212;         
+    background-color: #00BFFF; /* Azul Cielo Brillante (Alto contraste extremo) */
+}
+
+/* UTILIDAD: Éxito (Success) */
+
+.tmb_suc { 
+    color: #F0F0F0;         
+    background-color: #00C853; 
+}
+
+/* UTILIDAD: Error (Error) */
+
+.tmb_err { 
+    color: #F0F0F0;         
+    background-color: #D50000; 
+}
+
+/* ----------------------------------------------------
+   TEMA C: Chocolate / Marrón Oscuro (tmc) - TONOS MATTE
+   ---------------------------------------------------- */
+
+/* CLASE PRINCIPAL (Fondo de Página Marrón Profundo + Texto Hueso) */
+
+.tmc_pri { 
+    color: #EFEBE9;          
+    background-color: #3E2723; /* Fondo BASE */
+}
+
+/* CLASE SECUNDARIA (Fondo de Superficie Marrón + Texto Sutil) */
+
+.tmc_sec { 
+    color: #A1887F;          
+    background-color: #4E342E; /* Fondo de superficie */
+}
+
+/* UTILIDAD: Solo Color de Fondo Base */
+
+.tmc_b { 
+    background-color: #3E2723; 
+}
+
+/* UTILIDAD: Solo Color de Fondo Superficie */
+
+.tmc_sfc { 
+    background-color: #4E342E; 
+}
+
+/* UTILIDAD: Acento (Accent) - Matte */
+
+.tmc_acc { 
+    color: #000000;          
+    background-color: #D4AF37; /* Oro Viejo Profundo/Matte */
+}
+
+/* UTILIDAD: Éxito (Success) - Matte */
+
+.tmc_suc { 
+    color: #EFEBE9;          
+    background-color: #38761D; /* Verde Bosque Profundo/Matte */
+}
+
+/* UTILIDAD: Error (Error) - Matte */
+
+.tmc_err { 
+    color: #EFEBE9;          
+    background-color: #880000; /* Rojo Oscuro/Ladrillo/Matte */
+}
+
+/*============================
+    Botones
+============================*/
+
+/* Estilos base compartidos */
+
+.bt16,
+.bt16x > button,
+.bt16xx button,
+.bt24,
+.bt24x > button,
+.bt24xx button,
+.bt32,
+.bt32x > button,
+.bt32xx button,
+.bt40,
+.bt40x > button,
+.bt40xx button,
+.bt48,
+.bt48x > button,
+.bt48xx button,
+.bt56,
+.bt56x > button,
+.bt56xx button,
+.bt64,
+.bt64x > button,
+.bt64xx button,
+.bt72,
+.bt72x > button,
+.bt72xx button,
+.bt80,
+.bt80x > button,
+.bt80xx button,
+.bt96,
+.bt96x > button,
+.bt96xx button,
+.bt112,
+.bt112x > button,
+.bt112xx button,
+.bt128,
+.bt128x > button,
+.bt128xx button {
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  font-size: inherit;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+/* Alturas y padding unificado */
+
+.bt16,
+.bt16x > button,
+.bt16xx button {
+  height: 16px;
+  padding: 0 2px;
+}
+
+.bt24,
+.bt24x > button,
+.bt24xx button {
+  height: 24px;
+  padding: 0 3px;
+}
+
+.bt32,
+.bt32x > button,
+.bt32xx button {
+  height: 32px;
+  padding: 0 4px;
+}
+
+.bt40,
+.bt40x > button,
+.bt40xx button {
+  height: 40px;
+  padding: 0 5px;
+}
+
+.bt48,
+.bt48x > button,
+.bt48xx button {
+  height: 48px;
+  padding: 0 6px;
+}
+
+.bt56,
+.bt56x > button,
+.bt56xx button {
+  height: 56px;
+  padding: 0 7px;
+}
+
+.bt64,
+.bt64x > button,
+.bt64xx button {
+  height: 64px;
+  padding: 0 8px;
+}
+
+.bt72,
+.bt72x > button,
+.bt72xx button {
+  height: 72px;
+  padding: 0 9px;
+}
+
+.bt80,
+.bt80x > button,
+.bt80xx button {
+  height: 80px;
+  padding: 0 10px;
+}
+
+.bt96,
+.bt96x > button,
+.bt96xx button {
+  height: 96px;
+  padding: 0 12px;
+}
+
+.bt112,
+.bt112x > button,
+.bt112xx button {
+  height: 112px;
+  padding: 0 14px;
+}
+
+.bt128,
+.bt128x > button,
+.bt128xx button {
+  height: 128px;
+  padding: 0 16px;
+}
+
+/*============================
+    Panel Widths (Standard Sizes)
+============================*/
+
+/* 320px Panel - Mobile */
+
+.pn320,
+.pn320x > * {
+  width: 100%;
+  max-width: 320px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 480px Panel - Large Mobile */
+
+.pn480,
+.pn480x > * {
+  width: 100%;
+  max-width: 480px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 640px Panel - Medium Mobile */
+
+.pn640,
+.pn640x > * {
+  width: 100%;
+  max-width: 640px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 768px Panel - Tablet */
+
+.pn768,
+.pn768x > * {
+  width: 100%;
+  max-width: 768px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1024px Panel - Small Desktop */
+
+.pn1024,
+.pn1024x > * {
+  width: 100%;
+  max-width: 1024px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1280px Panel - Medium Desktop */
+
+.pn1280,
+.pn1280x > * {
+  width: 100%;
+  max-width: 1280px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1440px Panel - Large Desktop */
+
+.pn1440,
+.pn1440x > * {
+  width: 100%;
+  max-width: 1440px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1920px Panel - Full HD */
+
+.pn1920,
+.pn1920x > * {
+  width: 100%;
+  max-width: 1920px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto; /* centra el panel */
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/*============================
+  Compact & Elegant Alerts (Mate Version)
+============================*/
+
+/* Base styles */
+
+.al1,
+.al2,
+.al3,
+.al4,
+.al5,
+.al6,
+.al7,
+.al8,
+.al9,
+.al10 {
+  padding: 6px 10px; /* compacto y moderado */
+  margin: 0 0 10px 0;
+  border: 1px solid transparent;
+  border-radius: 5px; /* discreto */
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; /* letra moderada */
+  line-height: 1.4;
+  box-sizing: border-box;
+  text-align: center; /* centra todo el contenido */
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Alert-specific matte colors */
+
+.al1 {
+  color: #2f855a;
+  background: #d4f0e7;
+  border-color: #48bb78;
+}
+
+.al2 {
+  color: #2c5282;
+  background: #dbeafe;
+  border-color: #63b3ed;
+}
+
+.al3 {
+  color: #744210;
+  background: #fef6e3;
+  border-color: #d69e2e;
+}
+
+.al4 {
+  color: #822727;
+  background: #fde8e8;
+  border-color: #f56565;
+}
+
+.al5 {
+  color: #4b5563;
+  background: #f3f4f6;
+  border-color: #cbd5e0;
+}
+
+.al6 {
+  color: #5b2c91;
+  background: #f3e8fd;
+  border-color: #9f7aea;
+}
+
+.al7 {
+  color: #0c7189;
+  background: #d1f7f4;
+  border-color: #22d3ee;
+}
+
+.al8 {
+  color: #78350f;
+  background: #fff7f0;
+  border-color: #fb923c;
+}
+
+.al9 {
+  color: #5b21b6;
+  background: #ede9fe;
+  border-color: #8b5cf6;
+}
+
+.al10 {
+  color: #115e59;
+  background: #d1f7f4;
+  border-color: #2dd4bf;
+}
+
+/* Text inside */
+
+.al1 h1,
+.al2 h1,
+.al3 h1,
+.al4 h1,
+.al5 h1,
+.al6 h1,
+.al7 h1,
+.al8 h1,
+.al9 h1,
+.al10 h1 {
+  font-size: 16px; /* títulos elegantes */
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.al1 h2,
+.al2 h2,
+.al3 h2,
+.al4 h2,
+.al5 h2,
+.al6 h2,
+.al7 h2,
+.al8 h2,
+.al9 h2,
+.al10 h2 {
+  font-size: 15px;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+}
+
+.al1 p,
+.al2 p,
+.al3 p,
+.al4 p,
+.al5 p,
+.al6 p,
+.al7 p,
+.al8 p,
+.al9 p,
+.al10 p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Optional hover */
+
+.al1:hover,
+.al2:hover,
+.al3:hover,
+.al4:hover,
+.al5:hover,
+.al6:hover,
+.al7:hover,
+.al8:hover,
+.al9:hover,
+.al10:hover {
+  transform: translateY(-1px); /* sutil */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/*****************************
+    Font Size Presets
+*****************************/
+
+/* Texto pequeño / notas */
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+/* Texto principal / párrafos */
+
+.fs16 {
+  font-size: 16px;
+}
+
+/* estándar para párrafos */
+
+.fs18 {
+  font-size: 18px;
+}
+
+/* Subtítulos y secciones */
+
+.fs20 {
+  font-size: 20px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
+.fs28 {
+  font-size: 28px;
+}
+
+/* Encabezados principales */
+
+.fs32 {
+  font-size: 32px;
+}
+
+.fs36 {
+  font-size: 36px;
+}
+
+.fs40 {
+  font-size: 40px;
+}
+
+/* Títulos grandes / banners */
+
+.fs48 {
+  font-size: 48px;
+}
+
+.fs56 {
+  font-size: 56px;
+}
+
+/* para encabezados muy grandes */
+
+.fs64 {
+  font-size: 64px;
+}
+
+/* para hero / banners */
+
+/*============================
+    Border Radius Utilities
+============================*/
+
+/*============================
+   Pixel Values (0px → 16px)
+============================*/
+
+/* rd0 → border-radius: 0px */
+
+.rd0,
+.rd0x > * {
+  border-radius: 0px !important;
+}
+
+.rd1,
+.rd1x > * {
+  border-radius: 1px !important;
+}
+
+.rd2,
+.rd2x > * {
+  border-radius: 2px !important;
+}
+
+.rd3,
+.rd3x > * {
+  border-radius: 3px !important;
+}
+
+.rd4,
+.rd4x > * {
+  border-radius: 4px !important;
+}
+
+.rd5,
+.rd5x > * {
+  border-radius: 5px !important;
+}
+
+.rd6,
+.rd6x > * {
+  border-radius: 6px !important;
+}
+
+.rd7,
+.rd7x > * {
+  border-radius: 7px !important;
+}
+
+.rd8,
+.rd8x > * {
+  border-radius: 8px !important;
+}
+
+.rd9,
+.rd9x > * {
+  border-radius: 9px !important;
+}
+
+.rd10,
+.rd10x > * {
+  border-radius: 10px !important;
+}
+
+.rd11,
+.rd11x > * {
+  border-radius: 11px !important;
+}
+
+.rd12,
+.rd12x > * {
+  border-radius: 12px !important;
+}
+
+.rd13,
+.rd13x > * {
+  border-radius: 13px !important;
+}
+
+.rd14,
+.rd14x > * {
+  border-radius: 14px !important;
+}
+
+.rd15,
+.rd15x > * {
+  border-radius: 15px !important;
+}
+
+.rd16,
+.rd16x > * {
+  border-radius: 16px !important;
+}
+
+/*============================
+   Extra Utilities
+============================*/
+
+/* rd9999 → border-radius: 9999px (pill shape) */
+
+.rd9999,
+.rd9999x > * {
+  border-radius: 9999px !important;
+}
+
+/* rd50p → border-radius: 50% (circle) */
+
+.rd50p,
+.rd50px > * {
+  border-radius: 50% !important;
+}
+
+/*============================
+    Input Mix Styles (Dark Elegant)
+============================*/
+
+/*----------------------------
+    Inputs: 16px - 64px
+----------------------------*/
+
+.ip16,
+.ip16x > :is(input, textarea, select),
+.ip16xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 12px; /* mínimo de texto */
+  padding: 0 8px;
+  height: 16px;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ip24,
+.ip24x > :is(input, textarea, select),
+.ip24xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 14px;
+  padding: 0 8px;
+  height: 24px;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ip32,
+.ip32x > :is(input, textarea, select),
+.ip32xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 16px;
+  padding: 0 12px;
+  height: 32px;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ip40,
+.ip40x > :is(input, textarea, select),
+.ip40xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 18px;
+  padding: 0 12px;
+  height: 40px;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ip48,
+.ip48x > :is(input, textarea, select),
+.ip48xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 20px;
+  padding: 0 12px;
+  height: 48px;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ip56,
+.ip56x > :is(input, textarea, select),
+.ip56xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 22px;
+  padding: 0 12px;
+  height: 56px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ip64,
+.ip64x > :is(input, textarea, select),
+.ip64xx :is(input, textarea, select) {
+  box-sizing: border-box;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  display: block;
+  font-size: 24px;
+  padding: 0 12px;
+  height: 64px;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*============================
+    Checkbox Sizes (Dark Elegant)
+============================*/
+
+.ckb16,
+.ckb16x > input[type="checkbox"],
+.ckb16xx input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.ckb24,
+.ckb24x > input[type="checkbox"],
+.ckb24xx input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.ckb32,
+.ckb32x > input[type="checkbox"],
+.ckb32xx input[type="checkbox"] {
+  width: 32px;
+  height: 32px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ckb40,
+.ckb40x > input[type="checkbox"],
+.ckb40xx input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ckb48,
+.ckb48x > input[type="checkbox"],
+.ckb48xx input[type="checkbox"] {
+  width: 48px;
+  height: 48px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.ckb56,
+.ckb56x > input[type="checkbox"],
+.ckb56xx input[type="checkbox"] {
+  width: 56px;
+  height: 56px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.ckb64,
+.ckb64x > input[type="checkbox"],
+.ckb64xx input[type="checkbox"] {
+  width: 64px;
+  height: 64px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  accent-color: #3b82f6;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/*============================
+  Modern Note Styles Extended (Mate Version)
+============================*/
+
+/* Base styles for all notes */
+
+.nt1,
+.nt2,
+.nt3,
+.nt4,
+.nt5,
+.nt6,
+.nt7,
+.nt8,
+.nt9,
+.nt10 {
+  padding: 1rem 1.25rem;
+  margin: 0 0 1rem 0;
+  border: 0;
+  border-left-width: 6px;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  background-blend-mode: multiply;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Colors for each note type - matte, soft */
+
+.nt1 {
+  background-color: #d0f0e0;
+  border-left-color: #34a37f;
+  color: #065f46;
+}
+
+.nt2 {
+  background-color: #dbe9f8;
+  border-left-color: #3b82f6;
+  color: #1e3a8a;
+}
+
+.nt3 {
+  background-color: #fffbe0;
+  border-left-color: #facc15;
+  color: #744210;
+}
+
+.nt4 {
+  background-color: #fdeaea;
+  border-left-color: #ef4444;
+  color: #822727;
+}
+
+.nt5 {
+  background-color: #f4f5f7;
+  border-left-color: #9ca3af;
+  color: #4b5563;
+}
+
+.nt6 {
+  background-color: #f3e6f9;
+  border-left-color: #a855f7;
+  color: #5b2c91;
+}
+
+.nt7 {
+  background-color: #d8fbfa;
+  border-left-color: #06b6d4;
+  color: #0c7189;
+}
+
+.nt8 {
+  background-color: #fff4e8;
+  border-left-color: #f97316;
+  color: #78350f;
+}
+
+.nt9 {
+  background-color: #f0edfb;
+  border-left-color: #8b5cf6;
+  color: #5b21b6;
+}
+
+.nt10 {
+  background-color: #d0f5f1;
+  border-left-color: #14b8a6;
+  color: #115e59;
+}
+
+/* Typography inside notes */
+
+.nt1 h1,
+.nt2 h1,
+.nt3 h1,
+.nt4 h1,
+.nt5 h1,
+.nt6 h1,
+.nt7 h1,
+.nt8 h1,
+.nt9 h1,
+.nt10 h1 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.nt1 h2,
+.nt2 h2,
+.nt3 h2,
+.nt4 h2,
+.nt5 h2,
+.nt6 h2,
+.nt7 h2,
+.nt8 h2,
+.nt9 h2,
+.nt10 h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.nt1 p,
+.nt2 p,
+.nt3 p,
+.nt4 p,
+.nt5 p,
+.nt6 p,
+.nt7 p,
+.nt8 p,
+.nt9 p,
+.nt10 p {
+  margin: 0 0 0.75rem 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.nt1 code,
+.nt2 code,
+.nt3 code,
+.nt4 code,
+.nt5 code,
+.nt6 code,
+.nt7 code,
+.nt8 code,
+.nt9 code,
+.nt10 code {
+  font-family: "Fira Code", monospace;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.nt1 div,
+.nt2 div,
+.nt3 div,
+.nt4 div,
+.nt5 div,
+.nt6 div,
+.nt7 div,
+.nt8 div,
+.nt9 div,
+.nt10 div {
+  margin-top: 0.5rem;
+}
+
+/* Lists inside notes */
+
+.nt1 ul,
+.nt2 ul,
+.nt3 ul,
+.nt4 ul,
+.nt5 ul,
+.nt6 ul,
+.nt7 ul,
+.nt8 ul,
+.nt9 ul,
+.nt10 ul,
+.nt1 ol,
+.nt2 ol,
+.nt3 ol,
+.nt4 ol,
+.nt5 ol,
+.nt6 ol,
+.nt7 ol,
+.nt8 ol,
+.nt9 ol,
+.nt10 ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.nt1 li,
+.nt2 li,
+.nt3 li,
+.nt4 li,
+.nt5 li,
+.nt6 li,
+.nt7 li,
+.nt8 li,
+.nt9 li,
+.nt10 li {
+  margin-bottom: 0.25rem;
+}
+
+/* Optional hover effect */
+
+.nt1:hover,
+.nt2:hover,
+.nt3:hover,
+.nt4:hover,
+.nt5:hover,
+.nt6:hover,
+.nt7:hover,
+.nt8:hover,
+.nt9:hover,
+.nt10:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/*============================
+    Container Width Variants
+============================*/
+
+/* Standard max-widths for responsive containers */
+
+.ctn1 {
+  max-width: 320px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+}
+
+/* móviles pequeños */
+
+.ctn2 {
+  max-width: 480px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+}
+
+/* móviles medianos */
+
+.ctn3 {
+  max-width: 768px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+}
+
+/* tablet / móviles grandes */
+
+.ctn4 {
+  max-width: 1024px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+}
+
+/* desktop pequeño */
+
+.ctn5 {
+  max-width: 1200px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+}
+
+/* desktop medio */
+
+.ctn6 {
+  max-width: 1440px;
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto; /* centrar contenedor */
+  border: 0;
+  color: inherit;
+}
+
+/* desktop grande */
+
+/*============================
+    Page Width Utilities (Standard Sizes)
+============================*/
+
+/* 320px Page Width - Mobile */
+
+.pg320,
+.pg320x > * {
+  width: 100%;
+  max-width: 320px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 480px Page Width - Large Mobile */
+
+.pg480,
+.pg480x > * {
+  width: 100%;
+  max-width: 480px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 640px Page Width - Medium Mobile */
+
+.pg640,
+.pg640x > * {
+  width: 100%;
+  max-width: 640px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 768px Page Width - Tablet */
+
+.pg768,
+.pg768x > * {
+  width: 100%;
+  max-width: 768px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1024px Page Width - Small Desktop */
+
+.pg1024,
+.pg1024x > * {
+  width: 100%;
+  max-width: 1024px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1280px Page Width - Medium Desktop */
+
+.pg1280,
+.pg1280x > * {
+  width: 100%;
+  max-width: 1280px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1440px Page Width - Large Desktop */
+
+.pg1440,
+.pg1440x > * {
+  width: 100%;
+  max-width: 1440px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* 1920px Page Width - Full HD */
+
+.pg1920,
+.pg1920x > * {
+  width: 100%;
+  max-width: 1920px !important;
+  display: block;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/*============================
+    Image Size Presets
+============================*/
+
+/* Contenedor principal */
+
+.img16 {
+  height: 16px;
+  display: inline-block;
+}
+
+.img24 {
+  height: 24px;
+  display: inline-block;
+}
+
+.img32 {
+  height: 32px;
+  display: inline-block;
+}
+
+.img48 {
+  height: 48px;
+  display: inline-block;
+}
+
+.img64 {
+  height: 64px;
+  display: inline-block;
+}
+
+.img96 {
+  height: 96px;
+  display: inline-block;
+}
+
+.img128 {
+  height: 128px;
+  display: inline-block;
+}
+
+.img256 {
+  height: 256px;
+  display: inline-block;
+}
+
+/* Hijos directos de imgXXx */
+
+.img16x > img {
+  height: 16px;
+  width: auto;
+}
+
+.img24x > img {
+  height: 24px;
+  width: auto;
+}
+
+.img32x > img {
+  height: 32px;
+  width: auto;
+}
+
+.img48x > img {
+  height: 48px;
+  width: auto;
+}
+
+.img64x > img {
+  height: 64px;
+  width: auto;
+}
+
+.img96x > img {
+  height: 96px;
+  width: auto;
+}
+
+.img128x > img {
+  height: 128px;
+  width: auto;
+}
+
+.img256x > img {
+  height: 256px;
+  width: auto;
+}
+
+/* Todas las imágenes dentro (anidadas) */
+
+.img16xx img {
+  height: 16px;
+  width: auto;
+}
+
+.img24xx img {
+  height: 24px;
+  width: auto;
+}
+
+.img32xx img {
+  height: 32px;
+  width: auto;
+}
+
+.img48xx img {
+  height: 48px;
+  width: auto;
+}
+
+.img64xx img {
+  height: 64px;
+  width: auto;
+}
+
+.img96xx img {
+  height: 96px;
+  width: auto;
+}
+
+.img128xx img {
+  height: 128px;
+  width: auto;
+}
+
+.img256xx img {
+  height: 256px;
+  width: auto;
+}
+
+/*============================
+    Responsive Width Utilities
+============================*/
+
+/*============================
+   Default / Desktop Widths
+============================*/
+
+/* 100% → bloque completo */
+
+.rps100 {
+  width: 100%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+/* Mitades (2 columnas) */
+
+.rps50 {
+  width: 50%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+/* Tercios (3 columnas) */
+
+.rps33 {
+  width: 33.33%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+.rps66 {
+  width: 66.66%;
+}
+
+/* Cuartos (4 columnas) */
+
+.rps25 {
+  width: 25%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+.rps75 {
+  width: 75%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+/* Quintos (5 columnas o layouts proporcionales) */
+
+.rps20 {
+  width: 20%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+.rps40 {
+  width: 40%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+.rps60 {
+  width: 60%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+.rps80 {
+  width: 80%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  vertical-align: top;
+}
+
+/*============================
+    Padding Utilities
+============================*/
+
+/* === Padding 0 === */
+
+.pd0,
+.pd0x > * {
+  padding: 0px !important;
+}
+
+.pd0t,
+.pd0tx > * {
+  padding-top: 0px !important;
+}
+
+.pd0r,
+.pd0rx > * {
+  padding-right: 0px !important;
+}
+
+.pd0b,
+.pd0bx > * {
+  padding-bottom: 0px !important;
+}
+
+.pd0l,
+.pd0lx > * {
+  padding-left: 0px !important;
+}
+
+.pd0tb,
+.pd0tbx > * {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.pd0lr,
+.pd0lrx > * {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+/* === Padding 1 === */
+
+.pd1,
+.pd1x > * {
+  padding: 1px !important;
+}
+
+.pd1t,
+.pd1tx > * {
+  padding-top: 1px !important;
+}
+
+.pd1r,
+.pd1rx > * {
+  padding-right: 1px !important;
+}
+
+.pd1b,
+.pd1bx > * {
+  padding-bottom: 1px !important;
+}
+
+.pd1l,
+.pd1lx > * {
+  padding-left: 1px !important;
+}
+
+.pd1tb,
+.pd1tbx > * {
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
+
+.pd1lr,
+.pd1lrx > * {
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
+
+/* === Padding 2 === */
+
+.pd2,
+.pd2x > * {
+  padding: 2px !important;
+}
+
+.pd2t,
+.pd2tx > * {
+  padding-top: 2px !important;
+}
+
+.pd2r,
+.pd2rx > * {
+  padding-right: 2px !important;
+}
+
+.pd2b,
+.pd2bx > * {
+  padding-bottom: 2px !important;
+}
+
+.pd2l,
+.pd2lx > * {
+  padding-left: 2px !important;
+}
+
+.pd2tb,
+.pd2tbx > * {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.pd2lr,
+.pd2lrx > * {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+/* === Padding 3 === */
+
+.pd3,
+.pd3x > * {
+  padding: 3px !important;
+}
+
+.pd3t,
+.pd3tx > * {
+  padding-top: 3px !important;
+}
+
+.pd3r,
+.pd3rx > * {
+  padding-right: 3px !important;
+}
+
+.pd3b,
+.pd3bx > * {
+  padding-bottom: 3px !important;
+}
+
+.pd3l,
+.pd3lx > * {
+  padding-left: 3px !important;
+}
+
+.pd3tb,
+.pd3tbx > * {
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+
+.pd3lr,
+.pd3lrx > * {
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+
+/* === Padding 4 === */
+
+.pd4,
+.pd4x > * {
+  padding: 4px !important;
+}
+
+.pd4t,
+.pd4tx > * {
+  padding-top: 4px !important;
+}
+
+.pd4r,
+.pd4rx > * {
+  padding-right: 4px !important;
+}
+
+.pd4b,
+.pd4bx > * {
+  padding-bottom: 4px !important;
+}
+
+.pd4l,
+.pd4lx > * {
+  padding-left: 4px !important;
+}
+
+.pd4tb,
+.pd4tbx > * {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+.pd4lr,
+.pd4lrx > * {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+
+/* === Padding 5 === */
+
+.pd5,
+.pd5x > * {
+  padding: 5px !important;
+}
+
+.pd5t,
+.pd5tx > * {
+  padding-top: 5px !important;
+}
+
+.pd5r,
+.pd5rx > * {
+  padding-right: 5px !important;
+}
+
+.pd5b,
+.pd5bx > * {
+  padding-bottom: 5px !important;
+}
+
+.pd5l,
+.pd5lx > * {
+  padding-left: 5px !important;
+}
+
+.pd5tb,
+.pd5tbx > * {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.pd5lr,
+.pd5lrx > * {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+/* === Padding 6 === */
+
+.pd6,
+.pd6x > * {
+  padding: 6px !important;
+}
+
+.pd6t,
+.pd6tx > * {
+  padding-top: 6px !important;
+}
+
+.pd6r,
+.pd6rx > * {
+  padding-right: 6px !important;
+}
+
+.pd6b,
+.pd6bx > * {
+  padding-bottom: 6px !important;
+}
+
+.pd6l,
+.pd6lx > * {
+  padding-left: 6px !important;
+}
+
+.pd6tb,
+.pd6tbx > * {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.pd6lr,
+.pd6lrx > * {
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+/* === Padding 7 === */
+
+.pd7,
+.pd7x > * {
+  padding: 7px !important;
+}
+
+.pd7t,
+.pd7tx > * {
+  padding-top: 7px !important;
+}
+
+.pd7r,
+.pd7rx > * {
+  padding-right: 7px !important;
+}
+
+.pd7b,
+.pd7bx > * {
+  padding-bottom: 7px !important;
+}
+
+.pd7l,
+.pd7lx > * {
+  padding-left: 7px !important;
+}
+
+.pd7tb,
+.pd7tbx > * {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.pd7lr,
+.pd7lrx > * {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+/* === Padding 8 === */
+
+.pd8,
+.pd8x > * {
+  padding: 8px !important;
+}
+
+.pd8t,
+.pd8tx > * {
+  padding-top: 8px !important;
+}
+
+.pd8r,
+.pd8rx > * {
+  padding-right: 8px !important;
+}
+
+.pd8b,
+.pd8bx > * {
+  padding-bottom: 8px !important;
+}
+
+.pd8l,
+.pd8lx > * {
+  padding-left: 8px !important;
+}
+
+.pd8tb,
+.pd8tbx > * {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.pd8lr,
+.pd8lrx > * {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+/* === Padding 9 === */
+
+.pd9,
+.pd9x > * {
+  padding: 9px !important;
+}
+
+.pd9t,
+.pd9tx > * {
+  padding-top: 9px !important;
+}
+
+.pd9r,
+.pd9rx > * {
+  padding-right: 9px !important;
+}
+
+.pd9b,
+.pd9bx > * {
+  padding-bottom: 9px !important;
+}
+
+.pd9l,
+.pd9lx > * {
+  padding-left: 9px !important;
+}
+
+.pd9tb,
+.pd9tbx > * {
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
+}
+
+.pd9lr,
+.pd9lrx > * {
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+}
+
+/* === Padding 10 === */
+
+.pd10,
+.pd10x > * {
+  padding: 10px !important;
+}
+
+.pd10t,
+.pd10tx > * {
+  padding-top: 10px !important;
+}
+
+.pd10r,
+.pd10rx > * {
+  padding-right: 10px !important;
+}
+
+.pd10b,
+.pd10bx > * {
+  padding-bottom: 10px !important;
+}
+
+.pd10l,
+.pd10lx > * {
+  padding-left: 10px !important;
+}
+
+.pd10tb,
+.pd10tbx > * {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.pd10lr,
+.pd10lrx > * {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+/* === Padding 11 === */
+
+.pd11,
+.pd11x > * {
+  padding: 11px !important;
+}
+
+.pd11t,
+.pd11tx > * {
+  padding-top: 11px !important;
+}
+
+.pd11r,
+.pd11rx > * {
+  padding-right: 11px !important;
+}
+
+.pd11b,
+.pd11bx > * {
+  padding-bottom: 11px !important;
+}
+
+.pd11l,
+.pd11lx > * {
+  padding-left: 11px !important;
+}
+
+.pd11tb,
+.pd11tbx > * {
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+
+.pd11lr,
+.pd11lrx > * {
+  padding-left: 11px !important;
+  padding-right: 11px !important;
+}
+
+/* === Padding 12 === */
+
+.pd12,
+.pd12x > * {
+  padding: 12px !important;
+}
+
+.pd12t,
+.pd12tx > * {
+  padding-top: 12px !important;
+}
+
+.pd12r,
+.pd12rx > * {
+  padding-right: 12px !important;
+}
+
+.pd12b,
+.pd12bx > * {
+  padding-bottom: 12px !important;
+}
+
+.pd12l,
+.pd12lx > * {
+  padding-left: 12px !important;
+}
+
+.pd12tb,
+.pd12tbx > * {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.pd12lr,
+.pd12lrx > * {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+/*============================
+    Menu Widths (Numerical)
+============================*/
+
+/* 64 Width Menu */
+
+.mn64 {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  max-width: 64px !important;
+  color: inherit;
+}
+
+.mn64 ul,
+.mn64 ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  color: inherit;
+}
+
+/* 200 Width Menu */
+
+.mn200 {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  max-width: 200px !important;
+  color: inherit;
+}
+
+.mn200 ul,
+.mn200 ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  color: inherit;
+}
+
+/* 280 Width Menu */
+
+.mn280 {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  max-width: 280px !important;
+  color: inherit;
+}
+
+.mn280 ul,
+.mn280 ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-wrap: break-word;
+  width: 100%;
+  color: inherit;
+}
+
+/*============================
+  Link Button Base Styles
+============================*/
+
+/* Estilos base compartidos */
+
+.lb16,
+.lb16x > a,
+.lb16xx a,
+.lb24,
+.lb24x > a,
+.lb24xx a,
+.lb32,
+.lb32x > a,
+.lb32xx a,
+.lb40,
+.lb40x > a,
+.lb40xx a,
+.lb48,
+.lb48x > a,
+.lb48xx a,
+.lb56,
+.lb56x > a,
+.lb56xx a,
+.lb64,
+.lb64x > a,
+.lb64xx a,
+.lb72,
+.lb72x > a,
+.lb72xx a,
+.lb80,
+.lb80x > a,
+.lb80xx a,
+.lb88,
+.lb88x > a,
+.lb88xx a,
+.lb96,
+.lb96x > a,
+.lb96xx a,
+.lb104,
+.lb104x > a,
+.lb104xx a,
+.lb112,
+.lb112x > a,
+.lb112xx a,
+.lb120,
+.lb120x > a,
+.lb120xx a,
+.lb128,
+.lb128x > a,
+.lb128xx a {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* mismo centrado que los btXX */
+  align-items: center;
+  text-decoration: none;
+  font-size: inherit;
+  background-color: inherit;
+  color: inherit;
+  vertical-align: top;
+  cursor: pointer;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* Altura y padding unificado */
+
+.lb16,
+.lb16x > a,
+.lb16xx a {
+  min-height: 16px;
+  padding: 0 2px;
+}
+
+.lb24,
+.lb24x > a,
+.lb24xx a {
+  min-height: 24px;
+  padding: 0 3px;
+}
+
+.lb32,
+.lb32x > a,
+.lb32xx a {
+  min-height: 32px;
+  padding: 0 4px;
+}
+
+.lb40,
+.lb40x > a,
+.lb40xx a {
+  min-height: 40px;
+  padding: 0 5px;
+}
+
+.lb48,
+.lb48x > a,
+.lb48xx a {
+  min-height: 48px;
+  padding: 0 6px;
+}
+
+.lb56,
+.lb56x > a,
+.lb56xx a {
+  min-height: 56px;
+  padding: 0 7px;
+}
+
+.lb64,
+.lb64x > a,
+.lb64xx a {
+  min-height: 64px;
+  padding: 0 8px;
+}
+
+.lb72,
+.lb72x > a,
+.lb72xx a {
+  min-height: 72px;
+  padding: 0 9px;
+}
+
+.lb80,
+.lb80x > a,
+.lb80xx a {
+  min-height: 80px;
+  padding: 0 10px;
+}
+
+.lb88,
+.lb88x > a,
+.lb88xx a {
+  min-height: 88px;
+  padding: 0 11px;
+}
+
+.lb96,
+.lb96x > a,
+.lb96xx a {
+  min-height: 96px;
+  padding: 0 12px;
+}
+
+.lb104,
+.lb104x > a,
+.lb104xx a {
+  min-height: 104px;
+  padding: 0 13px;
+}
+
+.lb112,
+.lb112x > a,
+.lb112xx a {
+  min-height: 112px;
+  padding: 0 14px;
+}
+
+.lb120,
+.lb120x > a,
+.lb120xx a {
+  min-height: 120px;
+  padding: 0 15px;
+}
+
+.lb128,
+.lb128x > a,
+.lb128xx a {
+  min-height: 128px;
+  padding: 0 16px;
+}
+
+/*****************************
+    Flex Containers Base
+*****************************/
+
+.fx {
+  display: flex;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/*****************************
+    Flex Direction
+*****************************/
+
+.fx1,
+.fx1x > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row !important;
+}
+
+.fx2,
+.fx2x > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse !important;
+}
+
+.fx3,
+.fx3x > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column !important;
+}
+
+.fx4,
+.fx4x > * {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse !important;
+}
+
+/*****************************
+    Flex Wrap
+*****************************/
+
+.fx5,
+.fx5x > * {
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+.fx6,
+.fx6x > * {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+
+.fx7,
+.fx7x > * {
+  display: flex;
+  flex-wrap: wrap-reverse !important;
+}
+
+/*****************************
+    Justify Content
+*****************************/
+
+.fx8,
+.fx8x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start !important;
+}
+
+.fx9,
+.fx9x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end !important;
+}
+
+.fx10,
+.fx10x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
+
+.fx11,
+.fx11x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around !important;
+}
+
+.fx12,
+.fx12x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly !important;
+}
+
+.fx13,
+.fx13x > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+}
+
+/*****************************
+    Align Items
+*****************************/
+
+.fx14,
+.fx14x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch !important;
+}
+
+.fx15,
+.fx15x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline !important;
+}
+
+.fx16,
+.fx16x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center !important;
+}
+
+.fx17,
+.fx17x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start !important;
+}
+
+.fx18,
+.fx18x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end !important;
+}
+
+/*****************************
+    Align Content
+*****************************/
+
+.fx19,
+.fx19x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch !important;
+}
+
+.fx20,
+.fx20x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center !important;
+}
+
+.fx21,
+.fx21x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start !important;
+}
+
+.fx22,
+.fx22x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end !important;
+}
+
+.fx23,
+.fx23x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around !important;
+}
+
+.fx24,
+.fx24x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly !important;
+}
+
+.fx25,
+.fx25x > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between !important;
+}
+
+/*****************************
+    Flex Grow / Shrink / Basis
+*****************************/
+
+.fx26,
+.fx26x > * {
+  display: flex;
+  flex-grow: 1 !important;
+}
+
+.fx27,
+.fx27x > * {
+  display: flex;
+  flex-grow: 0 !important;
+}
+
+.fx28,
+.fx28x > * {
+  display: flex;
+  flex-shrink: 1 !important;
+}
+
+.fx29,
+.fx29x > * {
+  display: flex;
+  flex-shrink: 0 !important;
+}
+
+.fx30,
+.fx30x > * {
+  display: flex;
+  flex-basis: auto !important;
+}
+
+.fx31,
+.fx31x > * {
+  display: flex;
+  flex-basis: 0 !important;
+}
+
+/*****************************
+    Align Self
+*****************************/
+
+.fx32,
+.fx32x > * {
+  display: flex;
+  align-self: auto !important;
+}
+
+.fx33,
+.fx33x > * {
+  display: flex;
+  align-self: stretch !important;
+}
+
+.fx34,
+.fx34x > * {
+  display: flex;
+  align-self: baseline !important;
+}
+
+.fx35,
+.fx35x > * {
+  display: flex;
+  align-self: center !important;
+}
+
+.fx36,
+.fx36x > * {
+  display: flex;
+  align-self: flex-start !important;
+}
+
+.fx37,
+.fx37x > * {
+  display: flex;
+  align-self: flex-end !important;
+}
+
+/*****************************
+    Order
+*****************************/
+
+.fx38,
+.fx38x > * {
+  display: flex;
+  order: 0 !important;
+}
+
+.fx39,
+.fx39x > * {
+  display: flex;
+  order: 1 !important;
+}
+
+.fx40,
+.fx40x > * {
+  display: flex;
+  order: 2 !important;
+}
+
+.fx41,
+.fx41x > * {
+  display: flex;
+  order: 3 !important;
+}
+
+/*****************************
+    Gap (solo contenedor)
+*****************************/
+
+.fx42 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.fx43 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.fx44 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.fx45 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/*****************************
+    Flex Items Base
+*****************************/
+
+.ifx {
+  box-sizing: border-box;
+}
+
+/*****************************
+    Flex Grow
+*****************************/
+
+.ifx1,
+.ifx1x > * {
+  flex-grow: 0 !important;
+}
+
+.ifx2,
+.ifx2x > * {
+  flex-grow: 1 !important;
+}
+
+.ifx3,
+.ifx3x > * {
+  flex-grow: 2 !important;
+}
+
+/*****************************
+    Flex Shrink
+*****************************/
+
+.ifx4,
+.ifx4x > * {
+  flex-shrink: 0 !important;
+}
+
+.ifx5,
+.ifx5x > * {
+  flex-shrink: 1 !important;
+}
+
+/*****************************
+    Flex Basis
+*****************************/
+
+.ifx6,
+.ifx6x > * {
+  flex-basis: auto !important;
+}
+
+.ifx7,
+.ifx7x > * {
+  flex-basis: 0 !important;
+}
+
+.ifx8,
+.ifx8x > * {
+  flex-basis: 25% !important;
+}
+
+.ifx9,
+.ifx9x > * {
+  flex-basis: 50% !important;
+}
+
+.ifx10,
+.ifx10x > * {
+  flex-basis: 75% !important;
+}
+
+.ifx11,
+.ifx11x > * {
+  flex-basis: 100% !important;
+}
+
+/*****************************
+    Flex (abreviada)
+*****************************/
+
+.ifx12,
+.ifx12x > * {
+  flex: 0 1 auto !important;
+}
+
+.ifx13,
+.ifx13x > * {
+  flex: 1 1 auto !important;
+}
+
+.ifx14,
+.ifx14x > * {
+  flex: 1 0 0 !important;
+}
+
+.ifx15,
+.ifx15x > * {
+  flex: 2 1 0 !important;
+}
+
+/*****************************
+    Align Self
+*****************************/
+
+.ifx16,
+.ifx16x > * {
+  align-self: auto !important;
+}
+
+.ifx17,
+.ifx17x > * {
+  align-self: stretch !important;
+}
+
+.ifx18,
+.ifx18x > * {
+  align-self: flex-start !important;
+}
+
+.ifx19,
+.ifx19x > * {
+  align-self: flex-end !important;
+}
+
+.ifx20,
+.ifx20x > * {
+  align-self: center !important;
+}
+
+.ifx21,
+.ifx21x > * {
+  align-self: baseline !important;
+}
+
+/*****************************
+    Order
+*****************************/
+
+.ifx22,
+.ifx22x > * {
+  order: 0 !important;
+}
+
+.ifx23,
+.ifx23x > * {
+  order: 1 !important;
+}
+
+.ifx24,
+.ifx24x > * {
+  order: 2 !important;
+}
+
+.ifx25,
+.ifx25x > * {
+  order: 3 !important;
+}
+
+.ifx26,
+.ifx26x > * {
+  order: 4 !important;
+}
+
+.ifx27,
+.ifx27x > * {
+  order: 5 !important;
+}
+
+/*============================
+    Display Utilities - Hide / Show (Variables)
+============================*/
+
+/* Ocultar siempre */
+
+.hd {
+  display: none !important;
+}
+
+/* =============================
+   Base hidden classes for inheritance
+============================= */
+
+.hdi321,
+.hda320,
+.hdi481,
+.hda480,
+.hdi641,
+.hda640,
+.hdi769,
+.hda768,
+.hdi961,
+.hda960,
+.hdi1201,
+.hda1200 {
+  color: inherit;
+}
+
+/* =============================
+   Variables globales
+============================= */
+
+:root {
+  --hide: none !important;
+}
+
+/* ==============================
+   HDA: max-width (ocultar hasta cierto tamaño)
+============================== */
+
+@media screen and (max-width: 320px) {
+  .hda320 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hda480 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hda640 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hda768 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hda960 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hda1200 {
+    display: var(--hide) !important;
+  }
+}
+
+/* ==============================
+   HDI: min-width (ocultar desde cierto tamaño)
+============================== */
+
+@media screen and (min-width: 321px) {
+  .hdi321 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hdi481 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .hdi641 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hdi769 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .hdi961 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .hdi1201 {
+    display: var(--hide) !important;
+  }
+}
+
+/* ==============================
+   HD RANGES: min + max (solo para rangos específicos)
+============================== */
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .hd0x320 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .hd321x480 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  .hd481x640 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .hd641x768 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .hd769x960 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+  .hd961x1200 {
+    display: var(--hide) !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .hdi1201x {
+    display: var(--hide) !important;
+  }
+}
+
+/*============================
+    Bloques base
+============================*/
+
+.swb,
+.swbx > * {
+  display: block;
+}
+
+.swib,
+.swibx > * {
+  display: inline-block;
+}
+
+.swf,
+.swfx > * {
+  display: flex;
+}
+
+.swif,
+.swifx > * {
+  display: inline-flex;
+}
+
+/*============================
+    Display Utilities Responsive
+============================*/
+
+/* Helper macro to define display types */
+
+:root {
+  --display-block: block !important;
+  --display-inline-block: inline-block !important;
+  --display-flex: flex !important;
+  --display-inline-flex: inline-flex !important;
+}
+
+/* === Max-width breakpoints === */
+
+@media screen and (max-width: 320px) {
+  .swba320 {
+    display: var(--display-block);
+  }
+  .swiba320 {
+    display: var(--display-inline-block);
+  }
+  .swfa320 {
+    display: var(--display-flex);
+  }
+  .swifa320 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swba480 {
+    display: var(--display-block);
+  }
+  .swiba480 {
+    display: var(--display-inline-block);
+  }
+  .swfa480 {
+    display: var(--display-flex);
+  }
+  .swifa480 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .swba640 {
+    display: var(--display-block);
+  }
+  .swiba640 {
+    display: var(--display-inline-block);
+  }
+  .swfa640 {
+    display: var(--display-flex);
+  }
+  .swifa640 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swba768 {
+    display: var(--display-block);
+  }
+  .swiba768 {
+    display: var(--display-inline-block);
+  }
+  .swfa768 {
+    display: var(--display-flex);
+  }
+  .swifa768 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .swba1024 {
+    display: var(--display-block);
+  }
+  .swiba1024 {
+    display: var(--display-inline-block);
+  }
+  .swfa1024 {
+    display: var(--display-flex);
+  }
+  .swifa1024 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .swba1280 {
+    display: var(--display-block);
+  }
+  .swiba1280 {
+    display: var(--display-inline-block);
+  }
+  .swfa1280 {
+    display: var(--display-flex);
+  }
+  .swifa1280 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .swba1440 {
+    display: var(--display-block);
+  }
+  .swiba1440 {
+    display: var(--display-inline-block);
+  }
+  .swfa1440 {
+    display: var(--display-flex);
+  }
+  .swifa1440 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .swba1920 {
+    display: var(--display-block);
+  }
+  .swiba1920 {
+    display: var(--display-inline-block);
+  }
+  .swfa1920 {
+    display: var(--display-flex);
+  }
+  .swifa1920 {
+    display: var(--display-inline-flex);
+  }
+}
+
+/* === Min-width breakpoints === */
+
+@media screen and (min-width: 321px) {
+  .swbi321 {
+    display: var(--display-block);
+  }
+  .swibi321 {
+    display: var(--display-inline-block);
+  }
+  .swfi321 {
+    display: var(--display-flex);
+  }
+  .swifi321 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .swbi641 {
+    display: var(--display-block);
+  }
+  .swibi641 {
+    display: var(--display-inline-block);
+  }
+  .swfi641 {
+    display: var(--display-flex);
+  }
+  .swifi641 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .swbi961 {
+    display: var(--display-block);
+  }
+  .swibi961 {
+    display: var(--display-inline-block);
+  }
+  .swfi961 {
+    display: var(--display-flex);
+  }
+  .swifi961 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .swbi1201 {
+    display: var(--display-block);
+  }
+  .swibi1201 {
+    display: var(--display-inline-block);
+  }
+  .swfi1201 {
+    display: var(--display-flex);
+  }
+  .swifi1201 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .swbi1921 {
+    display: var(--display-block);
+  }
+  .swibi1921 {
+    display: var(--display-inline-block);
+  }
+  .swfi1921 {
+    display: var(--display-flex);
+  }
+  .swifi1921 {
+    display: var(--display-inline-flex);
+  }
+}
+
+/* === Range X–Y breakpoints === */
+
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  .swb321x640 {
+    display: var(--display-block);
+  }
+  .swib321x640 {
+    display: var(--display-inline-block);
+  }
+  .swf321x640 {
+    display: var(--display-flex);
+  }
+  .swif321x640 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  .swb641x768 {
+    display: var(--display-block);
+  }
+  .swib641x768 {
+    display: var(--display-inline-block);
+  }
+  .swf641x768 {
+    display: var(--display-flex);
+  }
+  .swif641x768 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .swb769x1024 {
+    display: var(--display-block);
+  }
+  .swib769x1024 {
+    display: var(--display-inline-block);
+  }
+  .swf769x1024 {
+    display: var(--display-flex);
+  }
+  .swif769x1024 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .swb1025x1280 {
+    display: var(--display-block);
+  }
+  .swib1025x1280 {
+    display: var(--display-inline-block);
+  }
+  .swf1025x1280 {
+    display: var(--display-flex);
+  }
+  .swif1025x1280 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .swb1281x1440 {
+    display: var(--display-block);
+  }
+  .swib1281x1440 {
+    display: var(--display-inline-block);
+  }
+  .swf1281x1440 {
+    display: var(--display-flex);
+  }
+  .swif1281x1440 {
+    display: var(--display-inline-flex);
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .swb1441x1920 {
+    display: var(--display-block);
+  }
+  .swib1441x1920 {
+    display: var(--display-inline-block);
+  }
+  .swf1441x1920 {
+    display: var(--display-flex);
+  }
+  .swif1441x1920 {
+    display: var(--display-inline-flex);
+  }
+}
+
+/* ============================= */
+
+/* Alineación horizontal (.ta*)  */
+
+/* ============================= */
+
+.tal {
+  text-align: left !important;
+}
+
+/* Left */
+
+.tar {
+  text-align: right !important;
+}
+
+/* Right */
+
+.tac {
+  text-align: center !important;
+}
+
+/* Center */
+
+.taj {
+  text-align: justify !important;
+}
+
+/* Justify */
+
+.tas {
+  text-align: start !important;
+}
+
+/* Start */
+
+.tae {
+  text-align: end !important;
+}
+
+/* End */
+
+.tam {
+  text-align: match-parent !important;
+}
+
+/* Match parent */
+
+/* ============================= */
+
+/* Alineación vertical (.tva*)   */
+
+/* ============================= */
+
+.tvat {
+  vertical-align: top !important;
+}
+
+/* Top */
+
+.tvam {
+  vertical-align: middle !important;
+}
+
+/* Middle */
+
+.tvab {
+  vertical-align: bottom !important;
+}
+
+/* Bottom */
+
+.tvabn {
+  vertical-align: baseline !important;
+}
+
+/* Baseline */
+
+/*============================
+    Flex Container
+============================*/
+
+.cf1 {
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Horizontal direction */
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+  justify-content: flex-start; /* Align items to the start horizontally */
+  align-items: stretch; /* Stretch items to fill container height */
+  width: 100%; /* Container takes full available width */
+  color: inherit;
+}
+
+/* Make all children occupy full width of the flex container */
+
+.cf1 > * {
+  width: 100%;
+  color: inherit;
+}
+
+/*============================
+    Dropdown Containers
+============================*/
+
+.dd1,
+.dd2 {
+  position: relative; /* Set relative positioning for dropdown positioning */
+  display: inline-block; /* Display inline-block for proper layout */
+  z-index: 2; /* Layer above other elements */
+}
+
+/*============================
+    Dropdown Menus
+============================*/
+
+.dd1 > div,
+.dd2 > div {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position relative to parent */
+  background-color: #f9f9f9; /* Light background for dropdown */
+  min-width: 160px; /* Minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  z-index: 1; /* Ensure dropdown is below the parent */
+}
+
+/*============================
+    Dropdown Positioning
+============================*/
+
+.dd1 > div {
+  left: 0; /* Align dropdown to left */
+}
+
+.dd2 > div {
+  right: 0; /* Align dropdown to right */
+}
+
+/*============================
+    Show Dropdown on Hover
+============================*/
+
+.dd1:hover > div,
+.dd2:hover > div {
+  display: block; /* Show dropdown when hovering parent */
+}
+
+/* ============================= */
+
+/* ANCHOS FIJOS PEQUEÑOS Y MEDIANOS */
+
+/* ============================= */
+
+/* 12px */
+
+.wa12,
+.wa12x > * {
+  width: 100%;
+  max-width: 12px !important;
+}
+
+.wi12,
+.wi12x > * {
+  width: 100%;
+  min-width: 12px !important;
+}
+
+/* 16px */
+
+.wa16,
+.wa16x > * {
+  width: 100%;
+  max-width: 16px !important;
+}
+
+.wi16,
+.wi16x > * {
+  width: 100%;
+  min-width: 16px !important;
+}
+
+/* 24px */
+
+.wa24,
+.wa24x > * {
+  width: 100%;
+  max-width: 24px !important;
+}
+
+.wi24,
+.wi24x > * {
+  width: 100%;
+  min-width: 24px !important;
+}
+
+/* 32px */
+
+.wa32,
+.wa32x > * {
+  width: 100%;
+  max-width: 32px !important;
+}
+
+.wi32,
+.wi32x > * {
+  width: 100%;
+  min-width: 32px !important;
+}
+
+/* 40px */
+
+.wa40,
+.wa40x > * {
+  width: 100%;
+  max-width: 40px !important;
+}
+
+.wi40,
+.wi40x > * {
+  width: 100%;
+  min-width: 40px !important;
+}
+
+/* 48px */
+
+.wa48,
+.wa48x > * {
+  width: 100%;
+  max-width: 48px !important;
+}
+
+.wi48,
+.wi48x > * {
+  width: 100%;
+  min-width: 48px !important;
+}
+
+/* 56px */
+
+.wa56,
+.wa56x > * {
+  width: 100%;
+  max-width: 56px !important;
+}
+
+.wi56,
+.wi56x > * {
+  width: 100%;
+  min-width: 56px !important;
+}
+
+/* 64px */
+
+.wa64,
+.wa64x > * {
+  width: 100%;
+  max-width: 64px !important;
+}
+
+.wi64,
+.wi64x > * {
+  width: 100%;
+  min-width: 64px !important;
+}
+
+/* 80px */
+
+.wa80,
+.wa80x > * {
+  width: 100%;
+  max-width: 80px !important;
+}
+
+.wi80,
+.wi80x > * {
+  width: 100%;
+  min-width: 80px !important;
+}
+
+/* 96px */
+
+.wa96,
+.wa96x > * {
+  width: 100%;
+  max-width: 96px !important;
+}
+
+.wi96,
+.wi96x > * {
+  width: 100%;
+  min-width: 96px !important;
+}
+
+/* 128px */
+
+.wa128,
+.wa128x > * {
+  width: 100%;
+  max-width: 128px !important;
+}
+
+.wi128,
+.wi128x > * {
+  width: 100%;
+  min-width: 128px !important;
+}
+
+/* 256px */
+
+.wa256,
+.wa256x > * {
+  width: 100%;
+  max-width: 256px !important;
+}
+
+.wi256,
+.wi256x > * {
+  width: 100%;
+  min-width: 256px !important;
+}
+
+/* ANCHOS RELATIVOS A PANTALLA */
+
+/* ============================= */
+
+.w100p,
+.w100px > * {
+  width: 100% !important;
+}
+
+.wi100p,
+.wi100px > * {
+  width: 100%;
+  min-width: 100% !important;
+}
+
+.wa100p,
+.wa100px > * {
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.wa100vw,
+.wa100vwx > * {
+  width: 100%;
+  max-width: 100vw !important;
+}
+
+.wi100vw,
+.wi100vwx > * {
+  width: 100%;
+  min-width: 100vw !important;
+}
+
+.wa100vwx,
+.wa100vwx > * {
+  width: 100%;
+  max-width: 100vw !important;
+}
+
+/*****************************
+    Height Presets
+*****************************/
+
+/* Altura en porcentaje y viewport */
+
+/* Altura en porcentaje y viewport */
+
+.h100p,
+.h100px > * {
+  height: 100% !important;
+}
+
+.hi100p,
+.hi100px > * {
+  min-height: 100% !important;
+}
+
+.ha100,
+.ha100x > * {
+  max-height: 100% !important;
+}
+
+.h100vh,
+.h100vhx > * {
+  height: 100vh !important;
+}
+
+.hi100vh,
+.hi100vhx > * {
+  min-height: 100vh !important;
+}
+
+.ha100vh,
+.ha100vhx > * {
+  max-height: 100vh !important;
+}
+
+.h100vw,
+.h100vwx > * {
+  height: 100vw !important;
+}
+
+.hi100vw,
+.hi100vwx > * {
+  min-height: 100vw !important;
+}
+
+.ha100vw,
+.ha100vwx > * {
+  max-height: 100vw !important;
+}
+
+.h100vmin,
+.h100vminx > * {
+  height: 100vmin !important;
+}
+
+.hi100vmin,
+.hi100vminx > * {
+  min-height: 100vmin !important;
+}
+
+.ha100vmin,
+.ha100vminx > * {
+  max-height: 100vmin !important;
+}
+
+.h100vmax,
+.h100vmaxx > * {
+  height: 100vmax !important;
+}
+
+.hi100vmax,
+.hi100vmaxx > * {
+  min-height: 100vmax !important;
+}
+
+.ha100vmax,
+.ha100vmaxx > * {
+  max-height: 100vmax !important;
+}
+
+/* Alturas estándar en píxeles */
+
+.h12 {
+  height: 12px !important;
+}
+
+.h12x > * {
+  height: 12px !important;
+}
+
+.hi12 {
+  min-height: 12px !important;
+}
+
+.hi12x > * {
+  min-height: 12px !important;
+}
+
+.ha12 {
+  max-height: 12px !important;
+}
+
+.ha12x > * {
+  max-height: 12px !important;
+}
+
+.h16 {
+  height: 16px !important;
+}
+
+.h16x > * {
+  height: 16px !important;
+}
+
+.hi16 {
+  min-height: 16px !important;
+}
+
+.hi16x > * {
+  min-height: 16px !important;
+}
+
+.ha16 {
+  max-height: 16px !important;
+}
+
+.ha16x > * {
+  max-height: 16px !important;
+}
+
+.h24 {
+  height: 24px !important;
+}
+
+.h24x > * {
+  height: 24px !important;
+}
+
+.hi24 {
+  min-height: 24px !important;
+}
+
+.hi24x > * {
+  min-height: 24px !important;
+}
+
+.ha24 {
+  max-height: 24px !important;
+}
+
+.ha24x > * {
+  max-height: 24px !important;
+}
+
+.h32 {
+  height: 32px !important;
+}
+
+.h32x > * {
+  height: 32px !important;
+}
+
+.hi32 {
+  min-height: 32px !important;
+}
+
+.hi32x > * {
+  min-height: 32px !important;
+}
+
+.ha32 {
+  max-height: 32px !important;
+}
+
+.ha32x > * {
+  max-height: 32px !important;
+}
+
+.h40 {
+  height: 40px !important;
+}
+
+.h40x > * {
+  height: 40px !important;
+}
+
+.hi40 {
+  min-height: 40px !important;
+}
+
+.hi40x > * {
+  min-height: 40px !important;
+}
+
+.ha40 {
+  max-height: 40px !important;
+}
+
+.ha40x > * {
+  max-height: 40px !important;
+}
+
+.h48 {
+  height: 48px !important;
+}
+
+.h48x > * {
+  height: 48px !important;
+}
+
+.hi48 {
+  min-height: 48px !important;
+}
+
+.hi48x > * {
+  min-height: 48px !important;
+}
+
+.ha48 {
+  max-height: 48px !important;
+}
+
+.ha48x > * {
+  max-height: 48px !important;
+}
+
+.h56 {
+  height: 56px !important;
+}
+
+.h56x > * {
+  height: 56px !important;
+}
+
+.hi56 {
+  min-height: 56px !important;
+}
+
+.hi56x > * {
+  min-height: 56px !important;
+}
+
+.ha56 {
+  max-height: 56px !important;
+}
+
+.ha56x > * {
+  max-height: 56px !important;
+}
+
+.h64 {
+  height: 64px !important;
+}
+
+.h64x > * {
+  height: 64px !important;
+}
+
+.hi64 {
+  min-height: 64px !important;
+}
+
+.hi64x > * {
+  min-height: 64px !important;
+}
+
+.ha64 {
+  max-height: 64px !important;
+}
+
+.ha64x > * {
+  max-height: 64px !important;
+}
+
+.h80 {
+  height: 80px !important;
+}
+
+.h80x > * {
+  height: 80px !important;
+}
+
+.hi80 {
+  min-height: 80px !important;
+}
+
+.hi80x > * {
+  min-height: 80px !important;
+}
+
+.ha80 {
+  max-height: 80px !important;
+}
+
+.ha80x > * {
+  max-height: 80px !important;
+}
+
+.h96 {
+  height: 96px !important;
+}
+
+.h96x > * {
+  height: 96px !important;
+}
+
+.hi96 {
+  min-height: 96px !important;
+}
+
+.hi96x > * {
+  min-height: 96px !important;
+}
+
+.ha96 {
+  max-height: 96px !important;
+}
+
+.ha96x > * {
+  max-height: 96px !important;
+}
+
+.h128 {
+  height: 128px !important;
+}
+
+.h128x > * {
+  height: 128px !important;
+}
+
+.hi128 {
+  min-height: 128px !important;
+}
+
+.hi128x > * {
+  min-height: 128px !important;
+}
+
+.ha128 {
+  max-height: 128px !important;
+}
+
+.ha128x > * {
+  max-height: 128px !important;
+}
+
+.h256 {
+  height: 256px !important;
+}
+
+.h256x > * {
+  height: 256px !important;
+}
+
+.hi256 {
+  min-height: 256px !important;
+}
+
+.hi256x > * {
+  min-height: 256px !important;
+}
+
+.ha256 {
+  max-height: 256px !important;
+}
+
+.ha256x > * {
+  max-height: 256px !important;
+}
+
+/*============================
+    Margin Styles
+============================*/
+
+/* Auto Margin */
+
+.mg,
+.mgx > * {
+  margin: 0px auto !important;
+}
+
+/* Margin 0 */
+
+.mg0,
+.mg0x > * {
+  margin: 0px !important;
+}
+
+.mg0t,
+.mg0tx > * {
+  margin-top: 0px !important;
+}
+
+.mg0r,
+.mg0rx > * {
+  margin-right: 0px !important;
+}
+
+.mg0b,
+.mg0bx > * {
+  margin-bottom: 0px !important;
+}
+
+.mg0l,
+.mg0lx > * {
+  margin-left: 0px !important;
+}
+
+.mg0tb,
+.mg0tbx > * {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.mg0lr,
+.mg0lrx > * {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/* Margin 1 */
+
+.mg1,
+.mg1x > * {
+  margin: 1px !important;
+}
+
+.mg1t,
+.mg1tx > * {
+  margin-top: 1px !important;
+}
+
+.mg1r,
+.mg1rx > * {
+  margin-right: 1px !important;
+}
+
+.mg1b,
+.mg1bx > * {
+  margin-bottom: 1px !important;
+}
+
+.mg1l,
+.mg1lx > * {
+  margin-left: 1px !important;
+}
+
+.mg1tb,
+.mg1tbx > * {
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+}
+
+.mg1lr,
+.mg1lrx > * {
+  margin-left: 1px !important;
+  margin-right: 1px !important;
+}
+
+/* Margin 2 */
+
+.mg2,
+.mg2x > * {
+  margin: 2px !important;
+}
+
+.mg2t,
+.mg2tx > * {
+  margin-top: 2px !important;
+}
+
+.mg2r,
+.mg2rx > * {
+  margin-right: 2px !important;
+}
+
+.mg2b,
+.mg2bx > * {
+  margin-bottom: 2px !important;
+}
+
+.mg2l,
+.mg2lx > * {
+  margin-left: 2px !important;
+}
+
+.mg2tb,
+.mg2tbx > * {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+.mg2lr,
+.mg2lrx > * {
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+/* Margin 3 */
+
+.mg3,
+.mg3x > * {
+  margin: 3px !important;
+}
+
+.mg3t,
+.mg3tx > * {
+  margin-top: 3px !important;
+}
+
+.mg3r,
+.mg3rx > * {
+  margin-right: 3px !important;
+}
+
+.mg3b,
+.mg3bx > * {
+  margin-bottom: 3px !important;
+}
+
+.mg3l,
+.mg3lx > * {
+  margin-left: 3px !important;
+}
+
+.mg3tb,
+.mg3tbx > * {
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+}
+
+.mg3lr,
+.mg3lrx > * {
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+/* Margin 4 */
+
+.mg4,
+.mg4x > * {
+  margin: 4px !important;
+}
+
+.mg4t,
+.mg4tx > * {
+  margin-top: 4px !important;
+}
+
+.mg4r,
+.mg4rx > * {
+  margin-right: 4px !important;
+}
+
+.mg4b,
+.mg4bx > * {
+  margin-bottom: 4px !important;
+}
+
+.mg4l,
+.mg4lx > * {
+  margin-left: 4px !important;
+}
+
+.mg4tb,
+.mg4tbx > * {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+.mg4lr,
+.mg4lrx > * {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
+/* Margin 5 */
+
+.mg5,
+.mg5x > * {
+  margin: 5px !important;
+}
+
+.mg5t,
+.mg5tx > * {
+  margin-top: 5px !important;
+}
+
+.mg5r,
+.mg5rx > * {
+  margin-right: 5px !important;
+}
+
+.mg5b,
+.mg5bx > * {
+  margin-bottom: 5px !important;
+}
+
+.mg5l,
+.mg5lx > * {
+  margin-left: 5px !important;
+}
+
+.mg5tb,
+.mg5tbx > * {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.mg5lr,
+.mg5lrx > * {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+/* Margin 6 */
+
+.mg6,
+.mg6x > * {
+  margin: 6px !important;
+}
+
+.mg6t,
+.mg6tx > * {
+  margin-top: 6px !important;
+}
+
+.mg6r,
+.mg6rx > * {
+  margin-right: 6px !important;
+}
+
+.mg6b,
+.mg6bx > * {
+  margin-bottom: 6px !important;
+}
+
+.mg6l,
+.mg6lx > * {
+  margin-left: 6px !important;
+}
+
+.mg6tb,
+.mg6tbx > * {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+.mg6lr,
+.mg6lrx > * {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+}
+
+/* Margin 7 */
+
+.mg7,
+.mg7x > * {
+  margin: 7px !important;
+}
+
+.mg7t,
+.mg7tx > * {
+  margin-top: 7px !important;
+}
+
+.mg7r,
+.mg7rx > * {
+  margin-right: 7px !important;
+}
+
+.mg7b,
+.mg7bx > * {
+  margin-bottom: 7px !important;
+}
+
+.mg7l,
+.mg7lx > * {
+  margin-left: 7px !important;
+}
+
+.mg7tb,
+.mg7tbx > * {
+  margin-top: 7px !important;
+  margin-bottom: 7px !important;
+}
+
+.mg7lr,
+.mg7lrx > * {
+  margin-left: 7px !important;
+  margin-right: 7px !important;
+}
+
+/* Margin 8 */
+
+.mg8,
+.mg8x > * {
+  margin: 8px !important;
+}
+
+.mg8t,
+.mg8tx > * {
+  margin-top: 8px !important;
+}
+
+.mg8r,
+.mg8rx > * {
+  margin-right: 8px !important;
+}
+
+.mg8b,
+.mg8bx > * {
+  margin-bottom: 8px !important;
+}
+
+.mg8l,
+.mg8lx > * {
+  margin-left: 8px !important;
+}
+
+.mg8tb,
+.mg8tbx > * {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.mg8lr,
+.mg8lrx > * {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+
+/* Margin 9 */
+
+.mg9,
+.mg9x > * {
+  margin: 9px !important;
+}
+
+.mg9t,
+.mg9tx > * {
+  margin-top: 9px !important;
+}
+
+.mg9r,
+.mg9rx > * {
+  margin-right: 9px !important;
+}
+
+.mg9b,
+.mg9bx > * {
+  margin-bottom: 9px !important;
+}
+
+.mg9l,
+.mg9lx > * {
+  margin-left: 9px !important;
+}
+
+.mg9tb,
+.mg9tbx > * {
+  margin-top: 9px !important;
+  margin-bottom: 9px !important;
+}
+
+.mg9lr,
+.mg9lrx > * {
+  margin-left: 9px !important;
+  margin-right: 9px !important;
+}
+
+/* Margin 10 */
+
+.mg10,
+.mg10x > * {
+  margin: 10px !important;
+}
+
+.mg10t,
+.mg10tx > * {
+  margin-top: 10px !important;
+}
+
+.mg10r,
+.mg10rx > * {
+  margin-right: 10px !important;
+}
+
+.mg10b,
+.mg10bx > * {
+  margin-bottom: 10px !important;
+}
+
+.mg10l,
+.mg10lx > * {
+  margin-left: 10px !important;
+}
+
+.mg10tb,
+.mg10tbx > * {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.mg10lr,
+.mg10lrx > * {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+/* Margin 11 */
+
+.mg11,
+.mg11x > * {
+  margin: 11px !important;
+}
+
+.mg11t,
+.mg11tx > * {
+  margin-top: 11px !important;
+}
+
+.mg11r,
+.mg11rx > * {
+  margin-right: 11px !important;
+}
+
+.mg11b,
+.mg11bx > * {
+  margin-bottom: 11px !important;
+}
+
+.mg11l,
+.mg11lx > * {
+  margin-left: 11px !important;
+}
+
+.mg11tb,
+.mg11tbx > * {
+  margin-top: 11px !important;
+  margin-bottom: 11px !important;
+}
+
+.mg11lr,
+.mg11lrx > * {
+  margin-left: 11px !important;
+  margin-right: 11px !important;
+}
+
+/* Margin 12 */
+
+.mg12,
+.mg12x > * {
+  margin: 12px !important;
+}
+
+.mg12t,
+.mg12tx > * {
+  margin-top: 12px !important;
+}
+
+.mg12r,
+.mg12rx > * {
+  margin-right: 12px !important;
+}
+
+.mg12b,
+.mg12bx > * {
+  margin-bottom: 12px !important;
+}
+
+.mg12l,
+.mg12lx > * {
+  margin-left: 12px !important;
+}
+
+.mg12tb,
+.mg12tbx > * {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.mg12lr,
+.mg12lrx > * {
+  margin-left: 12px !important;
+  margin-right: 12px !important;
+}
+
+/******************************/
+
+/* Position Utilities - pstNUM */
+
+/******************************/
+
+/*============================*/
+
+/* RELATIVE */
+
+/* pst1 → relative genérico */
+
+.pst1 {
+  position: relative;
+  width: 100%;
+}
+
+/*============================*/
+
+/* ABSOLUTE */
+
+/* pst2 → absolute genérico */
+
+.pst2 {
+  position: absolute;
+  width: 100%;
+}
+
+/* pst3 → absolute top-left */
+
+.pst3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* pst4 → absolute top-right */
+
+.pst4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* pst5 → absolute bottom-left */
+
+.pst5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* pst6 → absolute bottom-right */
+
+.pst6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* pst7 → absolute center */
+
+.pst7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* pst8 → absolute fullscreen */
+
+.pst8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*============================*/
+
+/* STICKY */
+
+/* pst9 → sticky genérico */
+
+.pst9 {
+  position: sticky;
+  width: 100%;
+}
+
+/* pst10 → sticky top */
+
+.pst10 {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* pst11 → sticky bottom */
+
+.pst11 {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+/* pst12 → sticky top-center */
+
+.pst12 {
+  position: sticky;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+/* pst13 → sticky bottom-center */
+
+.pst13 {
+  position: sticky;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+/*============================*/
+
+/* FIXED */
+
+/* pst14 → fixed genérico */
+
+.pst14 {
+  position: fixed;
+  width: 100%;
+}
+
+/* pst15 → fixed top */
+
+.pst15 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* pst16 → fixed bottom */
+
+.pst16 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* pst17 → fixed top-left */
+
+.pst17 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* pst18 → fixed top-right */
+
+.pst18 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* pst19 → fixed bottom-left */
+
+.pst19 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* pst20 → fixed bottom-right */
+
+.pst20 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* pst21 → fixed center */
+
+.pst21 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* pst22 → fixed fullscreen */
+
+.pst22 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/******************************/
+
+.zi1 {
+  z-index: 1 !important;
+}
+
+.zi2 {
+  z-index: 2 !important;
+}
+
+.zi3 {
+  z-index: 3 !important;
+}
+
+.zi4 {
+  z-index: 4 !important;
+}
+
+.zi5 {
+  z-index: 5 !important;
+}
+
+.zi6 {
+  z-index: 6 !important;
+}
+
+.zi7 {
+  z-index: 7 !important;
+}
+
+.zi8 {
+  z-index: 8 !important;
+}
+
+.zi9 {
+  z-index: 9 !important;
+}
+
+.zi10 {
+  z-index: 10 !important;
+}
+
+/*============================
+    Overflow Properties (Numeric)
+============================*/
+
+/* --- Overflow (both axes) --- */
+
+.of1 {
+  overflow: auto;
+}
+
+.of2 {
+  overflow: scroll;
+}
+
+.of3 {
+  overflow: visible;
+}
+
+.of4 {
+  overflow: hidden;
+}
+
+/* --- Overflow-X (horizontal) --- */
+
+.of5 {
+  overflow-x: auto;
+}
+
+.of6 {
+  overflow-x: scroll;
+}
+
+.of7 {
+  overflow-x: visible;
+}
+
+.of8 {
+  overflow-x: hidden;
+}
+
+/* --- Overflow-Y (vertical) --- */
+
+.of9 {
+  overflow-y: auto;
+}
+
+.of10 {
+  overflow-y: scroll;
+}
+
+.of11 {
+  overflow-y: visible;
+}
+
+.of12 {
+  overflow-y: hidden;
+}
+
+/* --- Combined Overflow X & Y --- */
+
+.of13 {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.of14 {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.of15 {
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.of16 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.of17 {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.of18 {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.of19 {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+/* ============================= */
+
+/* Alineación vertical (.va*)    */
+
+/* ============================= */
+
+/* Top */
+
+.vat,
+.vatx > * {
+  vertical-align: top !important;
+}
+
+/* Middle */
+
+.vamd,
+.vamdx > * {
+  vertical-align: middle !important;
+}
+
+/* Bottom */
+
+.vabt,
+.vabtx > * {
+  vertical-align: bottom !important;
+}
+
+/* Baseline */
+
+.vabs,
+.vabsx > * {
+  vertical-align: baseline !important;
+}
+
+/* Sub */
+
+.vasub,
+.vasubx > * {
+  vertical-align: sub !important;
+}
+
+/* Super */
+
+.vasup,
+.vasupx > * {
+  vertical-align: super !important;
+}
+
+/* Text Top */
+
+.vatt,
+.vattx > * {
+  vertical-align: text-top !important;
+}
+
+/* Text Bottom */
+
+.vatb,
+.vatbx > * {
+  vertical-align: text-bottom !important;
+}
+
+/* ============================= */
+
+/* Valores globales opcionales   */
+
+/* ============================= */
+
+/* Initial */
+
+.vaini,
+.vainix > * {
+  vertical-align: initial !important;
+}
+
+/* Inherit */
+
+.vainh,
+.vainhx > * {
+  vertical-align: inherit !important;
+}
+
+/* Unset */
+
+.vainu,
+.vainux > * {
+  vertical-align: unset !important;
+}
+
+/*============================
+  Border Utilities (with side-specific styles)
+============================*/
+
+.bd,
+.bdx > * {
+  border: 0;
+}
+
+/* --- All sides --- */
+
+.bd1,
+.bd1x > * {
+  border-width: 1px;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+.bd2,
+.bd2x > * {
+  border-width: 2px;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+.bd3,
+.bd3x > * {
+  border-width: 3px;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+.bd4,
+.bd4x > * {
+  border-width: 4px;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+.bd5,
+.bd5x > * {
+  border-width: 5px;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+.bd6,
+.bd6x > * {
+  border-width: 6px;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+/* --- Top only --- */
+
+.bd1t,
+.bd1tx > * {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+
+.bd2t,
+.bd2tx > * {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+
+.bd3t,
+.bd3tx > * {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+
+.bd4t,
+.bd4tx > * {
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+
+.bd5t,
+.bd5tx > * {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+
+.bd6t,
+.bd6tx > * {
+  border-top-width: 6px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+}
+
+/* --- Bottom only --- */
+
+.bd1b,
+.bd1bx > * {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd2b,
+.bd2bx > * {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd3b,
+.bd3bx > * {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd4b,
+.bd4bx > * {
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd5b,
+.bd5bx > * {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd6b,
+.bd6bx > * {
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+/* --- Right only --- */
+
+.bd1r,
+.bd1rx > * {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd2r,
+.bd2rx > * {
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd3r,
+.bd3rx > * {
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd4r,
+.bd4rx > * {
+  border-right-width: 4px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd5r,
+.bd5rx > * {
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd6r,
+.bd6rx > * {
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+/* --- Left only --- */
+
+.bd1l,
+.bd1lx > * {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+
+.bd2l,
+.bd2lx > * {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+
+.bd3l,
+.bd3lx > * {
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+
+.bd4l,
+.bd4lx > * {
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+
+.bd5l,
+.bd5lx > * {
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+
+.bd6l,
+.bd6lx > * {
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+}
+
+/* --- Top & Bottom --- */
+
+.bd1tb,
+.bd1tbx > * {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd2tb,
+.bd2tbx > * {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd3tb,
+.bd3tbx > * {
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd4tb,
+.bd4tbx > * {
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd5tb,
+.bd5tbx > * {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+.bd6tb,
+.bd6tbx > * {
+  border-top-width: 6px;
+  border-top-style: solid;
+  border-top-color: currentColor;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+
+/* --- Left & Right --- */
+
+.bd1lr,
+.bd1lrx > * {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd2lr,
+.bd2lrx > * {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd3lr,
+.bd3lrx > * {
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 3px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd4lr,
+.bd4lrx > * {
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 4px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd5lr,
+.bd5lrx > * {
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+.bd6lr,
+.bd6lrx > * {
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-left-color: currentColor;
+  border-right-width: 6px;
+  border-right-style: solid;
+  border-right-color: currentColor;
+}
+
+/******************************/
+
+/* === BLUR FILTERS (abreviado, hasta 6px) === */
+
+/* Blur 0px */
+
+.b0 {
+  filter: blur(0px);
+}
+
+/* Blur 1px */
+
+.b1 {
+  filter: blur(1px);
+}
+
+/* Blur 2px */
+
+.b2 {
+  filter: blur(2px);
+}
+
+/* Blur 3px */
+
+.b3 {
+  filter: blur(3px);
+}
+
+/* Blur 4px */
+
+.b4 {
+  filter: blur(4px);
+}
+
+/* Blur 5px */
+
+.b5 {
+  filter: blur(5px);
+}
+
+/* Blur 6px */
+
+.b6 {
+  filter: blur(6px);
+}
+
+/*----------------*/
+
+/* bsd1 - 1px */
+
+/* Gris 50 */
+
+.bsd1_50_05,
+.bsd1_50_05x > * {
+  box-shadow: 0px 0px 0px 1px rgba(50, 50, 50, 0.5);
+}
+
+.bsd1l_50_05,
+.bsd1l_50_05x > * {
+  box-shadow: -1px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+.bsd1r_50_05,
+.bsd1r_50_05x > * {
+  box-shadow: 1px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+.bsd1lr_50_05,
+.bsd1lr_50_05x > * {
+  box-shadow:
+    1px 0px 0px 0px rgba(50, 50, 50, 0.5),
+    -1px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+/* Gris 80 */
+
+.bsd1_80_05,
+.bsd1_80_05x > * {
+  box-shadow: 0px 0px 0px 1px rgba(80, 80, 80, 0.5);
+}
+
+.bsd1l_80_05,
+.bsd1l_80_05x > * {
+  box-shadow: -1px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+.bsd1r_80_05,
+.bsd1r_80_05x > * {
+  box-shadow: 1px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+.bsd1lr_80_05,
+.bsd1lr_80_05x > * {
+  box-shadow:
+    1px 0px 0px 0px rgba(80, 80, 80, 0.5),
+    -1px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+/* Gris 70 */
+
+.bsd1_70_05,
+.bsd1_70_05x > * {
+  box-shadow: 0px 0px 0px 1px rgba(70, 70, 70, 0.5);
+}
+
+.bsd1l_70_05,
+.bsd1l_70_05x > * {
+  box-shadow: -1px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+.bsd1r_70_05,
+.bsd1r_70_05x > * {
+  box-shadow: 1px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+.bsd1lr_70_05,
+.bsd1lr_70_05x > * {
+  box-shadow:
+    1px 0px 0px 0px rgba(70, 70, 70, 0.5),
+    -1px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+/*----------------*/
+
+/* bsd3 - 3px */
+
+/* Gris 50 */
+
+.bsd3_50_05,
+.bsd3_50_05x > * {
+  box-shadow: 0px 0px 0px 3px rgba(50, 50, 50, 0.5);
+}
+
+.bsd3l_50_05,
+.bsd3l_50_05x > * {
+  box-shadow: -3px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+.bsd3r_50_05,
+.bsd3r_50_05x > * {
+  box-shadow: 3px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+.bsd3lr_50_05,
+.bsd3lr_50_05x > * {
+  box-shadow:
+    3px 0px 0px 0px rgba(50, 50, 50, 0.5),
+    -3px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+/* Gris 80 */
+
+.bsd3_80_05,
+.bsd3_80_05x > * {
+  box-shadow: 0px 0px 0px 3px rgba(80, 80, 80, 0.5);
+}
+
+.bsd3l_80_05,
+.bsd3l_80_05x > * {
+  box-shadow: -3px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+.bsd3r_80_05,
+.bsd3r_80_05x > * {
+  box-shadow: 3px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+.bsd3lr_80_05,
+.bsd3lr_80_05x > * {
+  box-shadow:
+    3px 0px 0px 0px rgba(80, 80, 80, 0.5),
+    -3px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+/* Gris 70 */
+
+.bsd3_70_05,
+.bsd3_70_05x > * {
+  box-shadow: 0px 0px 0px 3px rgba(70, 70, 70, 0.5);
+}
+
+.bsd3l_70_05,
+.bsd3l_70_05x > * {
+  box-shadow: -3px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+.bsd3r_70_05,
+.bsd3r_70_05x > * {
+  box-shadow: 3px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+.bsd3lr_70_05,
+.bsd3lr_70_05x > * {
+  box-shadow:
+    3px 0px 0px 0px rgba(70, 70, 70, 0.5),
+    -3px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+/*----------------*/
+
+/* bsd5 - 5px */
+
+/* Gris 50 */
+
+.bsd5_50_05,
+.bsd5_50_05x > * {
+  box-shadow: 0px 0px 0px 5px rgba(50, 50, 50, 0.5);
+}
+
+.bsd5l_50_05,
+.bsd5l_50_05x > * {
+  box-shadow: -5px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+.bsd5r_50_05,
+.bsd5r_50_05x > * {
+  box-shadow: 5px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+.bsd5lr_50_05,
+.bsd5lr_50_05x > * {
+  box-shadow:
+    5px 0px 0px 0px rgba(50, 50, 50, 0.5),
+    -5px 0px 0px 0px rgba(50, 50, 50, 0.5);
+}
+
+/* Gris 80 */
+
+.bsd5_80_05,
+.bsd5_80_05x > * {
+  box-shadow: 0px 0px 0px 5px rgba(80, 80, 80, 0.5);
+}
+
+.bsd5l_80_05,
+.bsd5l_80_05x > * {
+  box-shadow: -5px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+.bsd5r_80_05,
+.bsd5r_80_05x > * {
+  box-shadow: 5px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+.bsd5lr_80_05,
+.bsd5lr_80_05x > * {
+  box-shadow:
+    5px 0px 0px 0px rgba(80, 80, 80, 0.5),
+    -5px 0px 0px 0px rgba(80, 80, 80, 0.5);
+}
+
+/* Gris 70 */
+
+.bsd5_70_05,
+.bsd5_70_05x > * {
+  box-shadow: 0px 0px 0px 5px rgba(70, 70, 70, 0.5);
+}
+
+.bsd5l_70_05,
+.bsd5l_70_05x > * {
+  box-shadow: -5px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+.bsd5r_70_05,
+.bsd5r_70_05x > * {
+  box-shadow: 5px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+.bsd5lr_70_05,
+.bsd5lr_70_05x > * {
+  box-shadow:
+    5px 0px 0px 0px rgba(70, 70, 70, 0.5),
+    -5px 0px 0px 0px rgba(70, 70, 70, 0.5);
+}
+
+/*----------------*/
+
+/* Buttons - Soft Shadows Dark Grey (70,70,70) */
+
+.bsd_bt_1,
+.bsd_bt_1x > * {
+  box-shadow: 0px 2px 4px rgba(70, 70, 70, 0.1);
+}
+
+.bsd_bt_2,
+.bsd_bt_2x > * {
+  box-shadow: 0px 3px 5px rgba(70, 70, 70, 0.15);
+}
+
+.bsd_bt_3,
+.bsd_bt_3x > * {
+  box-shadow: 0px 4px 6px rgba(70, 70, 70, 0.2);
+}
+
+.bsd_bt_4,
+.bsd_bt_4x > * {
+  box-shadow: 0px 6px 8px rgba(70, 70, 70, 0.25);
+}
+
+.bsd_bt_5,
+.bsd_bt_5x > * {
+  box-shadow: 0px 8px 10px rgba(70, 70, 70, 0.3);
+}
+
+/*----------------*/
+
+/* Cards - Soft Shadows Dark Grey (70,70,70) */
+
+.bsd_cd1,
+.bsd_cd1x > * {
+  box-shadow: 0px 1px 3px rgba(70, 70, 70, 0.1);
+}
+
+.bsd_cd2,
+.bsd_cd2x > * {
+  box-shadow: 0px 2px 4px rgba(70, 70, 70, 0.15);
+}
+
+.bsd_cd3,
+.bsd_cd3x > * {
+  box-shadow: 0px 4px 6px rgba(70, 70, 70, 0.2);
+}
+
+.bsd_cd4,
+.bsd_cd4x > * {
+  box-shadow: 0px 6px 10px rgba(70, 70, 70, 0.25);
+}
+
+.bsd_cd5,
+.bsd_cd5x > * {
+  box-shadow: 0px 8px 12px rgba(70, 70, 70, 0.3);
+}
+
+/*============================
+    Cursor Styles (Forced !important)
+============================*/
+
+/* General */
+
+.cs1,
+.cs1x > *:hover {
+  cursor: auto !important;
+}
+
+.cs2,
+.cs2x > *:hover {
+  cursor: none !important;
+}
+
+/* Selection / Text */
+
+.cs3,
+.cs3x > *:hover {
+  cursor: text !important;
+}
+
+.cs4,
+.cs4x > *:hover {
+  cursor: cell !important;
+}
+
+/* Pointer / Action */
+
+.cs5,
+.cs5x > *:hover {
+  cursor: pointer !important;
+}
+
+.cs6,
+.cs6x > *:hover {
+  cursor: alias !important;
+}
+
+.cs7,
+.cs7x > *:hover {
+  cursor: copy !important;
+}
+
+.cs8,
+.cs8x > *:hover {
+  cursor: help !important;
+}
+
+.cs9,
+.cs9x > *:hover {
+  cursor: not-allowed !important;
+}
+
+/* Resize */
+
+.cs10,
+.cs10x > *:hover {
+  cursor: col-resize !important;
+}
+
+.cs11,
+.cs11x > *:hover {
+  cursor: row-resize !important;
+}
+
+.cs12,
+.cs12x > *:hover {
+  cursor: ew-resize !important;
+}
+
+.cs13,
+.cs13x > *:hover {
+  cursor: n-resize !important;
+}
+
+.cs14,
+.cs14x > *:hover {
+  cursor: s-resize !important;
+}
+
+.cs15,
+.cs15x > *:hover {
+  cursor: se-resize !important;
+}
+
+.cs16,
+.cs16x > *:hover {
+  cursor: ne-resize !important;
+}
+
+.cs17,
+.cs17x > *:hover {
+  cursor: sw-resize !important;
+}
+
+.cs18,
+.cs18x > *:hover {
+  cursor: nesw-resize !important;
+}
+
+/* Move / Grab */
+
+.cs19,
+.cs19x > *:hover {
+  cursor: move !important;
+}
+
+.cs20,
+.cs20x > *:hover {
+  cursor: grab !important;
+}
+
+.cs21,
+.cs21x > *:hover {
+  cursor: grabbing !important;
+}
+
+/* Zoom */
+
+.cs22,
+.cs22x > *:hover {
+  cursor: zoom-in !important;
+}
+
+.cs23,
+.cs23x > *:hover {
+  cursor: zoom-out !important;
+}
+
+/* Scroll / Progress */
+
+.cs24,
+.cs24x > *:hover {
+  cursor: all-scroll !important;
+}
+
+.cs25,
+.cs25x > *:hover {
+  cursor: progress !important;
+}
+
+.cs26,
+.cs26x > *:hover {
+  cursor: context-menu !important;
+}
+
+.cs27,
+.cs27x > *:hover {
+  cursor: e-resize !important;
+}
+
+.cs28,
+.cs28x > *:hover {
+  cursor: w-resize !important;
+}
+
+/* ============================ */
+
+/*       Color Variants         */
+
+/* ============================ */
+
+/* ---------- Teal (Soft) ---------- */
+
+.cl1 {
+  color: rgb(0, 128, 128) !important;
+}
+
+.bg1 {
+  background-color: rgb(0, 128, 128) !important;
+  color: rgb(240, 255, 240);
+}
+
+.bg1:hover,
+.bg1x *,
+.bg1x *:hover {
+  background-color: rgb(0, 128, 128) !important;
+  color: rgb(240, 255, 240);
+}
+
+/* ---------- Soft Coral ---------- */
+
+.cl2 {
+  color: rgb(204, 85, 70) !important;
+}
+
+.bg2 {
+  background-color: rgb(204, 85, 70) !important;
+  color: rgb(255, 245, 240);
+}
+
+.bg2:hover,
+.bg2x *,
+.bg2x *:hover {
+  background-color: rgb(204, 85, 70) !important;
+  color: rgb(255, 245, 240);
+}
+
+/* ---------- Muted Gold ---------- */
+
+.cl3 {
+  color: rgb(204, 170, 0) !important;
+}
+
+.bg3 {
+  background-color: rgb(204, 170, 0) !important;
+  color: rgb(50, 50, 50);
+}
+
+.bg3:hover,
+.bg3x *,
+.bg3x *:hover {
+  background-color: rgb(204, 170, 0) !important;
+  color: rgb(50, 50, 50);
+}
+
+/* ---------- Slate Blue ---------- */
+
+.cl4 {
+  color: rgb(96, 125, 139) !important;
+}
+
+.bg4 {
+  background-color: rgb(96, 125, 139) !important;
+  color: rgb(245, 245, 245);
+}
+
+.bg4:hover,
+.bg4x *,
+.bg4x *:hover {
+  background-color: rgb(96, 125, 139) !important;
+  color: rgb(245, 245, 245);
+}
+
+/* ---------- Olive Green ---------- */
+
+.cl5 {
+  color: rgb(128, 128, 0) !important;
+}
+
+.bg5 {
+  background-color: rgb(128, 128, 0) !important;
+  color: rgb(245, 245, 245);
+}
+
+.bg5:hover,
+.bg5x *,
+.bg5x *:hover {
+  background-color: rgb(128, 128, 0) !important;
+  color: rgb(245, 245, 245);
+}
+
+/* ---------- Mauve ---------- */
+
+.cl6 {
+  color: rgb(153, 102, 153) !important;
+}
+
+.bg6 {
+  background-color: rgb(153, 102, 153) !important;
+  color: rgb(245, 245, 245);
+}
+
+.bg6:hover,
+.bg6x *,
+.bg6x *:hover {
+  background-color: rgb(153, 102, 153) !important;
+  color: rgb(245, 245, 245);
+}
+
+/* ---------- Soft Orange ---------- */
+
+.cl7 {
+  color: rgb(204, 102, 51) !important;
+}
+
+.bg7 {
+  background-color: rgb(204, 102, 51) !important;
+  color: rgb(245, 245, 245);
+}
+
+.bg7:hover,
+.bg7x *,
+.bg7x *:hover {
+  background-color: rgb(204, 102, 51) !important;
+  color: rgb(245, 245, 245);
+}
+
+/* ---------- Dusty Pink ---------- */
+
+.cl8 {
+  color: rgb(204, 153, 153) !important;
+}
+
+.bg8 {
+  background-color: rgb(204, 153, 153) !important;
+  color: rgb(50, 50, 50);
+}
+
+.bg8:hover,
+.bg8x *,
+.bg8x *:hover {
+  background-color: rgb(204, 153, 153) !important;
+  color: rgb(50, 50, 50);
+}
+
+/* ---------- Soft Cyan ---------- */
+
+.cl9 {
+  color: rgb(102, 153, 153) !important;
+}
+
+.bg9 {
+  background-color: rgb(102, 153, 153) !important;
+  color: rgb(245, 245, 245);
+}
+
+.bg9:hover,
+.bg9x *,
+.bg9x *:hover {
+  background-color: rgb(102, 153, 153) !important;
+  color: rgb(245, 245, 245);
+}
+
+/* ---------- Muted Brown ---------- */
+
+.cl10 {
+  color: rgb(128, 102, 76) !important;
+}
+
+.bg10 {
+  background-color: rgb(128, 102, 76) !important;
+  color: rgb(245, 245, 245);
+}
+
+.bg10:hover,
+.bg10x *,
+.bg10x *:hover {
+  background-color: rgb(128, 102, 76) !important;
+  color: rgb(245, 245, 245);
+}
+
+/*============================
+    Custom Scrollbar Styles
+============================*/
+
+/* --- Variables de colores --- */
+
+:root {
+  /* Black Theme */
+  --black-bg: rgb(24, 24, 24);
+  --black-track: rgb(12, 12, 12);
+  --black-thumb: rgb(45, 45, 45);
+  --black-thumb-border: rgb(67, 67, 67);
+  --black-btn: rgb(38, 38, 38);
+
+  /* Grey Theme */
+  --grey-bg: rgb(123, 123, 123);
+  --grey-track: rgb(160, 160, 160);
+  --grey-thumb: rgb(90, 90, 90);
+  --grey-thumb-border: rgb(32, 32, 32);
+  --grey-btn: rgb(48, 48, 48);
+}
+
+/* --- Base styles for WebKit browsers --- */
+
+.scl1::-webkit-scrollbar,
+.scl2::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.scl1::-webkit-scrollbar-button,
+.scl2::-webkit-scrollbar-button,
+.scl1::-webkit-scrollbar-corner,
+.scl2::-webkit-scrollbar-corner,
+.scl1::-webkit-resizer,
+.scl2::-webkit-resizer {
+  background: transparent;
+}
+
+/* --- Base styles for Firefox --- */
+
+.scl1,
+.scl2 {
+  scrollbar-width: auto;
+}
+
+/* --- Black Theme --- */
+
+.scl1::-webkit-scrollbar {
+  background: var(--black-bg);
+}
+
+.scl1::-webkit-scrollbar-track,
+.scl1::-webkit-scrollbar-track-piece {
+  background: var(--black-track);
+}
+
+.scl1::-webkit-scrollbar-thumb {
+  background: var(--black-thumb);
+  border: 1px solid var(--black-thumb-border);
+}
+
+.scl1::-webkit-scrollbar-button,
+.scl1::-webkit-scrollbar-corner,
+.scl1::-webkit-resizer {
+  background: var(--black-btn);
+}
+
+.scl1 {
+  scrollbar-color: var(--black-thumb) var(--black-track);
+}
+
+/* --- Grey Theme --- */
+
+.scl2::-webkit-scrollbar {
+  background: var(--grey-bg);
+}
+
+.scl2::-webkit-scrollbar-track,
+.scl2::-webkit-scrollbar-track-piece {
+  background: var(--grey-track);
+}
+
+.scl2::-webkit-scrollbar-thumb {
+  background: var(--grey-thumb);
+  border: 1px solid var(--grey-thumb-border);
+}
+
+.scl2::-webkit-scrollbar-button,
+.scl2::-webkit-scrollbar-corner,
+.scl2::-webkit-resizer {
+  background: var(--grey-btn);
+}
+
+.scl2 {
+  scrollbar-color: var(--grey-thumb) var(--grey-track);
+}
+
+/* --- Thumb Models (border-radius variations) --- */
+
+.sclm1::-webkit-scrollbar-thumb {
+  border: 1px solid transparent;
+}
+
+.sclm2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+/*==============================
+=      LISTA VERTICAL (.liv)    =
+==============================*/
+
+.liv ul,
+.liv ol {
+  list-style: none; /* elimina viñetas o números */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox */
+  flex-direction: column; /* elementos en columna */
+  gap: 10px; /* espacio entre elementos */
+  color: inherit;
+}
+
+.liv ul li,
+.liv ol li {
+  display: flex; /* flex para alinear hijos */
+  align-items: center; /* centra verticalmente contenido */
+  width: 100%;
+  color: inherit;
+}
+
+/*==============================
+=      LISTA HORIZONTAL (.lih)  =
+==============================*/
+
+.lih ul,
+.lih ol {
+  list-style: none; /* elimina viñetas o números */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox para horizontal */
+  flex-direction: row; /* elementos en fila */
+  align-items: center; /* centra verticalmente los hijos */
+  color: inherit;
+}
+
+.lih ul li,
+.lih ol li {
+  display: flex; /* flex para centrar hijos */
+  align-items: center; /* centra verticalmente contenido */
+  color: inherit;
+}
+
+/*============================
+  VARIABLES DE TIEMPO
+============================*/
+
+:root {
+  --t-05: 0.5s;
+  --t-1: 1s;
+  --t-2: 2s;
+}
+
+/*============================
+  KEYFRAMES BASE
+============================*/
+
+/* Rotaciones */
+
+@keyframes rot-r {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rot-l {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Fade */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/*============================
+  1️⃣ ROTACIONES AUTOMÁTICAS
+============================*/
+
+/* Derecha */
+
+.ani_ro_au_05r {
+  animation: rot-r var(--t-05) linear infinite;
+  transform-origin: center;
+}
+
+.ani_ro_au_1r {
+  animation: rot-r var(--t-1) linear infinite;
+  transform-origin: center;
+}
+
+.ani_ro_au_2r {
+  animation: rot-r var(--t-2) linear infinite;
+  transform-origin: center;
+}
+
+/* Izquierda */
+
+.ani_ro_au_05l {
+  animation: rot-l var(--t-05) linear infinite;
+  transform-origin: center;
+}
+
+.ani_ro_au_1l {
+  animation: rot-l var(--t-1) linear infinite;
+  transform-origin: center;
+}
+
+.ani_ro_au_2l {
+  animation: rot-l var(--t-2) linear infinite;
+  transform-origin: center;
+}
+
+/* Pausa en hover */
+
+.ani_ro_au_05r:hover,
+.ani_ro_au_1r:hover,
+.ani_ro_au_2r:hover,
+.ani_ro_au_05l:hover,
+.ani_ro_au_1l:hover,
+.ani_ro_au_2l:hover {
+  animation-play-state: paused;
+}
+
+/*============================
+  2️⃣ FADE AUTOMÁTICOS
+============================*/
+
+/* Fade in */
+
+.ani_fin_au_05 {
+  animation: fade-in var(--t-05) ease-in-out forwards;
+}
+
+.ani_fin_au_1 {
+  animation: fade-in var(--t-1) ease-in-out forwards;
+}
+
+.ani_fin_au_2 {
+  animation: fade-in var(--t-2) ease-in-out forwards;
+}
+
+/* Fade out */
+
+.ani_fout_au_05 {
+  animation: fade-out var(--t-05) ease-in-out forwards;
+}
+
+.ani_fout_au_1 {
+  animation: fade-out var(--t-1) ease-in-out forwards;
+}
+
+.ani_fout_au_2 {
+  animation: fade-out var(--t-2) ease-in-out forwards;
+}
+
+/*============================
+  3️⃣ ESCALAS HOVER
+============================*/
+
+/* AGRANDAR (ma) */
+
+/* Pequeño +5% */
+
+.ani_sc_ma_sm_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+
+.ani_sc_ma_sm_05:hover {
+  transform: scale(1.05);
+}
+
+.ani_sc_ma_sm_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+
+.ani_sc_ma_sm_1:hover {
+  transform: scale(1.05);
+}
+
+.ani_sc_ma_sm_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+
+.ani_sc_ma_sm_2:hover {
+  transform: scale(1.05);
+}
+
+/* Mediano +10% */
+
+.ani_sc_ma_md_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+
+.ani_sc_ma_md_05:hover {
+  transform: scale(1.1);
+}
+
+.ani_sc_ma_md_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+
+.ani_sc_ma_md_1:hover {
+  transform: scale(1.1);
+}
+
+.ani_sc_ma_md_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+
+.ani_sc_ma_md_2:hover {
+  transform: scale(1.1);
+}
+
+/* Grande +15% */
+
+.ani_sc_ma_lg_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+
+.ani_sc_ma_lg_05:hover {
+  transform: scale(1.15);
+}
+
+.ani_sc_ma_lg_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+
+.ani_sc_ma_lg_1:hover {
+  transform: scale(1.15);
+}
+
+.ani_sc_ma_lg_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+
+.ani_sc_ma_lg_2:hover {
+  transform: scale(1.15);
+}
+
+/* REDUCIR (mi) */
+
+/* Pequeño -5% */
+
+.ani_sc_mi_sm_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+
+.ani_sc_mi_sm_05:hover {
+  transform: scale(0.95);
+}
+
+.ani_sc_mi_sm_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+
+.ani_sc_mi_sm_1:hover {
+  transform: scale(0.95);
+}
+
+.ani_sc_mi_sm_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+
+.ani_sc_mi_sm_2:hover {
+  transform: scale(0.95);
+}
+
+/* Mediano -10% */
+
+.ani_sc_mi_md_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+
+.ani_sc_mi_md_05:hover {
+  transform: scale(0.9);
+}
+
+.ani_sc_mi_md_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+
+.ani_sc_mi_md_1:hover {
+  transform: scale(0.9);
+}
+
+.ani_sc_mi_md_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+
+.ani_sc_mi_md_2:hover {
+  transform: scale(0.9);
+}
+
+/* Grande -15% */
+
+.ani_sc_mi_lg_05 {
+  transition: transform var(--t-05) ease-in-out;
+}
+
+.ani_sc_mi_lg_05:hover {
+  transform: scale(0.85);
+}
+
+.ani_sc_mi_lg_1 {
+  transition: transform var(--t-1) ease-in-out;
+}
+
+.ani_sc_mi_lg_1:hover {
+  transform: scale(0.85);
+}
+
+.ani_sc_mi_lg_2 {
+  transition: transform var(--t-2) ease-in-out;
+}
+
+.ani_sc_mi_lg_2:hover {
+  transform: scale(0.85);
+}
+
+/*# sourceMappingURL=main.css.map */
