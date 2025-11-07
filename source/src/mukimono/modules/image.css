@@ -7,65 +7,79 @@
   height: 16px !important;
   display: inline-block;
 }
+
 .img24 {
   height: 24px !important;
   display: inline-block;
 }
+
 .img32 {
   height: 32px !important;
   display: inline-block;
 }
+
 .img48 {
   height: 48px !important;
   display: inline-block;
 }
+
 .img64 {
   height: 64px !important;
   display: inline-block;
 }
+
 .img96 {
   height: 96px !important;
   display: inline-block;
 }
+
 .img128 {
   height: 128px !important;
   display: inline-block;
 }
+
 .img256 {
   height: 256px !important;
   display: inline-block;
 }
 
 /* Hijos directos de imgXXx */
-.img16x > img {
+.img16x>img {
   height: 16px !important;
   width: auto;
 }
-.img24x > img {
+
+.img24x>img {
   height: 24px !important;
   width: auto;
 }
-.img32x > img {
+
+.img32x>img {
   height: 32px !important;
   width: auto;
 }
-.img48x > img {
+
+.img48x>img {
   height: 48px !important;
   width: auto;
 }
-.img64x > img {
+
+.img64x>img {
   height: 64px !important;
   width: auto;
 }
-.img96x > img {
+
+.img96x>img {
   height: 96px !important;
   width: auto;
 }
-.img128x > img {
+
+.img128x>img {
   height: 128px !important;
   width: auto;
 }
-.img256x > img {
+
+.img256x>img {
   height: 256px !important;
   width: auto;
 }
@@ -75,30 +89,37 @@
   height: 16px !important;
   width: auto;
 }
+
 .img24xx img {
   height: 24px !important;
   width: auto;
 }
+
 .img32xx img {
   height: 32px !important;
   width: auto;
 }
+
 .img48xx img {
   height: 48px !important;
   width: auto;
 }
+
 .img64xx img {
   height: 64px !important;
   width: auto;
 }
+
 .img96xx img {
   height: 96px !important;
   width: auto;
 }
+
 .img128xx img {
   height: 128px !important;
   width: auto;
 }
+
 .img256xx img {
   height: 256px !important;
   width: auto;

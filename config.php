@@ -3,8 +3,8 @@
 return [
     'production' => false,
     'baseUrl' => '',
-    'title' => 'MUKIMONO Project',
-    'description' => 'Website description for the MUKIMONO project, detailing system architecture.',
+    'title' => 'Mukimono css',
+    'description' => 'Website description for the Mukimono css, detailing system architecture.',
     'collections' => [], 
 
     /*

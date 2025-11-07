@@ -13,7 +13,7 @@
 
         {{-- 1. Cabecera de Página (sin clases) --}}
         <header>
-            @include('_layouts.navbar')
+            @include('_layouts.navbar_top')
             <div class="pd12">
                    <h1>
                 Soporte y Colaboración

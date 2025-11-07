@@ -1,5 +1,6 @@
 @import url("./reset.css");
-@import url("./theme.css");
+@import url("./variables.css");
+@import url("./modules/theme.css");
 @import url("./modules/button.css");
 @import url("./modules/panel.css");
 @import url("./modules/alert.css");
