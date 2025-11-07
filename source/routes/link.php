@@ -8,12 +8,43 @@
 
 // Define el listado completo de utilidades para asegurar la consistencia.
 $mukimonoUtilityKeys = [
-    'home', 'alert', 'animation', 'blur', 'border', 'button', 'color', 
-    'container', 'containerflex', 'cursor', 'dropdown', 'flex', 'font', 
-    'height', 'hide', 'image', 'input', 'link', 'list', 
-    'margin', 'menu', 'notes', 'overflow', 'padding', 'page', 
-    'panel', 'position', 'responsive', 'round', 'scroll', 'shadow', 
-    'show', 'textalign', 'theme', 'verticalalign', 'width', 'zindex',
+    'home',
+    'alert',
+    'animation',
+    'blur',
+    'border',
+    'button',
+    'color',
+    'container',
+    'containerflex',
+    'cursor',
+    'dropdown',
+    'flex',
+    'font',
+    'height',
+    'hide',
+    'image',
+    'input',
+    'link',
+    'list',
+    'margin',
+    'menu',
+    'notes',
+    'overflow',
+    'padding',
+    'page',
+    'panel',
+    'position',
+    'responsive',
+    'round',
+    'scroll',
+    'shadow',
+    'show',
+    'textalign',
+    'theme',
+    'verticalalign',
+    'width',
+    'zindex',
 ];
 
 // Mapeo manual o generado de las utilidades a nombres e íconos legibles.
@@ -52,7 +83,7 @@ $mukimonoUtilities = [
     'shadow' => ['name' => 'Shadows', 'icon' => 'cloud'],
     'show' => ['name' => 'Show', 'icon' => 'plus-circle'],
     'textalign' => ['name' => 'Text Align', 'icon' => 'align-left'],
-    'theme' => ['name' => 'Themes', 'icon' => 'brush'], // Nuevo elemento agregado
+    'theme' => ['name' => 'Themes', 'icon' => 'brush'],
     'verticalalign' => ['name' => 'Vertical Align', 'icon' => 'exchange-alt'],
     'width' => ['name' => 'Width', 'icon' => 'arrows-alt-h'],
     'zindex' => ['name' => 'Z-Index', 'icon' => 'layer-group'],
@@ -66,15 +97,17 @@ foreach ($mukimonoUtilityKeys as $key) {
     $secondaryLinks[] = [
         'name' => $data['name'],
         // Construye la ruta /guide/{key}
-        'route' => '/guide/' . $key, 
+        // Nota: Si usas rutas con nombre (ej. Laravel), esto debería ser un nombre de ruta.
+        // Asumiendo rutas basadas en path para Jigsaw:
+        'route' => '/guide/' . $key,
         'icon' => $data['icon'],
     ];
 }
 
 
 // Define el main configuration object containing links and assets.
-$NAV_LINKS = (object) [
-    
+$NAV_LINKS = [
+
     /**
      * Site Asset Paths (Images, Icons, CSS, and JS).
      */
@@ -83,14 +116,14 @@ $NAV_LINKS = (object) [
         'logo'          => '/assets/images/logo.png',
         'logotype'      => '/assets/images/logotype.png',
         'favicon'       => '/assets/images/logo.ico',
-        
+
         // Rutas específicas para el tutorial Mukimono CSS
         'tutorial_images'   => '/assets/images/mukimono-tutorial/',
-        
+
         'compiled_assets' => [
             'css' => '/assets/build/css/main.css',
             'js'  => '/assets/build/js/main.js',
-            'version' => time(), 
+            'version' => time(),
         ],
     ],
 
@@ -129,4 +162,9 @@ $NAV_LINKS = (object) [
     'link_footer' => [
         // Footer routes would be added here.
     ],
+];
+
+// **CORRECCIÓN CLAVE:** El archivo DEBE devolver un array que contiene NAV_LINKS.
+return [
+    'NAV_LINKS' => $NAV_LINKS,
 ];

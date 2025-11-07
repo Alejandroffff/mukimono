@@ -1,28 +1,23 @@
 <?php
 
-return [
+// 1. Cargamos el array devuelto por link.php.
+// CORRECCIÓN: La ruta es correcta para tu estructura (source/routes/link.php)
+$link_data = require(__DIR__ . '/source/routes/link.php');
+
+$base_config = [
     'production' => false,
     'baseUrl' => '',
     'title' => 'Mukimono css',
     'description' => 'Website description for the Mukimono css, detailing system architecture.',
     'collections' => [], 
 
-    /*
-    |--------------------------------------------------------------------------
-    | Helper Simplificado para la Navegación Activa
-    |--------------------------------------------------------------------------
-    | Verifica si el path de la página actual coincide exactamente o comienza con
-    | el path de prueba (para páginas anidadas).
-    */
     'isActive' => function ($page, $path) {
-        // Obtenemos el path limpio de la página actual (ej: 'contact' o 'home').
         $currentPath = trim($page->getPath(), '/');
-        // Limpiamos el path de prueba (ej: 'contact').
         $testPath = trim($path, '/');
         
-        // Comprobación simple de coincidencia:
-        // 1. Coincidencia exacta (ej: 'contact' === 'contact')
-        // 2. Coincidencia de inicio (ej: 'blog/post' comienza con 'blog')
         return ($currentPath === $testPath) || (strpos($currentPath, $testPath . '/') === 0);
     },
 ];
+
+// Fusionamos la configuración base con los datos de navegación
+return array_merge($base_config, $link_data);
