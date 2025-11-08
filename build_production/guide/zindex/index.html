@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/guide/zindex">
+    <meta name="description" content="Website description for the Mukimono css, detailing system architecture.">
+    <title>Mukimono css</title>
+
+    
+    <link rel="icon" type="image/x-icon"
+        href="/assets/images/logo.ico">
+    <link rel="shortcut icon" href="/assets/images/logo.ico"
+        type="image/x-icon">
+
+    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40wLw2+Xp0B26aVz8/T4j4fA9bJzI1l0D9b/0t0x0qE+I3a4E1jG0Q2F0vG6jN9tY+R4jP6hQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet"
+        href="/assets/build/css/main.css?v=1762589379">
+</head>
+
+<body class="mukimono tma_d1">
+    <div class="fx2">
+        <div class="pg1440 h100vh of1">
+            <div class="h100vh">
+                    <header>
+        <nav class="tma_d2 pd8lr fx13 ">
+    <div>
+        
+        <a href="/" class="lb48">
+            
+            <img src="/assets/images/logotype.png"
+                alt="Mukimono Css Logo" class="img24">
+        </a>
+    </div>
+
+    <div>
+
+        
+        
+        
+        <div class="lih">
+            <ul id="navbar_main_fixed_up" class="tma_d7xhv">
+
+                
+                
+                <li>
+                    <a  href="/"
+                        class="lb48 ">
+                        Home
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a  href="/contact"
+                        class=" lb48 ">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <button type="button" class="bt48 wi48 tma_d7hv">
+            ☰
+        </button>
+    </div>
+</nav>
+        <div class="pd12">
+            <h1>Índice Z (`zi`)</h1>
+            <p>
+                Clases para aplicar **`z-index`** y controlar la posición de los elementos en el eje Z (profundidad). Útil
+                para modales, *tooltips*, *popups* y menús fijos.
+            </p>
+        </div>
+    </header>
+
+    <main class="pd12">
+
+        <h2>Escala de Superposición</h2>
+        <p class="mg6">La escala de **`.zi1` a `.zi10`** permite definir el orden de apilamiento. Un número mayor
+            significa que el elemento estará más cerca del usuario.</p>
+
+        <div class="mg6x pd6 bd1 tma_d3">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clase</th>
+                        <th>Propiedad CSS</th>
+                        <th>Uso Común</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>**.zi1**</td>
+                        <td>`z-index: 1`</td>
+                        <td>Elementos en la capa base (ej: *cards*).</td>
+                    </tr>
+                    <tr>
+                        <td>**.zi5**</td>
+                        <td>`z-index: 5`</td>
+                        <td>Menús fijos (*sticky*) o *tooltips*.</td>
+                    </tr>
+                    <tr>
+                        <td>**.zi8**</td>
+                        <td>`z-index: 8`</td>
+                        <td>Barras de navegación superiores (*navbar*).</td>
+                    </tr>
+                    <tr>
+                        <td>**.zi10**</td>
+                        <td>`z-index: 10`</td>
+                        <td>Elementos críticos o *modals* (capa superior).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mg6x bd1 tma_d5 pd6" style="position: relative; height: 100px;">
+            
+            <div class="zi1 pd3 mg3 tma_d8" style="position: absolute; top: 30px; left: 10px; width: 100px; height: 50px;">
+                <p class="mg0 fs12">.zi1 (Base)</p>
+            </div>
+
+            <div class="zi5 pd3 mg3 tma_d9" style="position: absolute; top: 10px; left: 50px; width: 100px; height: 50px;">
+                <p class="mg0 fs12">.zi5 (Medio)</p>
+            </div>
+
+            <div class="zi10 pd3 mg3 tma_d10" style="position: absolute; top: 5px; left: 90px; width: 100px; height: 50px;">
+                <p class="mg0 fs12">.zi10 (Superior)</p>
+            </div>
+        </div>
+
+    </main>
+            </div>
+            <footer class="pd12tb tma_d3">
+    <div class="fx10">
+        
+        
+        <div class="pd12 liv">
+            
+            <img src="/assets/images/logotype.png" 
+                 alt="Logotipo Mukimono" 
+                 class="h40 mg6b">
+            <h3 class="fs22">Mukimono Css</h3>
+            <p class="fs14">
+                Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
+            </p>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Navegación</h3>
+            
+            <ul class="tma_d7xhv">
+                            </ul>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Contacto</h3>
+            <p class="fs14">Email: info@mukimono.com</p>
+            
+            <p>Soporte: +507 555-5555</p> 
+        </div>
+
+    </div>
+
+    
+    <div class="pd12 tac">
+        <p class="fs14">
+            &copy; 2025 MUKIMONO. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>        </div>
+    </div>
+
+    
+    <script defer
+        src="/assets/build/js/main.js?v=1762589379">
+    </script>
+</body>
+
+</html>

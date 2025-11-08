@@ -29,6 +29,7 @@
   overflow-wrap: break-word;
   vertical-align: top;
 }
+
 .rps66 {
   width: 66.66%;
 }
@@ -40,6 +41,7 @@
   overflow-wrap: break-word;
   vertical-align: top;
 }
+
 .rps75 {
   width: 75%;
   display: inline-block;
@@ -54,18 +56,21 @@
   overflow-wrap: break-word;
   vertical-align: top;
 }
+
 .rps40 {
   width: 40%;
   display: inline-block;
   overflow-wrap: break-word;
   vertical-align: top;
 }
+
 .rps60 {
   width: 60%;
   display: inline-block;
   overflow-wrap: break-word;
   vertical-align: top;
 }
+
 .rps80 {
   width: 80%;
   display: inline-block;

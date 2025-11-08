@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/guide/flex">
+    <meta name="description" content="Website description for the Mukimono css, detailing system architecture.">
+    <title>Mukimono css</title>
+
+    
+    <link rel="icon" type="image/x-icon"
+        href="/assets/images/logo.ico">
+    <link rel="shortcut icon" href="/assets/images/logo.ico"
+        type="image/x-icon">
+
+    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40wLw2+Xp0B26aVz8/T4j4fA9bJzI1l0D9b/0t0x0qE+I3a4E1jG0Q2F0vG6jN9tY+R4jP6hQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet"
+        href="/assets/build/css/main.css?v=1762589379">
+</head>
+
+<body class="mukimono tma_d1">
+    <div class="fx2">
+        <div class="pg1440 h100vh of1">
+            <div class="h100vh">
+                    
+    <header>
+        <nav class="tma_d2 pd8lr fx13 ">
+    <div>
+        
+        <a href="/" class="lb48">
+            
+            <img src="/assets/images/logotype.png"
+                alt="Mukimono Css Logo" class="img24">
+        </a>
+    </div>
+
+    <div>
+
+        
+        
+        
+        <div class="lih">
+            <ul id="navbar_main_fixed_up" class="tma_d7xhv">
+
+                
+                
+                <li>
+                    <a  href="/"
+                        class="lb48 ">
+                        Home
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a  href="/contact"
+                        class=" lb48 ">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <button type="button" class="bt48 wi48 tma_d7hv">
+            ☰
+        </button>
+    </div>
+</nav>
+        <div class="pd12">
+            <h1>Flexbox (`fx` & `ifx`) - Documentación Exhaustiva</h1>
+            <p>
+                A continuación, se muestra un ejemplo individual para **cada clase** de utilidad Flexbox (`fx` para
+                contenedores, `ifx` para ítems).
+            </p>
+        </div>
+    </header>
+
+    <main class="pd12">
+        <div class="mg6x rd3x bd1 tma_d1 pd6">
+
+            ## Contenedores Flex (`fx`)
+            <p class="mg6">La clase base para todos los ejemplos es **`.fx`**.</p>
+
+            ---
+
+            ### ➡️ Flex Direction
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx1">
+                <p class="mg3 w100p">.fx1 (row)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx2">
+                <p class="mg3 w100p">.fx2 (row-reverse)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx3 h128 fx3">
+                <p class="mg3 w100p">.fx3 (column) - h128</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx3 h128 fx4">
+                <p class="mg3 w100p">.fx4 (column-reverse) - h128</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+
+            ---
+
+            ### ➿ Flex Wrap
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx5 w200x">
+                <p class="mg3 w100p">.fx5 (nowrap)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class=" fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx6 w200x">
+                <p class="mg3 w100p">.fx6 (wrap)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class=" fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx7 w200x">
+                <p class="mg3 w100p">.fx7 (wrap-reverse)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+
+            ---
+
+            ### ↔️ Justify Content
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx8">
+                <p class="mg3 w100p">.fx8 (flex-start)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx9">
+                <p class="mg3 w100p">.fx9 (flex-end)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx10">
+                <p class="mg3 w100p">.fx10 (center)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx11">
+                <p class="mg3 w100p">.fx11 (space-around)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx12">
+                <p class="mg3 w100p">.fx12 (space-evenly)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx13">
+                <p class="mg3 w100p">.fx13 (space-between)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+
+            ---
+
+            ### ↕️ Align Items
+            <p class="mg6">Contenedor: h128. Los ítems se estiran verticalmente en `fx14`.</p>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h128 fx14">
+                <p class="mg3 w100p">.fx14 (stretch)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h128 fx15">
+                <p class="mg3 w100p">.fx15 (baseline)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h128 fx16">
+                <p class="mg3 w100p">.fx16 (center)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h128 fx17">
+                <p class="mg3 w100p">.fx17 (flex-start)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h128 fx18">
+                <p class="mg3 w100p">.fx18 (flex-end)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+
+            ---
+
+            ### 🧱 Align Content
+            <p class="mg6">Requiere `flex-wrap` (`fx6` está incluido en $ac\_container) y altura fija
+                (h256).</p>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h256 w350x fx6 fx19">
+                <p class="mg3 w100p">.fx19 (stretch)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h256 w350x fx6 fx20">
+                <p class="mg3 w100p">.fx20 (center)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h256 w350x fx6 fx21">
+                <p class="mg3 w100p">.fx21 (flex-start)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h256 w350x fx6 fx22">
+                <p class="mg3 w100p">.fx22 (flex-end)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h256 w350x fx6 fx23">
+                <p class="mg3 w100p">.fx23 (space-around)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h256 w350x fx6 fx24">
+                <p class="mg3 w100p">.fx24 (space-evenly)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h256 w350x fx6 fx25">
+                <p class="mg3 w100p">.fx25 (space-between)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+
+            ---
+
+            ### 📈 Grow / Shrink / Basis (Contenedor)
+            <p class="mg6">Estas clases (`fx26` a `fx31`) aplican `display: flex` y la propiedad flex al *propio
+                contenedor*, no a los hijos.</p>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx26 w100p">
+                <p class="mg3 w100p">.fx26 (flex-grow: 1)</p>Contenedor que crece.
+            </div>
+
+            ---
+
+            ### 📐 Align Self (Contenedor)
+            <p class="mg6">Estas clases (`fx32` a `fx37`) aplican `display: flex` y `align-self` al *propio contenedor*,
+                útil dentro de otro flex padre.</p>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx35 pd3">.fx35 (align-self: center)</div>
+
+            ---
+
+            ### 🔢 Order (Contenedor)
+            <p class="mg6">Estas clases (`fx38` a `fx41`) aplican `display: flex` y `order` al *propio contenedor*.</p>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx41 pd3">.fx41 (order: 3)</div>
+
+            ---
+
+            ### 🏞️ Gap
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx42">
+                <p class="mg3 w100p">.fx42 (gap: 0.25rem)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx43">
+                <p class="mg3 w100p">.fx43 (gap: 0.5rem)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx44">
+                <p class="mg3 w100p">.fx44 (gap: 1rem)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 fx45">
+                <p class="mg3 w100p">.fx45 (gap: 2rem)</p><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">1</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">2</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">3</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">4</div><div class="pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">5</div>
+            </div>
+
+            ---
+            ---
+
+            ## Ítems Flex (`ifx`)
+            <p class="mg6">Utilidades aplicables a los elementos hijos dentro del contenedor Flex. La clase base para los
+                hijos es **`.ifx`**.</p>
+            <p class="mg6">El contenedor padre para estos ejemplos utiliza **`.fx`**.</p>
+
+            ### 📏 Grow
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4">
+                <div class="ifx ifx1 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx1 (Grow 0)</div>
+                <div class="ifx ifx2 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx2 (Grow 1)</div>
+                <div class="ifx ifx3 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx3 (Grow 2)</div>
+            </div>
+
+            ### ⬇️ Shrink
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 w300x">
+                <div class="ifx ifx4 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx4 (Shrink 0)</div>
+                <div class="ifx ifx5 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx5 (Shrink 1)</div>
+                <div class="ifx pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">Default (Shrink 1)</div>
+            </div>
+
+            ### 📐 Basis
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4">
+                <div class="ifx ifx6 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx6 (auto)</div>
+                <div class="ifx ifx7 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx7 (0)</div>
+                <div class="ifx ifx8 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx8 (25%)</div>
+                <div class="ifx ifx9 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx9 (50%)</div>
+                <div class="ifx ifx10 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx10 (75%)</div>
+                <div class="ifx ifx11 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx11 (100%)</div>
+            </div>
+
+            ### 🔗 Flex (Abreviada)
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4">
+                <div class="ifx ifx12 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx12 (0 1 auto)</div>
+                <div class="ifx ifx13 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx13 (1 1 auto)</div>
+                <div class="ifx ifx14 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx14 (1 0 0)</div>
+                <div class="ifx ifx15 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx15 (2 1 0)</div>
+            </div>
+
+            ### ⬆️ Align Self
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4 h128 fx16">
+                <p class="mg3 w100p">Contenedor en fx16 (Align Items Center) - h128</p>
+                
+                <div class="ifx ifx16 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm h32">ifx16 (auto)</div>
+                <div class="ifx ifx17 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx17 (stretch)</div>
+                <div class="ifx ifx18 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm h32">ifx18 (flex-start)</div>
+                <div class="ifx ifx19 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm h32">ifx19 (flex-end)</div>
+                <div class="ifx ifx20 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm h32">ifx20 (center)</div>
+                <div class="ifx ifx21 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm h32">ifx21 (baseline)</div>
+            </div>
+
+            ### #️⃣ Order
+            <div class="fx fx43 mg6 bd1 pd6 rd2 tma_d4">
+                <div class="ifx ifx22 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx22 (Order 0)</div>
+                <div class="ifx ifx23 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx23 (Order 1)</div>
+                <div class="ifx ifx24 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx24 (Order 2)</div>
+                <div class="ifx ifx25 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx25 (Order 3)</div>
+                <div class="ifx ifx26 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx26 (Order 4)</div>
+                <div class="ifx ifx27 pd3 mg1 rd2 tma_d7 w32x fx10 fx16 tx-sm">ifx27 (Order 5)</div>
+            </div>
+
+        </div>
+    </main>
+            </div>
+            <footer class="pd12tb tma_d3">
+    <div class="fx10">
+        
+        
+        <div class="pd12 liv">
+            
+            <img src="/assets/images/logotype.png" 
+                 alt="Logotipo Mukimono" 
+                 class="h40 mg6b">
+            <h3 class="fs22">Mukimono Css</h3>
+            <p class="fs14">
+                Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
+            </p>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Navegación</h3>
+            
+            <ul class="tma_d7xhv">
+                            </ul>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Contacto</h3>
+            <p class="fs14">Email: info@mukimono.com</p>
+            
+            <p>Soporte: +507 555-5555</p> 
+        </div>
+
+    </div>
+
+    
+    <div class="pd12 tac">
+        <p class="fs14">
+            &copy; 2025 MUKIMONO. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>        </div>
+    </div>
+
+    
+    <script defer
+        src="/assets/build/js/main.js?v=1762589379">
+    </script>
+</body>
+
+</html>

@@ -1,48 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="canonical" href="/fallback">
-        <meta name="description" content="La página que buscas no se ha podido localizar.">
-        <title>Error 404 | Página No Encontrada</title>
-        
-        
-        <link rel="stylesheet" href="/assets/build/css/main.css">
-        <script defer src="/assets/build/js/main.js"></script>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/fallback">
+    <meta name="description" content="La página que buscas no se ha podido localizar.">
+    <title>Error 404 | Página No Encontrada</title>
+
     
+    <link rel="icon" type="image/x-icon"
+        href="/assets/images/logo.ico">
+    <link rel="shortcut icon" href="/assets/images/logo.ico"
+        type="image/x-icon">
+
     
-    <body class="mukimono tma_pri">
-        <div class="fx2">
-            <div class="pg1440">
-            
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40wLw2+Xp0B26aVz8/T4j4fA9bJzI1l0D9b/0t0x0qE+I3a4E1jG0Q2F0vG6jN9tY+R4jP6hQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet"
+        href="/assets/build/css/main.css?v=1762589379">
+</head>
+
+<body class="mukimono tma_d1">
+    <div class="fx2">
+        <div class="pg1440 h100vh of1">
+            <div class="h100vh">
+                    
     <div class="pd12 pd12x">
         
-        <div>  
-            <h1>404</h1>
-            <p>Página No Encontrada</p>
-            <p>Lo sentimos, la URL que intentas acceder no existe o ha sido movida.</p>
-        </div>
-        
-      
+        <header>
+            <nav id="navbar_main_top" class="tma_d2 pd8lr pst9" title="Main Navigation Bar">
+    <div class="fx13">
+
         
         <div>
+            <a href="/" class="lb48" title="Go to Home Page">
+                
+                <img src="/assets/images/logotype.png"
+                    alt="Mukimono Css Logo" class="img24" title="Mukimono CSS Logotype">
+            </a>
+        </div>
+
+        
+        <div class="fx1">
+
             
+            <div id="navbar_main_top_hor" class="lih">
+                <ul class="tma_d7xhv mg0 pd0" title="Main Navigation Links">
+
+                    
+                    <li>
+                        <a href="/"
+                            class="lb48 pd8lr  "
+                            title="Home Page">
+                            <i class="material-icons mg6r">home</i>
+                            Inicio
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/contact"
+                            class="lb48 pd8lr  "
+                            title="Contact Us">
+                            <i class="material-icons mg6r">phone</i>
+                            Contacto
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/guide/home"
+                            class="lb48 pd8lr  "
+                            title="Mukimono CSS Documentation Guide">
+                            <i class="material-icons mg6r">book</i>
+                            Guía
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            
+            
+            <div id="navbar_main_top_fixed" class="liv pst4 h100vh of1 tma_d5 mn280" style="display: none;">
+
+                
+                <button onclick="navbar_main_top_fixed_show('navbar_main_top_fixed')" type="button"
+                    class="bt48 wi48 tma_d7hv" id="navbar_main_top_button_close" aria-expanded="false"
+                    aria-controls="navbar_main_top_fixed" title="Toggle Navigation Menu">
+                    
+                    <i class="material-icons mg6r">close</i>
+                </button>
+
+                <ul class="tma_d7xhv mg0 pd0" title="Main Navigation Links">
+
+                    
+                    <li>
+                        <a href="/"
+                            class="lb48 pd8lr w100p fx1 fx8 "
+                            title="Home Page">
+                            <i class="material-icons mg6r">home</i>
+                            Inicio
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/contact"
+                            class="lb48 pd8lr w100p fx1 fx8 "
+                            title="Contact Us">
+                            <i class="material-icons mg6r">phone</i>
+                            Contacto
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/guide/home"
+                            class="lb48 pd8lr w100p fx1 fx8 "
+                            title="Mukimono CSS Documentation Guide">
+                            <i class="material-icons mg6r">book</i>
+                            Guía
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            
+            <div>
+                <button onclick="navbar_main_top_fixed_show('navbar_main_top_fixed')" type="button"
+                    class="bt48 wi48 tma_d7hv" id="navbar_main_top_button_menu" aria-expanded="false"
+                    aria-controls="navbar_main_top_fixed" title="Toggle Navigation Menu">
+                    <i class="material-icons mg6r">menu</i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    /**
+     * Alterna la visibilidad (muestra u oculta) de un elemento HTML por su ID.
+     * @param {string} id - El ID del elemento a alternar.
+     */
+    const navbar_main_top_fixed_show = id => {
+        const el = document.getElementById(id);
+        if (el) {
+            // Alterna entre 'none' y 'block' (o 'flex', si es necesario, 
+            // pero 'block' funciona bien para el menú fijo).
+            el.style.display = (el.style.display === 'none' ? 'block' : 'none');
+        }
+    };
+</script>
+            <div>
+                <h1>404</h1>
+                <p>Página No Encontrada</p>
+                <p>Lo sentimos, la URL que intentas acceder no existe o ha sido movida.</p>
+            </div>
+
+        </header>
+
+
+        
+        <div>
+
             <a href="/" class="lb32">
                 Volver a Inicio
             </a>
-            
+
         </div>
     </div>
-
-            
-            <footer class="pd12tb">
-    <div class="fx2 fx10">
+            </div>
+            <footer class="pd12tb tma_d3">
+    <div class="fx10">
         
         
         <div class="pd12 liv">
+            
+            <img src="/assets/images/logotype.png" 
+                 alt="Logotipo Mukimono" 
+                 class="h40 mg6b">
             <h3 class="fs22">Mukimono Css</h3>
             <p class="fs14">
                 Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
@@ -52,23 +205,17 @@
         
         <div class="pd12 liv">
             <h3 class="fs22">Navegación</h3>
-            <ul>
-                <li>
-                    
-                    <a href="/" class="lb40">Inicio</a>
-                </li>
-                <li>
-                    
-                    <a href="/contacto"  class="lb40">Contacto</a>
-                </li>
-            </ul>
+            
+            <ul class="tma_d7xhv">
+                            </ul>
         </div>
         
         
         <div class="pd12 liv">
             <h3 class="fs22">Contacto</h3>
             <p class="fs14">Email: info@mukimono.com</p>
-            <p>Soporte: +507 555-5555</p>
+            
+            <p>Soporte: +507 555-5555</p> 
         </div>
 
     </div>
@@ -79,7 +226,13 @@
             &copy; 2025 MUKIMONO. Todos los derechos reservados.
         </p>
     </div>
-</footer>            </div> 
-        </div>
-    </body>
+</footer>        </div>
+    </div>
+
+    
+    <script defer
+        src="/assets/build/js/main.js?v=1762589379">
+    </script>
+</body>
+
 </html>

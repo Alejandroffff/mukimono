@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/guide/button">
+    <meta name="description" content="Website description for the Mukimono css, detailing system architecture.">
+    <title>Mukimono css</title>
+
+    
+    <link rel="icon" type="image/x-icon"
+        href="/assets/images/logo.ico">
+    <link rel="shortcut icon" href="/assets/images/logo.ico"
+        type="image/x-icon">
+
+    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40wLw2+Xp0B26aVz8/T4j4fA9bJzI1l0D9b/0t0x0qE+I3a4E1jG0Q2F0vG6jN9tY+R4jP6hQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet"
+        href="/assets/build/css/main.css?v=1762589379">
+</head>
+
+<body class="mukimono tma_d1">
+    <div class="fx2">
+        <div class="pg1440 h100vh of1">
+            <div class="h100vh">
+                    <header>
+        <nav class="tma_d2 pd8lr fx13 ">
+    <div>
+        
+        <a href="/" class="lb48">
+            
+            <img src="/assets/images/logotype.png"
+                alt="Mukimono Css Logo" class="img24">
+        </a>
+    </div>
+
+    <div>
+
+        
+        
+        
+        <div class="lih">
+            <ul id="navbar_main_fixed_up" class="tma_d7xhv">
+
+                
+                
+                <li>
+                    <a  href="/"
+                        class="lb48 ">
+                        Home
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a  href="/contact"
+                        class=" lb48 ">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <button type="button" class="bt48 wi48 tma_d7hv">
+            ☰
+        </button>
+    </div>
+</nav>
+        <div class="pd12">
+            <h1>Botones (`bt`)</h1>
+            <p>
+                Clases para definir tamaños de botón (desde **16px** hasta **128px** de altura) y resetear estilos base.
+            </p>
+        </div>
+    </header>
+
+    <main class="pd12">
+        <h2>Tamaños de Botón Individuales (bt16 a bt128)</h2>
+        <p class="mg6">Muestra la escala completa de botones aplicando la clase directamente a la etiqueta.</p>
+
+        <div class="mg6x pd6">
+            
+            <button class="bt16 mg6 pd6 tma_d5">.bt16 (16px)</button>
+            <button class="bt24 mg6 pd6 tma_d5">.bt24 (24px)</button>
+            <button class="bt32 mg6 pd6 tma_d5">.bt32 (32px)</button>
+            <button class="bt40 mg6 pd6 tma_d5">.bt40 (40px)</button>
+            <button class="bt48 mg6 pd6 tma_d5">.bt48 (48px)</button>
+            
+            
+            <button class="bt56 mg6 pd6 tma_d5">.bt56 (56px)</button>
+            <button class="bt64 mg6 pd6 tma_d5">.bt64 (64px)</button>
+            <button class="bt72 mg6 pd6 tma_d5">.bt72 (72px)</button>
+            <button class="bt80 mg6 pd6 tma_d5">.bt80 (80px)</button>
+
+            
+            <button class="bt96 mg6 pd6 tma_d5">.bt96 (96px)</button>
+            <button class="bt112 mg6 pd6 tma_d5">.bt112 (112px)</button>
+            <button class="bt128 mg6 pd6 tma_d5">.bt128 (128px)</button>
+        </div>
+
+        ---
+
+        <h2>Aplicación a Hijos Directos (`.btNx`)</h2>
+        <p class="mg6">El contenedor principal establece el tamaño en sus hijos directos (`> button`).</p>
+
+        <div class="mg6x pd6 bd1 tma_d2">
+            <h3 class="mg6">Contenedor .bt32x</h3>
+            <div class="bt32x mg6">
+                <button class="bt32 mg6 pd6 tma_d5">Botón Principal (32px)</button>
+                <button class="bt32 mg6 pd6 tma_d9">Botón Éxito (32px)</button>
+            </div>
+        </div>
+
+        ---
+
+        <h2>Aplicación a Descendientes Profundos (`.btNxx`)</h2>
+        <p class="mg6">El contenedor aplica el tamaño a cualquier descendiente `<button>`.</p>
+        
+        <div class="mg6x pd6 bd1 tma_d3">
+            <h3 class="mg6">Contenedor .bt48xx (Ejemplo Anidado)</h3>
+            <div class="bt48xx mg6">
+                <p>Botón envuelto:</p>
+                <div class="mg6">
+                    <button class="bt48 pd6 tma_d5">Iniciar (48px)</button>
+                </div>
+            </div>
+        </div>
+    </main>
+            </div>
+            <footer class="pd12tb tma_d3">
+    <div class="fx10">
+        
+        
+        <div class="pd12 liv">
+            
+            <img src="/assets/images/logotype.png" 
+                 alt="Logotipo Mukimono" 
+                 class="h40 mg6b">
+            <h3 class="fs22">Mukimono Css</h3>
+            <p class="fs14">
+                Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
+            </p>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Navegación</h3>
+            
+            <ul class="tma_d7xhv">
+                            </ul>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Contacto</h3>
+            <p class="fs14">Email: info@mukimono.com</p>
+            
+            <p>Soporte: +507 555-5555</p> 
+        </div>
+
+    </div>
+
+    
+    <div class="pd12 tac">
+        <p class="fs14">
+            &copy; 2025 MUKIMONO. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>        </div>
+    </div>
+
+    
+    <script defer
+        src="/assets/build/js/main.js?v=1762589379">
+    </script>
+</body>
+
+</html>

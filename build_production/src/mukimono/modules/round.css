@@ -8,87 +8,87 @@
 
 /* rd0 → border-radius: 0px */
 .rd0,
-.rd0x > * {
+.rd0x>* {
   border-radius: 0px !important;
 }
 
 .rd1,
-.rd1x > * {
+.rd1x>* {
   border-radius: 1px !important;
 }
 
 .rd2,
-.rd2x > * {
+.rd2x>* {
   border-radius: 2px !important;
 }
 
 .rd3,
-.rd3x > * {
+.rd3x>* {
   border-radius: 3px !important;
 }
 
 .rd4,
-.rd4x > * {
+.rd4x>* {
   border-radius: 4px !important;
 }
 
 .rd5,
-.rd5x > * {
+.rd5x>* {
   border-radius: 5px !important;
 }
 
 .rd6,
-.rd6x > * {
+.rd6x>* {
   border-radius: 6px !important;
 }
 
 .rd7,
-.rd7x > * {
+.rd7x>* {
   border-radius: 7px !important;
 }
 
 .rd8,
-.rd8x > * {
+.rd8x>* {
   border-radius: 8px !important;
 }
 
 .rd9,
-.rd9x > * {
+.rd9x>* {
   border-radius: 9px !important;
 }
 
 .rd10,
-.rd10x > * {
+.rd10x>* {
   border-radius: 10px !important;
 }
 
 .rd11,
-.rd11x > * {
+.rd11x>* {
   border-radius: 11px !important;
 }
 
 .rd12,
-.rd12x > * {
+.rd12x>* {
   border-radius: 12px !important;
 }
 
 .rd13,
-.rd13x > * {
+.rd13x>* {
   border-radius: 13px !important;
 }
 
 .rd14,
-.rd14x > * {
+.rd14x>* {
   border-radius: 14px !important;
 }
 
 .rd15,
-.rd15x > * {
+.rd15x>* {
   border-radius: 15px !important;
 }
 
 .rd16,
-.rd16x > * {
+.rd16x>* {
   border-radius: 16px !important;
 }
 
@@ -98,12 +98,12 @@
 
 /* rd9999 → border-radius: 9999px (pill shape) */
 .rd9999,
-.rd9999x > * {
+.rd9999x>* {
   border-radius: 9999px !important;
 }
 
 /* rd50p → border-radius: 50% (circle) */
 .rd50p,
-.rd50px > * {
+.rd50px>* {
   border-radius: 50% !important;
 }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/guide/color">
+    <meta name="description" content="Website description for the Mukimono css, detailing system architecture.">
+    <title>Mukimono css</title>
+
+    
+    <link rel="icon" type="image/x-icon"
+        href="/assets/images/logo.ico">
+    <link rel="shortcut icon" href="/assets/images/logo.ico"
+        type="image/x-icon">
+
+    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40wLw2+Xp0B26aVz8/T4j4fA9bJzI1l0D9b/0t0x0qE+I3a4E1jG0Q2F0vG6jN9tY+R4jP6hQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet"
+        href="/assets/build/css/main.css?v=1762589379">
+</head>
+
+<body class="mukimono tma_d1">
+    <div class="fx2">
+        <div class="pg1440 h100vh of1">
+            <div class="h100vh">
+                    <header>
+        <nav class="tma_d2 pd8lr fx13 ">
+    <div>
+        
+        <a href="/" class="lb48">
+            
+            <img src="/assets/images/logotype.png"
+                alt="Mukimono Css Logo" class="img24">
+        </a>
+    </div>
+
+    <div>
+
+        
+        
+        
+        <div class="lih">
+            <ul id="navbar_main_fixed_up" class="tma_d7xhv">
+
+                
+                
+                <li>
+                    <a  href="/"
+                        class="lb48 ">
+                        Home
+                    </a>
+                </li>
+
+                
+                <li>
+                    <a  href="/contact"
+                        class=" lb48 ">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <button type="button" class="bt48 wi48 tma_d7hv">
+            ☰
+        </button>
+    </div>
+</nav>
+        <div class="pd12">
+            <h1>Variantes de Color</h1>
+            <p>
+                Clases para aplicar colores de texto (`clN`) y fondo (`bgN`) fijos (1 a 10), útiles para acentos visuales específicos.
+            </p>
+        </div>
+    </header>
+
+    <main class="pd12">
+        <h2>Fondos de Variantes (`bgN`)</h2>
+        <p class="mg6">Aplica el color de fondo y el color de texto de contraste predefinido.</p>
+
+        <div class="mg6x pd6 tma_d1">
+            <div class="mg6 pd6 bg1">bg1 (Teal)</div>
+            <div class="mg6 pd6 bg2">bg2 (Soft Coral)</div>
+            <div class="mg6 pd6 bg3">bg3 (Muted Gold)</div>
+            <div class="mg6 pd6 bg4">bg4 (Slate Blue)</div>
+            <div class="mg6 pd6 bg5">bg5 (Olive Green)</div>
+            <div class="mg6 pd6 bg6">bg6 (Mauve)</div>
+            <div class="mg6 pd6 bg7">bg7 (Soft Orange)</div>
+            <div class="mg6 pd6 bg8">bg8 (Dusty Pink)</div>
+            <div class="mg6 pd6 bg9">bg9 (Soft Cyan)</div>
+            <div class="mg6 pd6 bg10">bg10 (Muted Brown)</div>
+        </div>
+
+        ---
+
+        <h2>Color de Texto de Variantes (`clN`)</h2>
+        <p class="mg6">Utiliza `clN` para aplicar solo el color de texto. Se demuestra sobre un fondo oscuro para visibilidad.</p>
+        
+        <div class="mg6x pd6 bd1 tma_d3">
+            <p class="mg6 cl1">Texto en cl1 (Teal)</p>
+            <p class="mg6 cl2">Texto en cl2 (Soft Coral)</p>
+            <p class="mg6 cl3">Texto en cl3 (Muted Gold)</p>
+            <p class="mg6 cl4">Texto en cl4 (Slate Blue)</p>
+            <p class="mg6 cl5">Texto en cl5 (Olive Green)</p>
+            <p class="mg6 cl6">Texto en cl6 (Mauve)</p>
+            <p class="mg6 cl7">Texto en cl7 (Soft Orange)</p>
+            <p class="mg6 cl8">Texto en cl8 (Dusty Pink)</p>
+            <p class="mg6 cl9">Texto en cl9 (Soft Cyan)</p>
+            <p class="mg6 cl10">Texto en cl10 (Muted Brown)</p>
+        </div>
+        
+        ---
+        
+        <h2>Variantes de Hijos y Hover (`bgNx`, `bgN:hover`)</h2>
+        <p class="mg6">Demostración de cómo aplicar estilos a hijos directos y al pasar el cursor.</p>
+
+        <div class="mg6x pd6 bd1 tma_d3">
+            <div class="mg6 pd6 bg4 bg2:hover">Elemento con **bg4** y hover **bg2**</div>
+            <div class="mg6 pd6 bg5x bd1">
+                <p class="pd6 bd1">El padre es **bg5x**: Hijo 1</p>
+            </div>
+        </div>
+    </main>
+            </div>
+            <footer class="pd12tb tma_d3">
+    <div class="fx10">
+        
+        
+        <div class="pd12 liv">
+            
+            <img src="/assets/images/logotype.png" 
+                 alt="Logotipo Mukimono" 
+                 class="h40 mg6b">
+            <h3 class="fs22">Mukimono Css</h3>
+            <p class="fs14">
+                Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
+            </p>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Navegación</h3>
+            
+            <ul class="tma_d7xhv">
+                            </ul>
+        </div>
+        
+        
+        <div class="pd12 liv">
+            <h3 class="fs22">Contacto</h3>
+            <p class="fs14">Email: info@mukimono.com</p>
+            
+            <p>Soporte: +507 555-5555</p> 
+        </div>
+
+    </div>
+
+    
+    <div class="pd12 tac">
+        <p class="fs14">
+            &copy; 2025 MUKIMONO. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>        </div>
+    </div>
+
+    
+    <script defer
+        src="/assets/build/js/main.js?v=1762589379">
+    </script>
+</body>
+
+</html>

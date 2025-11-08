@@ -4,126 +4,147 @@
 
 /* General */
 .cs1,
-.cs1x > *:hover {
+.cs1x>*:hover {
   cursor: auto !important;
 }
+
 .cs2,
-.cs2x > *:hover {
+.cs2x>*:hover {
   cursor: none !important;
 }
 
 /* Selection / Text */
 .cs3,
-.cs3x > *:hover {
+.cs3x>*:hover {
   cursor: text !important;
 }
+
 .cs4,
-.cs4x > *:hover {
+.cs4x>*:hover {
   cursor: cell !important;
 }
 
 /* Pointer / Action */
 .cs5,
-.cs5x > *:hover {
+.cs5x>*:hover {
   cursor: pointer !important;
 }
+
 .cs6,
-.cs6x > *:hover {
+.cs6x>*:hover {
   cursor: alias !important;
 }
+
 .cs7,
-.cs7x > *:hover {
+.cs7x>*:hover {
   cursor: copy !important;
 }
+
 .cs8,
-.cs8x > *:hover {
+.cs8x>*:hover {
   cursor: help !important;
 }
+
 .cs9,
-.cs9x > *:hover {
+.cs9x>*:hover {
   cursor: not-allowed !important;
 }
 
 /* Resize */
 .cs10,
-.cs10x > *:hover {
+.cs10x>*:hover {
   cursor: col-resize !important;
 }
+
 .cs11,
-.cs11x > *:hover {
+.cs11x>*:hover {
   cursor: row-resize !important;
 }
+
 .cs12,
-.cs12x > *:hover {
+.cs12x>*:hover {
   cursor: ew-resize !important;
 }
+
 .cs13,
-.cs13x > *:hover {
+.cs13x>*:hover {
   cursor: n-resize !important;
 }
+
 .cs14,
-.cs14x > *:hover {
+.cs14x>*:hover {
   cursor: s-resize !important;
 }
+
 .cs15,
-.cs15x > *:hover {
+.cs15x>*:hover {
   cursor: se-resize !important;
 }
+
 .cs16,
-.cs16x > *:hover {
+.cs16x>*:hover {
   cursor: ne-resize !important;
 }
+
 .cs17,
-.cs17x > *:hover {
+.cs17x>*:hover {
   cursor: sw-resize !important;
 }
+
 .cs18,
-.cs18x > *:hover {
+.cs18x>*:hover {
   cursor: nesw-resize !important;
 }
 
 /* Move / Grab */
 .cs19,
-.cs19x > *:hover {
+.cs19x>*:hover {
   cursor: move !important;
 }
+
 .cs20,
-.cs20x > *:hover {
+.cs20x>*:hover {
   cursor: grab !important;
 }
+
 .cs21,
-.cs21x > *:hover {
+.cs21x>*:hover {
   cursor: grabbing !important;
 }
 
 /* Zoom */
 .cs22,
-.cs22x > *:hover {
+.cs22x>*:hover {
   cursor: zoom-in !important;
 }
+
 .cs23,
-.cs23x > *:hover {
+.cs23x>*:hover {
   cursor: zoom-out !important;
 }
 
 /* Scroll / Progress */
 .cs24,
-.cs24x > *:hover {
+.cs24x>*:hover {
   cursor: all-scroll !important;
 }
+
 .cs25,
-.cs25x > *:hover {
+.cs25x>*:hover {
   cursor: progress !important;
 }
+
 .cs26,
-.cs26x > *:hover {
+.cs26x>*:hover {
   cursor: context-menu !important;
 }
+
 .cs27,
-.cs27x > *:hover {
+.cs27x>*:hover {
   cursor: e-resize !important;
 }
+
 .cs28,
-.cs28x > *:hover {
+.cs28x>*:hover {
   cursor: w-resize !important;
 }

@@ -3,38 +3,60 @@
 /* ============================= */
 .tal {
   text-align: left !important;
-} /* Left */
+}
+
+/* Left */
 .tar {
   text-align: right !important;
-} /* Right */
+}
+
+/* Right */
 .tac {
   text-align: center !important;
-} /* Center */
+}
+
+/* Center */
 .taj {
   text-align: justify !important;
-} /* Justify */
+}
+
+/* Justify */
 .tas {
   text-align: start !important;
-} /* Start */
+}
+
+/* Start */
 .tae {
   text-align: end !important;
-} /* End */
+}
+
+/* End */
 .tam {
   text-align: match-parent !important;
-} /* Match parent */
+}
+
+/* Match parent */
 
 /* ============================= */
 /* Alineación vertical (.tva*)   */
 /* ============================= */
 .tvat {
   vertical-align: top !important;
-} /* Top */
+}
+
+/* Top */
 .tvam {
   vertical-align: middle !important;
-} /* Middle */
+}
+
+/* Middle */
 .tvab {
   vertical-align: bottom !important;
-} /* Bottom */
+}
+
+/* Bottom */
 .tvabn {
   vertical-align: baseline !important;
-} /* Baseline */
+}
+
+/* Baseline */

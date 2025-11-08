@@ -4,49 +4,49 @@
 
 /* Top */
 .vat,
-.vatx > * {
+.vatx>* {
   vertical-align: top !important;
 }
 
 /* Middle */
 .vamd,
-.vamdx > * {
+.vamdx>* {
   vertical-align: middle !important;
 }
 
 /* Bottom */
 .vabt,
-.vabtx > * {
+.vabtx>* {
   vertical-align: bottom !important;
 }
 
 /* Baseline */
 .vabs,
-.vabsx > * {
+.vabsx>* {
   vertical-align: baseline !important;
 }
 
 /* Sub */
 .vasub,
-.vasubx > * {
+.vasubx>* {
   vertical-align: sub !important;
 }
 
 /* Super */
 .vasup,
-.vasupx > * {
+.vasupx>* {
   vertical-align: super !important;
 }
 
 /* Text Top */
 .vatt,
-.vattx > * {
+.vattx>* {
   vertical-align: text-top !important;
 }
 
 /* Text Bottom */
 .vatb,
-.vatbx > * {
+.vatbx>* {
   vertical-align: text-bottom !important;
 }
 
@@ -56,18 +56,18 @@
 
 /* Initial */
 .vaini,
-.vainix > * {
+.vainix>* {
   vertical-align: initial !important;
 }
 
 /* Inherit */
 .vainh,
-.vainhx > * {
+.vainhx>* {
   vertical-align: inherit !important;
 }
 
 /* Unset */
 .vainu,
-.vainux > * {
+.vainux>* {
   vertical-align: unset !important;
 }

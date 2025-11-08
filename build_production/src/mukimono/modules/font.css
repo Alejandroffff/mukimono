@@ -6,6 +6,7 @@
 .fs12 {
   font-size: 12px;
 }
+
 .fs14 {
   font-size: 14px;
 }
@@ -13,7 +14,9 @@
 /* Texto principal / párrafos */
 .fs16 {
   font-size: 16px;
-} /* estándar para párrafos */
+}
+
+/* estándar para párrafos */
 .fs18 {
   font-size: 18px;
 }
@@ -22,9 +25,11 @@
 .fs20 {
   font-size: 20px;
 }
+
 .fs24 {
   font-size: 24px;
 }
+
 .fs28 {
   font-size: 28px;
 }
@@ -33,9 +38,11 @@
 .fs32 {
   font-size: 32px;
 }
+
 .fs36 {
   font-size: 36px;
 }
+
 .fs40 {
   font-size: 40px;
 }
@@ -44,9 +51,14 @@
 .fs48 {
   font-size: 48px;
 }
+
 .fs56 {
   font-size: 56px;
-} /* para encabezados muy grandes */
+}
+
+/* para encabezados muy grandes */
 .fs64 {
   font-size: 64px;
-} /* para hero / banners */
+}
+
+/* para hero / banners */

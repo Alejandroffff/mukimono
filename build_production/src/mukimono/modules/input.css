@@ -6,13 +6,14 @@
     Inputs: 16px - 64px
 ----------------------------*/
 .ip16,
-.ip16x > :is(input, textarea, select),
+.ip16x> :is(input, textarea, select),
 .ip16xx :is(input, textarea, select) {
   box-sizing: border-box;
   background-color: #1e293b;
   color: #f1f5f9;
   display: block;
-  font-size: 12px; /* mínimo de texto */
+  font-size: 12px;
+  /* mínimo de texto */
   padding: 0 8px;
   height: 16px;
   border: 1px solid #334155;
@@ -22,7 +23,7 @@
 }
 
 .ip24,
-.ip24x > :is(input, textarea, select),
+.ip24x> :is(input, textarea, select),
 .ip24xx :is(input, textarea, select) {
   box-sizing: border-box;
   background-color: #1e293b;
@@ -38,7 +39,7 @@
 }
 
 .ip32,
-.ip32x > :is(input, textarea, select),
+.ip32x> :is(input, textarea, select),
 .ip32xx :is(input, textarea, select) {
   box-sizing: border-box;
   background-color: #1e293b;
@@ -54,7 +55,7 @@
 }
 
 .ip40,
-.ip40x > :is(input, textarea, select),
+.ip40x> :is(input, textarea, select),
 .ip40xx :is(input, textarea, select) {
   box-sizing: border-box;
   background-color: #1e293b;
@@ -70,7 +71,7 @@
 }
 
 .ip48,
-.ip48x > :is(input, textarea, select),
+.ip48x> :is(input, textarea, select),
 .ip48xx :is(input, textarea, select) {
   box-sizing: border-box;
   background-color: #1e293b;
@@ -86,7 +87,7 @@
 }
 
 .ip56,
-.ip56x > :is(input, textarea, select),
+.ip56x> :is(input, textarea, select),
 .ip56xx :is(input, textarea, select) {
   box-sizing: border-box;
   background-color: #1e293b;
@@ -102,7 +103,7 @@
 }
 
 .ip64,
-.ip64x > :is(input, textarea, select),
+.ip64x> :is(input, textarea, select),
 .ip64xx :is(input, textarea, select) {
   box-sizing: border-box;
   background-color: #1e293b;
@@ -121,7 +122,7 @@
     Checkbox Sizes (Dark Elegant)
 ============================*/
 .ckb16,
-.ckb16x > input[type="checkbox"],
+.ckb16x>input[type="checkbox"],
 .ckb16xx input[type="checkbox"] {
   width: 16px;
   height: 16px;
@@ -135,7 +136,7 @@
 }
 
 .ckb24,
-.ckb24x > input[type="checkbox"],
+.ckb24x>input[type="checkbox"],
 .ckb24xx input[type="checkbox"] {
   width: 24px;
   height: 24px;
@@ -149,7 +150,7 @@
 }
 
 .ckb32,
-.ckb32x > input[type="checkbox"],
+.ckb32x>input[type="checkbox"],
 .ckb32xx input[type="checkbox"] {
   width: 32px;
   height: 32px;
@@ -163,7 +164,7 @@
 }
 
 .ckb40,
-.ckb40x > input[type="checkbox"],
+.ckb40x>input[type="checkbox"],
 .ckb40xx input[type="checkbox"] {
   width: 40px;
   height: 40px;
@@ -177,7 +178,7 @@
 }
 
 .ckb48,
-.ckb48x > input[type="checkbox"],
+.ckb48x>input[type="checkbox"],
 .ckb48xx input[type="checkbox"] {
   width: 48px;
   height: 48px;
@@ -191,7 +192,7 @@
 }
 
 .ckb56,
-.ckb56x > input[type="checkbox"],
+.ckb56x>input[type="checkbox"],
 .ckb56xx input[type="checkbox"] {
   width: 56px;
   height: 56px;
@@ -205,7 +206,7 @@
 }
 
 .ckb64,
-.ckb64x > input[type="checkbox"],
+.ckb64x>input[type="checkbox"],
 .ckb64xx input[type="checkbox"] {
   width: 64px;
   height: 64px;

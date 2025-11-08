@@ -1,229 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="canonical" href="/">
-        <meta name="description" content="MUKIMONO CSS: Marco de trabajo CSS gratuito, minimalista y profesional para interfaces de alto contraste.">
-        <title>MUKIMONO CSS - Framework CSS Simple y Elegante</title>
-        
-        
-        <link rel="stylesheet" href="/assets/build/css/main.css">
-        <script defer src="/assets/build/js/main.js"></script>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/">
+    <meta name="description" content="Mukimono css: Marco de trabajo CSS gratuito, minimalista y profesional para interfaces de alto contraste.">
+    <title>Mukimono css - Framework CSS Simple y Elegante</title>
+
     
+    <link rel="icon" type="image/x-icon"
+        href="/assets/images/logo.ico">
+    <link rel="shortcut icon" href="/assets/images/logo.ico"
+        type="image/x-icon">
+
     
-    <body class="mukimono tma_pri">
-        <div class="fx2">
-            <div class="pg1440">
-            
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     
-    <div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40wLw2+Xp0B26aVz8/T4j4fA9bJzI1l0D9b/0t0x0qE+I3a4E1jG0Q2F0vG6jN9tY+R4jP6hQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet"
+        href="/assets/build/css/main.css?v=1762589379">
+</head>
+
+<body class="mukimono tma_d1">
+    <div class="fx2">
+        <div class="pg1440 h100vh of1">
+            <div class="h100vh">
+                    
+    <div class="design">
 
         
         <header>
-            <nav class="navbar-main-container tma_sec pd8lr" id="navbar-main-nav">
-    <div class="navbar-main-wrapper">
-        <div class="navbar-main-logo-area">
-            <a href="/" class="lb48">
-                <span class="navbar-main-title">Mukimono Css</span>
+            <nav id="navbar_main_top" class="tma_d2 pd8lr pst9" title="Main Navigation Bar">
+    <div class="fx13">
+
+        
+        <div>
+            <a href="/" class="lb48" title="Go to Home Page">
+                
+                <img src="/assets/images/logotype.png"
+                    alt="Mukimono Css Logo" class="img24" title="Mukimono CSS Logotype">
             </a>
         </div>
-        
-        <div class="navbar-main-right-group">
-            
-            <ul id="navbar-main-primary-list" class="navbar-main-primary-list">
-                <li class="navbar-main-item">
-                    <a 
-                        href="/" 
-                        class="navbar-main-link lb48  navbar-main-link-active "
-                    >
-                        Inicio
-                    </a>
-                </li>
-                <li class="navbar-main-item">
-                    <a 
-                        href="/contact" 
-                        class="navbar-main-link lb48 "
-                    >
-                        Contacto
-                    </a>
-                </li>
-            </ul>
 
-            <button 
-                type="button" 
-                class="navbar-main-toggle-button bt48 wi48" 
-                aria-controls="navbar-main-secondary-list" 
-                aria-expanded="false" 
-                id="navbar-main-toggle"
-            >
+        
+        <div class="fx1">
+
+            
+            <div id="navbar_main_top_hor" class="lih">
+                <ul class="tma_d7xhv mg0 pd0" title="Main Navigation Links">
+
+                    
+                    <li>
+                        <a href="/"
+                            class="lb48 pd8lr   tma_d3 rd3 "
+                            title="Home Page">
+                            <i class="material-icons mg6r">home</i>
+                            Inicio
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/contact"
+                            class="lb48 pd8lr  "
+                            title="Contact Us">
+                            <i class="material-icons mg6r">phone</i>
+                            Contacto
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/guide/home"
+                            class="lb48 pd8lr  "
+                            title="Mukimono CSS Documentation Guide">
+                            <i class="material-icons mg6r">book</i>
+                            Guía
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            
+            
+            <div id="navbar_main_top_fixed" class="liv pst4 h100vh of1 tma_d5 mn280" style="display: none;">
+
                 
-                ☰
-            </button>
+                <button onclick="navbar_main_top_fixed_show('navbar_main_top_fixed')" type="button"
+                    class="bt48 wi48 tma_d7hv" id="navbar_main_top_button_close" aria-expanded="false"
+                    aria-controls="navbar_main_top_fixed" title="Toggle Navigation Menu">
+                    
+                    <i class="material-icons mg6r">close</i>
+                </button>
+
+                <ul class="tma_d7xhv mg0 pd0" title="Main Navigation Links">
+
+                    
+                    <li>
+                        <a href="/"
+                            class="lb48 pd8lr w100p fx1 fx8  tma_d3 rd3 "
+                            title="Home Page">
+                            <i class="material-icons mg6r">home</i>
+                            Inicio
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/contact"
+                            class="lb48 pd8lr w100p fx1 fx8 "
+                            title="Contact Us">
+                            <i class="material-icons mg6r">phone</i>
+                            Contacto
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/guide/home"
+                            class="lb48 pd8lr w100p fx1 fx8 "
+                            title="Mukimono CSS Documentation Guide">
+                            <i class="material-icons mg6r">book</i>
+                            Guía
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
             
-            <ul id="navbar-main-secondary-list" class="navbar-main-secondary-list tma_sec">
-                <li class="navbar-main-item">
-                    <a 
-                        href="/alert" 
-                        class="navbar-main-link lb48 "
-                    >
-                        Alert
-                    </a>
-                </li>
-                <li class="navbar-main-item">
-                    <a 
-                        href="/animation" 
-                        class="navbar-main-link lb48 "
-                    >
-                        Animation
-                    </a>
-                </li>
-                <li class="navbar-main-item">
-                    <a 
-                        href="/blur" 
-                        class="navbar-main-link lb48 "
-                    >
-                        Blur
-                    </a>
-                </li>
-            </ul>
-            
+            <div>
+                <button onclick="navbar_main_top_fixed_show('navbar_main_top_fixed')" type="button"
+                    class="bt48 wi48 tma_d7hv" id="navbar_main_top_button_menu" aria-expanded="false"
+                    aria-controls="navbar_main_top_fixed" title="Toggle Navigation Menu">
+                    <i class="material-icons mg6r">menu</i>
+                </button>
+            </div>
+
         </div>
-        
     </div>
-    
-    
-    <style>
-        /* Estilos Base Mínimos (Solo disposición) */
-        .navbar-main-wrapper {
-            max-width: 1200px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 60px;
-            /* Necesario para posicionar el dropdown en móvil si la barra es relativa */
-            position: relative; 
-        }
-
-        .navbar-main-title {
-            text-decoration: none;
-        }
-        
-        /* Grupo de la Derecha: Contenedor para el posicionamiento relativo del dropdown */
-        .navbar-main-right-group {
-            display: flex; 
-            align-items: center;
-            /* Necesario para posicionar el dropdown absolutamente respecto a este grupo en escritorio */
-            position: relative; 
-        }
-
-        /* 💻 COMPORTAMIENTO EN ESCRITORIO (Mayor de 768px) */
-        
-        /* 1. Menú Principal: Horizontal */
-        .navbar-main-primary-list {
-            display: flex; 
-            list-style: none;
-        }
-        
-        /* 2. Botón de Toggle: Siempre visible */
-        .navbar-main-toggle-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            display: block; 
-        }
-        
-        /* 3. Menú Secundario: Comportamiento de Dropdown en Escritorio */
-        .navbar-main-secondary-list {
-            /* Debe ser absoluto respecto a navbar-main-right-group */
-            position: absolute;
-            top: 100%; /* Justo debajo del navbar */
-            right: 0;
-            width: 200px; /* Ancho fijo para el dropdown */
-            list-style: none;
-            z-index: 1000;
-            
-            /* Oculto por defecto con transición */
-            display: block;
-            height: 0;
-            overflow: hidden;
-            transition: height 0.3s ease;
-        }
-
-        /* Enlaces del dropdown en escritorio */
-        .navbar-main-secondary-list .navbar-main-item {
-            display: block;
-        }
-        .navbar-main-secondary-list .navbar-main-link {
-            padding: 10px 15px;
-            display: block;
-            text-decoration: none;
-        }
-        
-        /* El estado 'is-open' controlado por JS */
-        .navbar-main-secondary-list.navbar-main-is-open {
-            height: auto; 
-            max-height: 500px; 
-        }
+</nav>
 
 
-        /* 📱 COMPORTAMIENTO EN MÓVIL (Menor o igual a 768px) */
-        @media (max-width: 768px) {
-
-            /* 3. Menú Secundario: Ahora se expande a full width */
-            .navbar-main-secondary-list {
-                position: absolute; 
-                top: 60px; /* Posicionado debajo de la barra */
-                left: 0;
-                right: 0;
-                width: auto; /* Full width en móvil */
-                
-                /* Reutiliza el display: block, height: 0, etc. */
-            }
-            
-            .navbar-main-link-active {
-                border-bottom: none; 
-            }
+<script>
+    /**
+     * Alterna la visibilidad (muestra u oculta) de un elemento HTML por su ID.
+     * @param {string} id - El ID del elemento a alternar.
+     */
+    const navbar_main_top_fixed_show = id => {
+        const el = document.getElementById(id);
+        if (el) {
+            // Alterna entre 'none' y 'block' (o 'flex', si es necesario, 
+            // pero 'block' funciona bien para el menú fijo).
+            el.style.display = (el.style.display === 'none' ? 'block' : 'none');
         }
-    </style>
-    
-    
-    <script>
-        // Obtener el botón y la lista de navegación SECUNDARIA
-        const menuToggleButton = document.getElementById('navbar-main-toggle');
-        const navigationMenuList = document.getElementById('navbar-main-secondary-list'); 
-        
-        // Clase que activa el menú vertical
-        const OPEN_CLASS = 'navbar-main-is-open';
-
-        // Función para alternar el menú
-        function toggleMenu() {
-            // 1. Alternar la clase de apertura en la lista 
-            navigationMenuList.classList.toggle(OPEN_CLASS);
-
-            // 2. Determinar si el menú está abierto
-            const isExpanded = navigationMenuList.classList.contains(OPEN_CLASS);
-            
-            // 3. Actualizar el atributo ARIA para accesibilidad
-            menuToggleButton.setAttribute('aria-expanded', isExpanded);
-            
-            // 4. Cambiar el texto/ícono del botón para indicar el estado
-            menuToggleButton.textContent = isExpanded ? '✕' : '☰';
-        }
-
-        // Asignar el listener de evento al botón
-        menuToggleButton.addEventListener('click', toggleMenu);
-    </script>
-</nav>            <div class="pd12">
+    };
+</script>
+            <div class="pd12">
                 <h1>
-                MUKIMONO <span>CSS</span>
+                    MUKIMONO <span>CSS</span>
                 </h1>
                 <p>
                     Marco de trabajo CSS simple, rápido y profesional.
-                </p> 
+                </p>
             </div>
-           
         </header>
 
         <div class="pd12x">
@@ -231,27 +184,29 @@
             <section>
                 <h2>Enfoque Minimalista</h2>
                 <p>
-                    <strong>MUKIMONO CSS</strong> es un <strong>framework gratuito y de código abierto</strong> diseñado para la ingeniería de interfaces de usuario. Su arquitectura minimalista permite construir sitios elegantes y funcionales con la máxima eficiencia y el menor código posible. Obtén **alto contraste**, **velocidad** y un **diseño serio y limpio** en cada proyecto.
+                    <strong>Mukimono css</strong> minimalista, rápido y de código abierto, garantiza un <strong>diseño serio
+                        y elegante</strong> con la máxima eficiencia.
                 </p>
             </section>
 
             
             <div>
-                <a href="/guia" class="lb48 tma_suc rd3">
+                <a href="/guide/home" class="lb48 tma_d9 rd3">
                     Comenzar con la Guía
                 </a>
             </div>
         </div>
-      
-
     </div>
-
-            
-            <footer class="pd12tb">
-    <div class="fx2 fx10">
+            </div>
+            <footer class="pd12tb tma_d3">
+    <div class="fx10">
         
         
         <div class="pd12 liv">
+            
+            <img src="/assets/images/logotype.png" 
+                 alt="Logotipo Mukimono" 
+                 class="h40 mg6b">
             <h3 class="fs22">Mukimono Css</h3>
             <p class="fs14">
                 Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
@@ -261,23 +216,17 @@
         
         <div class="pd12 liv">
             <h3 class="fs22">Navegación</h3>
-            <ul>
-                <li>
-                    
-                    <a href="/" class="lb40">Inicio</a>
-                </li>
-                <li>
-                    
-                    <a href="/contacto"  class="lb40">Contacto</a>
-                </li>
-            </ul>
+            
+            <ul class="tma_d7xhv">
+                            </ul>
         </div>
         
         
         <div class="pd12 liv">
             <h3 class="fs22">Contacto</h3>
             <p class="fs14">Email: info@mukimono.com</p>
-            <p>Soporte: +507 555-5555</p>
+            
+            <p>Soporte: +507 555-5555</p> 
         </div>
 
     </div>
@@ -288,7 +237,13 @@
             &copy; 2025 MUKIMONO. Todos los derechos reservados.
         </p>
     </div>
-</footer>            </div> 
-        </div>
-    </body>
+</footer>        </div>
+    </div>
+
+    
+    <script defer
+        src="/assets/build/js/main.js?v=1762589379">
+    </script>
+</body>
+
 </html>

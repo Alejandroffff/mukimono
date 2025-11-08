@@ -20,18 +20,3 @@
 .b3 {
   filter: blur(3px);
 }
-
-/* Blur 4px */
-.b4 {
-  filter: blur(4px);
-}
-
-/* Blur 5px */
-.b5 {
-  filter: blur(5px);
-}
-
-/* Blur 6px */
-.b6 {
-  filter: blur(6px);
-}

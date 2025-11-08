@@ -2,19 +2,22 @@
     Bloques base
 ============================*/
 .swb,
-.swbx > * {
+.swbx>* {
   display: block;
 }
+
 .swib,
-.swibx > * {
+.swibx>* {
   display: inline-block;
 }
+
 .swf,
-.swfx > * {
+.swfx>* {
   display: flex;
 }
+
 .swif,
-.swifx > * {
+.swifx>* {
   display: inline-flex;
 }
 
@@ -35,12 +38,15 @@
   .swba320 {
     display: var(--display-block);
   }
+
   .swiba320 {
     display: var(--display-inline-block);
   }
+
   .swfa320 {
     display: var(--display-flex);
   }
+
   .swifa320 {
     display: var(--display-inline-flex);
   }
@@ -50,12 +56,15 @@
   .swba480 {
     display: var(--display-block);
   }
+
   .swiba480 {
     display: var(--display-inline-block);
   }
+
   .swfa480 {
     display: var(--display-flex);
   }
+
   .swifa480 {
     display: var(--display-inline-flex);
   }
@@ -65,12 +74,15 @@
   .swba640 {
     display: var(--display-block);
   }
+
   .swiba640 {
     display: var(--display-inline-block);
   }
+
   .swfa640 {
     display: var(--display-flex);
   }
+
   .swifa640 {
     display: var(--display-inline-flex);
   }
@@ -80,12 +92,15 @@
   .swba768 {
     display: var(--display-block);
   }
+
   .swiba768 {
     display: var(--display-inline-block);
   }
+
   .swfa768 {
     display: var(--display-flex);
   }
+
   .swifa768 {
     display: var(--display-inline-flex);
   }
@@ -95,12 +110,15 @@
   .swba1024 {
     display: var(--display-block);
   }
+
   .swiba1024 {
     display: var(--display-inline-block);
   }
+
   .swfa1024 {
     display: var(--display-flex);
   }
+
   .swifa1024 {
     display: var(--display-inline-flex);
   }
@@ -110,12 +128,15 @@
   .swba1280 {
     display: var(--display-block);
   }
+
   .swiba1280 {
     display: var(--display-inline-block);
   }
+
   .swfa1280 {
     display: var(--display-flex);
   }
+
   .swifa1280 {
     display: var(--display-inline-flex);
   }
@@ -125,12 +146,15 @@
   .swba1440 {
     display: var(--display-block);
   }
+
   .swiba1440 {
     display: var(--display-inline-block);
   }
+
   .swfa1440 {
     display: var(--display-flex);
   }
+
   .swifa1440 {
     display: var(--display-inline-flex);
   }
@@ -140,12 +164,15 @@
   .swba1920 {
     display: var(--display-block);
   }
+
   .swiba1920 {
     display: var(--display-inline-block);
   }
+
   .swfa1920 {
     display: var(--display-flex);
   }
+
   .swifa1920 {
     display: var(--display-inline-flex);
   }
@@ -156,12 +183,15 @@
   .swbi321 {
     display: var(--display-block);
   }
+
   .swibi321 {
     display: var(--display-inline-block);
   }
+
   .swfi321 {
     display: var(--display-flex);
   }
+
   .swifi321 {
     display: var(--display-inline-flex);
   }
@@ -171,12 +201,15 @@
   .swbi641 {
     display: var(--display-block);
   }
+
   .swibi641 {
     display: var(--display-inline-block);
   }
+
   .swfi641 {
     display: var(--display-flex);
   }
+
   .swifi641 {
     display: var(--display-inline-flex);
   }
@@ -186,12 +219,15 @@
   .swbi961 {
     display: var(--display-block);
   }
+
   .swibi961 {
     display: var(--display-inline-block);
   }
+
   .swfi961 {
     display: var(--display-flex);
   }
+
   .swifi961 {
     display: var(--display-inline-flex);
   }
@@ -201,12 +237,15 @@
   .swbi1201 {
     display: var(--display-block);
   }
+
   .swibi1201 {
     display: var(--display-inline-block);
   }
+
   .swfi1201 {
     display: var(--display-flex);
   }
+
   .swifi1201 {
     display: var(--display-inline-flex);
   }
@@ -216,12 +255,15 @@
   .swbi1921 {
     display: var(--display-block);
   }
+
   .swibi1921 {
     display: var(--display-inline-block);
   }
+
   .swfi1921 {
     display: var(--display-flex);
   }
+
   .swifi1921 {
     display: var(--display-inline-flex);
   }
@@ -232,12 +274,15 @@
   .swb321x640 {
     display: var(--display-block);
   }
+
   .swib321x640 {
     display: var(--display-inline-block);
   }
+
   .swf321x640 {
     display: var(--display-flex);
   }
+
   .swif321x640 {
     display: var(--display-inline-flex);
   }
@@ -247,12 +292,15 @@
   .swb641x768 {
     display: var(--display-block);
   }
+
   .swib641x768 {
     display: var(--display-inline-block);
   }
+
   .swf641x768 {
     display: var(--display-flex);
   }
+
   .swif641x768 {
     display: var(--display-inline-flex);
   }
@@ -262,12 +310,15 @@
   .swb769x1024 {
     display: var(--display-block);
   }
+
   .swib769x1024 {
     display: var(--display-inline-block);
   }
+
   .swf769x1024 {
     display: var(--display-flex);
   }
+
   .swif769x1024 {
     display: var(--display-inline-flex);
   }
@@ -277,12 +328,15 @@
   .swb1025x1280 {
     display: var(--display-block);
   }
+
   .swib1025x1280 {
     display: var(--display-inline-block);
   }
+
   .swf1025x1280 {
     display: var(--display-flex);
   }
+
   .swif1025x1280 {
     display: var(--display-inline-flex);
   }
@@ -292,12 +346,15 @@
   .swb1281x1440 {
     display: var(--display-block);
   }
+
   .swib1281x1440 {
     display: var(--display-inline-block);
   }
+
   .swf1281x1440 {
     display: var(--display-flex);
   }
+
   .swif1281x1440 {
     display: var(--display-inline-flex);
   }
@@ -307,12 +364,15 @@
   .swb1441x1920 {
     display: var(--display-block);
   }
+
   .swib1441x1920 {
     display: var(--display-inline-block);
   }
+
   .swf1441x1920 {
     display: var(--display-flex);
   }
+
   .swif1441x1920 {
     display: var(--display-inline-flex);
   }

@@ -4,102 +4,123 @@
 
 /* Contenedor principal */
 .img16 {
-  height: 16px;
+  height: 16px !important;
   display: inline-block;
 }
+
 .img24 {
-  height: 24px;
+  height: 24px !important;
   display: inline-block;
 }
+
 .img32 {
-  height: 32px;
+  height: 32px !important;
   display: inline-block;
 }
+
 .img48 {
-  height: 48px;
+  height: 48px !important;
   display: inline-block;
 }
+
 .img64 {
-  height: 64px;
+  height: 64px !important;
   display: inline-block;
 }
+
 .img96 {
-  height: 96px;
+  height: 96px !important;
   display: inline-block;
 }
+
 .img128 {
-  height: 128px;
+  height: 128px !important;
   display: inline-block;
 }
+
 .img256 {
-  height: 256px;
+  height: 256px !important;
   display: inline-block;
 }
 
 /* Hijos directos de imgXXx */
-.img16x > img {
-  height: 16px;
+.img16x>img {
+  height: 16px !important;
   width: auto;
 }
-.img24x > img {
-  height: 24px;
+
+.img24x>img {
+  height: 24px !important;
   width: auto;
 }
-.img32x > img {
-  height: 32px;
+
+.img32x>img {
+  height: 32px !important;
   width: auto;
 }
-.img48x > img {
-  height: 48px;
+
+.img48x>img {
+  height: 48px !important;
   width: auto;
 }
-.img64x > img {
-  height: 64px;
+
+.img64x>img {
+  height: 64px !important;
   width: auto;
 }
-.img96x > img {
-  height: 96px;
+
+.img96x>img {
+  height: 96px !important;
   width: auto;
 }
-.img128x > img {
-  height: 128px;
+
+.img128x>img {
+  height: 128px !important;
   width: auto;
 }
-.img256x > img {
-  height: 256px;
+
+.img256x>img {
+  height: 256px !important;
   width: auto;
 }
 
 /* Todas las imágenes dentro (anidadas) */
 .img16xx img {
-  height: 16px;
+  height: 16px !important;
   width: auto;
 }
+
 .img24xx img {
-  height: 24px;
+  height: 24px !important;
   width: auto;
 }
+
 .img32xx img {
-  height: 32px;
+  height: 32px !important;
   width: auto;
 }
+
 .img48xx img {
-  height: 48px;
+  height: 48px !important;
   width: auto;
 }
+
 .img64xx img {
-  height: 64px;
+  height: 64px !important;
   width: auto;
 }
+
 .img96xx img {
-  height: 96px;
+  height: 96px !important;
   width: auto;
 }
+
 .img128xx img {
-  height: 128px;
+  height: 128px !important;
   width: auto;
 }
+
 .img256xx img {
-  height: 256px;
+  height: 256px !important;
   width: auto;
 }

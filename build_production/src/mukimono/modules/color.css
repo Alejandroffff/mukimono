@@ -6,10 +6,12 @@
 .cl1 {
   color: rgb(0, 128, 128) !important;
 }
+
 .bg1 {
   background-color: rgb(0, 128, 128) !important;
   color: rgb(240, 255, 240);
 }
+
 .bg1:hover,
 .bg1x *,
 .bg1x *:hover {
@@ -21,10 +23,12 @@
 .cl2 {
   color: rgb(204, 85, 70) !important;
 }
+
 .bg2 {
   background-color: rgb(204, 85, 70) !important;
   color: rgb(255, 245, 240);
 }
+
 .bg2:hover,
 .bg2x *,
 .bg2x *:hover {
@@ -36,10 +40,12 @@
 .cl3 {
   color: rgb(204, 170, 0) !important;
 }
+
 .bg3 {
   background-color: rgb(204, 170, 0) !important;
   color: rgb(50, 50, 50);
 }
+
 .bg3:hover,
 .bg3x *,
 .bg3x *:hover {
@@ -51,10 +57,12 @@
 .cl4 {
   color: rgb(96, 125, 139) !important;
 }
+
 .bg4 {
   background-color: rgb(96, 125, 139) !important;
   color: rgb(245, 245, 245);
 }
+
 .bg4:hover,
 .bg4x *,
 .bg4x *:hover {
@@ -66,10 +74,12 @@
 .cl5 {
   color: rgb(128, 128, 0) !important;
 }
+
 .bg5 {
   background-color: rgb(128, 128, 0) !important;
   color: rgb(245, 245, 245);
 }
+
 .bg5:hover,
 .bg5x *,
 .bg5x *:hover {
@@ -81,10 +91,12 @@
 .cl6 {
   color: rgb(153, 102, 153) !important;
 }
+
 .bg6 {
   background-color: rgb(153, 102, 153) !important;
   color: rgb(245, 245, 245);
 }
+
 .bg6:hover,
 .bg6x *,
 .bg6x *:hover {
@@ -96,10 +108,12 @@
 .cl7 {
   color: rgb(204, 102, 51) !important;
 }
+
 .bg7 {
   background-color: rgb(204, 102, 51) !important;
   color: rgb(245, 245, 245);
 }
+
 .bg7:hover,
 .bg7x *,
 .bg7x *:hover {
@@ -111,10 +125,12 @@
 .cl8 {
   color: rgb(204, 153, 153) !important;
 }
+
 .bg8 {
   background-color: rgb(204, 153, 153) !important;
   color: rgb(50, 50, 50);
 }
+
 .bg8:hover,
 .bg8x *,
 .bg8x *:hover {
@@ -126,10 +142,12 @@
 .cl9 {
   color: rgb(102, 153, 153) !important;
 }
+
 .bg9 {
   background-color: rgb(102, 153, 153) !important;
   color: rgb(245, 245, 245);
 }
+
 .bg9:hover,
 .bg9x *,
 .bg9x *:hover {
@@ -141,10 +159,12 @@
 .cl10 {
   color: rgb(128, 102, 76) !important;
 }
+
 .bg10 {
   background-color: rgb(128, 102, 76) !important;
   color: rgb(245, 245, 245);
 }
+
 .bg10:hover,
 .bg10x *,
 .bg10x *:hover {

@@ -1,238 +1,281 @@
 /*============================
-  VARIABLES DE TIEMPO
-============================*/
-:root {
-  --t-05: 0.5s;
-  --t-1: 1s;
-  --t-2: 2s;
-}
-
-/*============================
-  KEYFRAMES BASE
+  KEYFRAMES BASE
 ============================*/
 /* Rotaciones */
-@keyframes rot-r {
+@keyframes ani_rtr {
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-@keyframes rot-l {
+
+@keyframes ani_rtl {
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(-360deg);
   }
 }
 
 /* Fade */
-@keyframes fade-in {
+@keyframes ani_fdi {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
-@keyframes fade-out {
+
+@keyframes ani_fdo {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
 }
 
 /*============================
-  1️⃣ ROTACIONES AUTOMÁTICAS
+  1️⃣ ROTACIONES AUTOMÁTICAS
 ============================*/
 /* Derecha */
-.ani_ro_au_05r {
-  animation: rot-r var(--t-05) linear infinite;
+.ani_rtr05 {
+  animation: ani_rtr var(--t05) linear infinite;
   transform-origin: center;
 }
-.ani_ro_au_1r {
-  animation: rot-r var(--t-1) linear infinite;
+
+.ani_rtr1 {
+  animation: ani_rtr var(--t1) linear infinite;
   transform-origin: center;
 }
-.ani_ro_au_2r {
-  animation: rot-r var(--t-2) linear infinite;
+
+.ani_rtr15 {
+  animation: ani_rtr var(--t15) linear infinite;
   transform-origin: center;
 }
 
 /* Izquierda */
-.ani_ro_au_05l {
-  animation: rot-l var(--t-05) linear infinite;
+.ani_rtl05 {
+  animation: ani_rtl var(--t05) linear infinite;
   transform-origin: center;
 }
-.ani_ro_au_1l {
-  animation: rot-l var(--t-1) linear infinite;
+
+.ani_rtl1 {
+  animation: ani_rtl var(--t1) linear infinite;
   transform-origin: center;
 }
-.ani_ro_au_2l {
-  animation: rot-l var(--t-2) linear infinite;
+
+.ani_rtl15 {
+  animation: ani_rtl var(--t15) linear infinite;
   transform-origin: center;
 }
 
 /* Pausa en hover */
-.ani_ro_au_05r:hover,
-.ani_ro_au_1r:hover,
-.ani_ro_au_2r:hover,
-.ani_ro_au_05l:hover,
-.ani_ro_au_1l:hover,
-.ani_ro_au_2l:hover {
+.ani_rtr05:hover,
+.ani_rtr1:hover,
+.ani_rtr15:hover,
+.ani_rtl05:hover,
+.ani_rtl1:hover,
+.ani_rtl15:hover {
   animation-play-state: paused;
 }
 
 /*============================
-  2️⃣ FADE AUTOMÁTICOS
+  2️⃣ FADE AUTOMÁTICOS
 ============================*/
 /* Fade in */
-.ani_fin_au_05 {
-  animation: fade-in var(--t-05) ease-in-out forwards;
+.ani_fdi05 {
+  animation: ani_fdi var(--t05) ease-in-out forwards;
 }
-.ani_fin_au_1 {
-  animation: fade-in var(--t-1) ease-in-out forwards;
+
+.ani_fdi1 {
+  animation: ani_fdi var(--t1) ease-in-out forwards;
 }
-.ani_fin_au_2 {
-  animation: fade-in var(--t-2) ease-in-out forwards;
+
+.ani_fdi15 {
+  animation: ani_fdi var(--t15) ease-in-out forwards;
 }
 
 /* Fade out */
-.ani_fout_au_05 {
-  animation: fade-out var(--t-05) ease-in-out forwards;
+.ani_fdo05 {
+  animation: ani_fdo var(--t05) ease-in-out forwards;
 }
-.ani_fout_au_1 {
-  animation: fade-out var(--t-1) ease-in-out forwards;
+
+.ani_fdo1 {
+  animation: ani_fdo var(--t1) ease-in-out forwards;
 }
-.ani_fout_au_2 {
-  animation: fade-out var(--t-2) ease-in-out forwards;
+
+.ani_fdo15 {
+  /* Agregado 1.5s */
+  animation: ani_fdo var(--t15) ease-in-out forwards;
 }
 
 /*============================
-  3️⃣ ESCALAS HOVER
+  3️⃣ ESCALAS HOVER
 ============================*/
 /* AGRANDAR (ma) */
 /* Pequeño +5% */
-.ani_sc_ma_sm_05 {
-  transition: transform var(--t-05) ease-in-out;
+.ani_sco_sm05 {
+  transition: transform var(--t05) ease-in-out;
 }
-.ani_sc_ma_sm_05:hover {
+
+.ani_sco_sm05:hover {
   transform: scale(1.05);
 }
-.ani_sc_ma_sm_1 {
-  transition: transform var(--t-1) ease-in-out;
+
+.ani_sco_sm1 {
+  transition: transform var(--t1) ease-in-out;
 }
-.ani_sc_ma_sm_1:hover {
+
+.ani_sco_sm1:hover {
   transform: scale(1.05);
 }
-.ani_sc_ma_sm_2 {
-  transition: transform var(--t-2) ease-in-out;
+
+.ani_sco_sm15 {
+  /* Agregado 1.5s */
+  transition: transform var(--t15) ease-in-out;
 }
-.ani_sc_ma_sm_2:hover {
+
+.ani_sco_sm15:hover {
   transform: scale(1.05);
 }
 
 /* Mediano +10% */
-.ani_sc_ma_md_05 {
-  transition: transform var(--t-05) ease-in-out;
+.ani_sco_md05 {
+  transition: transform var(--t05) ease-in-out;
 }
-.ani_sc_ma_md_05:hover {
-  transform: scale(1.1);
-}
-.ani_sc_ma_md_1 {
-  transition: transform var(--t-1) ease-in-out;
-}
-.ani_sc_ma_md_1:hover {
-  transform: scale(1.1);
-}
-.ani_sc_ma_md_2 {
-  transition: transform var(--t-2) ease-in-out;
-}
-.ani_sc_ma_md_2:hover {
+
+.ani_sco_md05:hover {
   transform: scale(1.1);
 }
 
+.ani_sco_md1 {
+  transition: transform var(--t1) ease-in-out;
+}
+
+.ani_sco_md1:hover {
+  transform: scale(1.1);
+}
+
+.ani_sco_md15 {
+  /* Agregado 1.5s */
+  transition: transform var(--t15) ease-in-out;
+}
+
+.ani_sco_md15:hover {
+  transform: scale(1.1);
+}
+
+
 /* Grande +15% */
-.ani_sc_ma_lg_05 {
-  transition: transform var(--t-05) ease-in-out;
+.ani_sco_lg05 {
+  transition: transform var(--t05) ease-in-out;
 }
-.ani_sc_ma_lg_05:hover {
+
+.ani_sco_lg05:hover {
   transform: scale(1.15);
 }
-.ani_sc_ma_lg_1 {
-  transition: transform var(--t-1) ease-in-out;
+
+.ani_sco_lg1 {
+  transition: transform var(--t1) ease-in-out;
 }
-.ani_sc_ma_lg_1:hover {
+
+.ani_sco_lg1:hover {
   transform: scale(1.15);
 }
-.ani_sc_ma_lg_2 {
-  transition: transform var(--t-2) ease-in-out;
+
+.ani_sco_lg15 {
+  /* Agregado 1.5s */
+  transition: transform var(--t15) ease-in-out;
 }
-.ani_sc_ma_lg_2:hover {
+
+.ani_sco_lg15:hover {
   transform: scale(1.15);
 }
 
 /* REDUCIR (mi) */
 /* Pequeño -5% */
-.ani_sc_mi_sm_05 {
-  transition: transform var(--t-05) ease-in-out;
+.ani_sci_sm05 {
+  transition: transform var(--t05) ease-in-out;
 }
-.ani_sc_mi_sm_05:hover {
+
+.ani_sci_sm05:hover {
   transform: scale(0.95);
 }
-.ani_sc_mi_sm_1 {
-  transition: transform var(--t-1) ease-in-out;
+
+.ani_sci_sm1 {
+  transition: transform var(--t1) ease-in-out;
 }
-.ani_sc_mi_sm_1:hover {
+
+.ani_sci_sm1:hover {
   transform: scale(0.95);
 }
-.ani_sc_mi_sm_2 {
-  transition: transform var(--t-2) ease-in-out;
+
+.ani_sci_sm15 {
+  /* Agregado 1.5s */
+  transition: transform var(--t15) ease-in-out;
 }
-.ani_sc_mi_sm_2:hover {
+
+.ani_sci_sm15:hover {
   transform: scale(0.95);
 }
 
 /* Mediano -10% */
-.ani_sc_mi_md_05 {
-  transition: transform var(--t-05) ease-in-out;
+.ani_sci_md05 {
+  transition: transform var(--t05) ease-in-out;
 }
-.ani_sc_mi_md_05:hover {
+
+.ani_sci_md05:hover {
   transform: scale(0.9);
 }
-.ani_sc_mi_md_1 {
-  transition: transform var(--t-1) ease-in-out;
+
+.ani_sci_md1 {
+  transition: transform var(--t1) ease-in-out;
 }
-.ani_sc_mi_md_1:hover {
+
+.ani_sci_md1:hover {
   transform: scale(0.9);
 }
-.ani_sc_mi_md_2 {
-  transition: transform var(--t-2) ease-in-out;
+
+.ani_sci_md15 {
+  /* Agregado 1.5s */
+  transition: transform var(--t15) ease-in-out;
 }
-.ani_sc_mi_md_2:hover {
+
+.ani_sci_md15:hover {
   transform: scale(0.9);
 }
 
 /* Grande -15% */
-.ani_sc_mi_lg_05 {
-  transition: transform var(--t-05) ease-in-out;
+.ani_sci_lg05 {
+  transition: transform var(--t05) ease-in-out;
 }
-.ani_sc_mi_lg_05:hover {
+
+.ani_sci_lg05:hover {
   transform: scale(0.85);
 }
-.ani_sc_mi_lg_1 {
-  transition: transform var(--t-1) ease-in-out;
+
+.ani_sci_lg1 {
+  transition: transform var(--t1) ease-in-out;
 }
-.ani_sc_mi_lg_1:hover {
+
+.ani_sci_lg1:hover {
   transform: scale(0.85);
 }
-.ani_sc_mi_lg_2 {
-  transition: transform var(--t-2) ease-in-out;
+
+.ani_sci_lg15 {
+  /* Agregado 1.5s */
+  transition: transform var(--t15) ease-in-out;
 }
-.ani_sc_mi_lg_2:hover {
+
+.ani_sci_lg15:hover {
   transform: scale(0.85);
 }

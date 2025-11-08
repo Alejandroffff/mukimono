@@ -4,40 +4,40 @@
 
 /* Estilos base compartidos */
 .bt16,
-.bt16x > button,
+.bt16x>button,
 .bt16xx button,
 .bt24,
-.bt24x > button,
+.bt24x>button,
 .bt24xx button,
 .bt32,
-.bt32x > button,
+.bt32x>button,
 .bt32xx button,
 .bt40,
-.bt40x > button,
+.bt40x>button,
 .bt40xx button,
 .bt48,
-.bt48x > button,
+.bt48x>button,
 .bt48xx button,
 .bt56,
-.bt56x > button,
+.bt56x>button,
 .bt56xx button,
 .bt64,
-.bt64x > button,
+.bt64x>button,
 .bt64xx button,
 .bt72,
-.bt72x > button,
+.bt72x>button,
 .bt72xx button,
 .bt80,
-.bt80x > button,
+.bt80x>button,
 .bt80xx button,
 .bt96,
-.bt96x > button,
+.bt96x>button,
 .bt96xx button,
 .bt112,
-.bt112x > button,
+.bt112x>button,
 .bt112xx button,
 .bt128,
-.bt128x > button,
+.bt128x>button,
 .bt128xx button {
   border: 0;
   display: inline-flex;
@@ -52,76 +52,121 @@
   cursor: pointer;
 }
 
-/* Alturas y padding unificado */
+/* Tamaños predefinidos */
 .bt16,
-.bt16x > button,
+.bt16x>button,
 .bt16xx button {
   height: 16px;
-  padding: 0 2px;
-}
-.bt24,
-.bt24x > button,
-.bt24xx button {
-  height: 24px;
-  padding: 0 3px;
-}
-.bt32,
-.bt32x > button,
-.bt32xx button {
-  height: 32px;
+  min-height: 16px;
+  line-height: 16px;
   padding: 0 4px;
 }
-.bt40,
-.bt40x > button,
-.bt40xx button {
-  height: 40px;
-  padding: 0 5px;
-}
-.bt48,
-.bt48x > button,
-.bt48xx button {
-  height: 48px;
-  padding: 0 6px;
-}
-.bt56,
-.bt56x > button,
-.bt56xx button {
-  height: 56px;
-  padding: 0 7px;
-}
-.bt64,
-.bt64x > button,
-.bt64xx button {
-  height: 64px;
+
+.bt24,
+.bt24x>button,
+.bt24xx button {
+  height: 24px;
+  min-height: 24px;
+  line-height: 24px;
   padding: 0 8px;
 }
-.bt72,
-.bt72x > button,
-.bt72xx button {
-  height: 72px;
-  padding: 0 9px;
-}
-.bt80,
-.bt80x > button,
-.bt80xx button {
-  height: 80px;
-  padding: 0 10px;
-}
-.bt96,
-.bt96x > button,
-.bt96xx button {
-  height: 96px;
+
+.bt32,
+.bt32x>button,
+.bt32xx button {
+  height: 32px;
+  min-height: 32px;
+  line-height: 32px;
   padding: 0 12px;
 }
+
+.bt40,
+.bt40x>button,
+.bt40xx button {
+  height: 40px;
+  min-height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+}
+
+.bt48,
+.bt48x>button,
+.bt48xx button {
+  height: 48px;
+  min-height: 48px;
+  line-height: 48px;
+  padding: 0 20px;
+}
+
+.bt56,
+.bt56x>button,
+.bt56xx button {
+  height: 56px;
+  min-height: 56px;
+  line-height: 56px;
+  padding: 0 24px;
+}
+
+.bt64,
+.bt64x>button,
+.bt64xx button {
+  height: 64px;
+  min-height: 64px;
+  line-height: 64px;
+  padding: 0 28px;
+}
+
+.bt72,
+.bt72x>button,
+.bt72xx button {
+  height: 72px;
+  min-height: 72px;
+  line-height: 72px;
+  padding: 0 32px;
+}
+
+.bt80,
+.bt80x>button,
+.bt80xx button {
+  height: 80px;
+  min-height: 80px;
+  line-height: 80px;
+  padding: 0 36px;
+}
+
+.bt96,
+.bt96x>button,
+.bt96xx button {
+  height: 96px;
+  min-height: 96px;
+  line-height: 96px;
+  padding: 0 40px;
+}
+
 .bt112,
-.bt112x > button,
+.bt112x>button,
 .bt112xx button {
   height: 112px;
-  padding: 0 14px;
+  min-height: 112px;
+  line-height: 112px;
+  padding: 0 48px;
 }
+
 .bt128,
-.bt128x > button,
+.bt128x>button,
 .bt128xx button {
   height: 128px;
-  padding: 0 16px;
+  min-height: 128px;
+  line-height: 128px;
+  padding: 0 56px;
+}
+
+/*=========================================================
+  Clase opcional: Forzar medidas si algún framework sobrescribe
+=========================================================*/
+.bt-force {
+  height: inherit !important;
+  min-height: inherit !important;
+  line-height: inherit !important;
+  padding: inherit !important;
 }

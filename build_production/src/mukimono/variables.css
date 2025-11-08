@@ -1,0 +1,8 @@
+:root {
+    /* Duraciones de Tiempo para Animaciones y Transiciones. */
+    --t05: 0.5s;     /* Rápido. */
+    --t1: 1s;        /* Estándar. */
+    --t15: 1.5s;     /* Extendido. */
+    --t2: 2s;        /* Lento. */
+    
+}

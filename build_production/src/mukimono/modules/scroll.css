@@ -5,18 +5,18 @@
 /* --- Variables de colores --- */
 :root {
   /* Black Theme */
-  --black-bg: rgb(24, 24, 24);
-  --black-track: rgb(12, 12, 12);
-  --black-thumb: rgb(45, 45, 45);
-  --black-thumb-border: rgb(67, 67, 67);
-  --black-btn: rgb(38, 38, 38);
+  --sc1_bg: rgb(24, 24, 24);
+  --sc1_track: rgb(12, 12, 12);
+  --sc1_thumb: rgb(45, 45, 45);
+  --sc1_thumb-border: rgb(67, 67, 67);
+  --sc1_btn: rgb(38, 38, 38);
 
   /* Grey Theme */
-  --grey-bg: rgb(123, 123, 123);
-  --grey-track: rgb(160, 160, 160);
-  --grey-thumb: rgb(90, 90, 90);
-  --grey-thumb-border: rgb(32, 32, 32);
-  --grey-btn: rgb(48, 48, 48);
+  --sc2_bg: rgb(123, 123, 123);
+  --sc2_track: rgb(160, 160, 160);
+  --sc2_thumb: rgb(90, 90, 90);
+  --sc2_thumb_border: rgb(32, 32, 32);
+  --sc2_btn: rgb(48, 48, 48);
 }
 
 /* --- Base styles for WebKit browsers --- */
@@ -43,44 +43,44 @@
 
 /* --- Black Theme --- */
 .scl1::-webkit-scrollbar {
-  background: var(--black-bg);
+  background: var(--sc1_bk_bg);
 }
 .scl1::-webkit-scrollbar-track,
 .scl1::-webkit-scrollbar-track-piece {
-  background: var(--black-track);
+  background: var(--sc1_track);
 }
 .scl1::-webkit-scrollbar-thumb {
-  background: var(--black-thumb);
-  border: 1px solid var(--black-thumb-border);
+  background: var(--sc1_thumb);
+  border: 1px solid var(--sc1_thumb-border);
 }
 .scl1::-webkit-scrollbar-button,
 .scl1::-webkit-scrollbar-corner,
 .scl1::-webkit-resizer {
-  background: var(--black-btn);
+  background: var(--sc1_btn);
 }
 .scl1 {
-  scrollbar-color: var(--black-thumb) var(--black-track);
+  scrollbar-color: var(--sc1_thumb) var(--sc1_track);
 }
 
 /* --- Grey Theme --- */
 .scl2::-webkit-scrollbar {
-  background: var(--grey-bg);
+  background: var(--sc2_bg);
 }
 .scl2::-webkit-scrollbar-track,
 .scl2::-webkit-scrollbar-track-piece {
-  background: var(--grey-track);
+  background: var(--sc2_track);
 }
 .scl2::-webkit-scrollbar-thumb {
-  background: var(--grey-thumb);
-  border: 1px solid var(--grey-thumb-border);
+  background: var(--sc2_thumb);
+  border: 1px solid var(--sc2_thumb_border);
 }
 .scl2::-webkit-scrollbar-button,
 .scl2::-webkit-scrollbar-corner,
 .scl2::-webkit-resizer {
-  background: var(--grey-btn);
+  background: var(--sc2_btn);
 }
 .scl2 {
-  scrollbar-color: var(--grey-thumb) var(--grey-track);
+  scrollbar-color: var(--sc2_thumb) var(--sc2_track);
 }
 
 /* --- Thumb Models (border-radius variations) --- */
