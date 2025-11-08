@@ -1,8 +1,11 @@
 @php
     // Accedemos a NAV_LINKS a través de $page, que contiene la configuración fusionada.
     // Usamos corchetes '[]' porque en PHP la configuración se maneja como un array asociativo.
-    $assets = $page->NAV_LINKS['asset_paths'] ?? []; // Añadido ?? [] para seguridad
-    $compiled = $assets['compiled_assets'] ?? []; // Añadido ?? [] para seguridad
+    $assets = $page->NAV_LINKS['asset_paths'] ?? [];
+    $compiled = $assets['compiled_assets'] ?? [];
+
+    // Aplicando la estética profesional, seria, y elegante.
+    $design = 'mukimono tma_d1';
 @endphp
 
 <!DOCTYPE html>
@@ -16,31 +19,42 @@
     <title>{{ $page->title }}</title>
 
     {{-- MUKIMONO: Favicon (Usando $assets) --}}
-    <link rel="icon" type="image/x-icon" href="{{ $page->baseUrl }}{{ $assets['favicon'] ?? '/assets/images/logo.ico' }}">
-    <link rel="shortcut icon" href="{{ $page->baseUrl }}{{ $assets['favicon'] ?? '/assets/images/logo.ico' }}" type="image/x-icon">
+    <link rel="icon" type="image/x-icon"
+        href="{{ $page->baseUrl }}{{ $assets['favicon'] ?? '/assets/images/logo.ico' }}">
+    <link rel="shortcut icon" href="{{ $page->baseUrl }}{{ $assets['favicon'] ?? '/assets/images/logo.ico' }}"
+        type="image/x-icon">
 
-    {{-- 🎨 ICONOS: Google Material Symbols (Google Icons) --}}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    {{-- 🎨 ICONOS: Google Material Symbols (Nueva Fuente Variable) --}}
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    {{-- 🎨 ICONOS: Google Material Icons (Fuente Clásica para Compatibilidad) --}}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     {{-- 🎨 ICONOS: Font Awesome 5 Free --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40wLw2+Xp0B26aVz8/T4j4fA9bJzI1l0D9b/0t0x0qE+I3a4E1jG0Q2F0vG6jN9tY+R4jP6hQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     {{-- MUKIMONO: Cache-Busting para CSS (Usando $compiled) --}}
-    <link rel="stylesheet" href="{{ $page->baseUrl }}{{ $compiled['css'] ?? '/assets/build/css/main.css' }}?v={{ $compiled['version'] ?? '1' }}">
-
-    {{-- MUKIMONO: Cache-Busting para JS (Usando $compiled) --}}
-    <script defer src="{{ $page->baseUrl }}{{ $compiled['js'] ?? '/assets/build/js/main.js' }}?v={{ $compiled['version'] ?? '1' }}"></script>
+    <link rel="stylesheet"
+        href="{{ $page->baseUrl }}{{ $compiled['css'] ?? '/assets/build/css/main.css' }}?v={{ $compiled['version'] ?? '1' }}">
 </head>
 
-<body class="mukimono tma_d1">
+<body class="{{ $design }}">
     <div class="fx2">
         <div class="pg1440 h100vh of1">
-            @yield('body')
+            <div class="h100vh">
+                @yield('body')
+            </div>
             @include('_layouts.footer')
         </div>
     </div>
+
+    {{-- MUKIMONO: Cache-Busting para JS (Usando $compiled) --}}
+    <script defer
+        src="{{ $page->baseUrl }}{{ $compiled['js'] ?? '/assets/build/js/main.js' }}?v={{ $compiled['version'] ?? '1' }}">
+    </script>
 </body>
 
 </html>
