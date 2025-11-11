@@ -1,68 +1,76 @@
 @extends('_layouts.main')
 
-{{-- Define el título y descripción de la página --}}
 @php
-    $page->title = 'Contacto y Soporte - MUKIMONO CSS';
-    $page->description = 'Vías directas para contacto, soporte, redes sociales y donaciones para MUKIMONO CSS.';
+    $page->title = 'Contacto - MUKIMONO CSS';
+    $page->description = 'Canales de soporte directo.';
+
+    $design = [
+        'main_content' => '',
+        'title' => 'fs32 pd12tb', // Título con negrita fw7 reintroducido
+        'subtitle' => 'fs22 fw6 mg12t tac',
+        'paragraph' => 'fs14 mg8b',
+        'card' => 'pd12 rd3x liv',
+        'link_icon' => 'lb40',
+    ];
+
+    // Datos Dinámicos de Contacto
+    $contacts = [
+        [
+            'title' => 'Soporte Directo',
+            'description' => 'Para consultas técnicas',
+            'admin_name' => 'Alejandro F.C.S.',
+            'email' => 'alejandroffff11@gmail.com',
+            'phone' => '+507 6963-2402',
+            'email_link' => 'https://mail.google.com/mail/?view=cm&fs=1&to=alejandroffff11@gmail.com',
+            'whatsapp_link' => 'https://wa.me/50769632402',
+        ],
+    ];
+
 @endphp
 
 @section('body')
-    {{-- Contenedor Principal (sin clases) --}}
-    <div>
-
-        {{-- 1. Cabecera de Página (sin clases) --}}
+    <main class="{{ $design['main_content'] }}">
+        {{-- Encabezado --}}
         <header>
             @include('_layouts.navbar_main_top')
-            <div class="pd12">
-                <h1>
-                    Soporte y Colaboración
-                </h1>
-                <p>
-                    Conéctese con el equipo de MUKIMONO CSS y apoye nuestro desarrollo.
+            <div class="{{ $design['main_content'] }} tac">
+                <h1 class="{{ $design['title'] }}">Contacto y Soporte</h1>
+                <p class="{{ $design['paragraph'] }} fs18">
+                    Conéctate con el equipo.
                 </p>
             </div>
-
         </header>
 
-        {{-- 2. Grid de Opciones de Contacto (sin clases) --}}
-        <section class="pd12tb fx10 pd12x">
+        {{-- Canales de Comunicación Directa --}}
+        <section>
+            <div class="fx10 wa256x">
+                @foreach ($contacts as $contact)
+                    {{-- Tarjeta de Contacto --}}
+                    <div class="{{ $design['card'] }}">
+                        <h3 class="{{ $design['subtitle'] }} tdn">{{ $contact['title'] }}</h3>
+                        <p class="{{ $design['paragraph'] }} tac fs12">{{ $contact['description'] }}</p>
 
-            {{-- Tarjeta 1: Contacto Directo (sin clases) --}}
-            <div>
-                <h3>Contacto Directo</h3>
-                <p>
-                    <span>✉️</span> info@mukimono.com
-                </p>
-                <p>
-                    <span>📞</span> +507 555-5555
-                </p>
+                        <div class="rd3 tma_d3 pd12">
+                            <p class="{{ $design['paragraph'] }} fs16 fw6">Admin: {{ $contact['admin_name'] }}</p>
+                            <div class="mg8t">
+                                <span class="fs12 fw7 tdn">Correo:</span>
+                                <a href="{{ $contact['email_link'] }}" target="_blank" title="Enviar correo vía Gmail"
+                                    class="{{ $design['link_icon'] }}">
+                                    <i class="fab fa-google mg6r"></i> {{ $contact['email'] }}
+                                </a>
+                            </div>
+                            <div class="mg8t">
+                                <span class="fs12 fw7 tdn">Móvil:</span>
+                                <a href="{{ $contact['whatsapp_link'] }}" target="_blank" title="Chatear vía WhatsApp"
+                                    class="{{ $design['link_icon'] }}">
+                                    <i class="fab fa-whatsapp mg6r"></i> {{ $contact['phone'] }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
-
-            {{-- Tarjeta 2: Redes Sociales / Código (sin clases) --}}
-            <div>
-                <h3>Comunidad y Código</h3>
-                <ul>
-                    <li>
-                        <a href="#" class="lb32">GitHub (Código Fuente)</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lb32">Twitter/X (Noticias Oficiales)</a>
-                    </li>
-                </ul>
-            </div>
-
-            {{-- Tarjeta 3: Donaciones / Apoyo (sin clases) --}}
-            <div>
-                <h3>Apoyar el Proyecto</h3>
-                <p>
-                    MUKIMONO CSS es gratuito y de código abierto. Su apoyo es vital para mantener el proyecto.
-                </p>
-                <a href="#" class="lb32">
-                    Realizar una Donación
-                </a>
-            </div>
-
         </section>
 
-    </div>
+    </main>
 @endsection

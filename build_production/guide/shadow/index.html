@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,58 +27,452 @@
 
     
     <link rel="stylesheet"
-        href="/assets/build/css/main.css?v=1762589379">
+        href="/assets/build/css/main.css?v=1762842687">
 </head>
 
-<body class="mukimono tma_d1">
-    <div class="fx2">
-        <div class="pg1440 h100vh of1">
-            <div class="h100vh">
+
+<body class="mukimono tma_d1 h100vh of4"> 
+    
+    <div class="fx2 h100p"> 
+        
+        <div class="pg1440 h100p of1">
+            <div class="ha100p">
+                
                     <header>
-        <nav class="tma_d2 pd8lr fx13 ">
-    <div>
-        
-        <a href="/" class="lb48">
-            
-            <img src="/assets/images/logotype.png"
-                alt="Mukimono Css Logo" class="img24">
-        </a>
-    </div>
-
-    <div>
+        <nav id="navbar_main_top" class="tma_d2 pd8lr pst9" title="Guide Navigation Bar">
+    <div class="fx13">
 
         
-        
-        
-        <div class="lih">
-            <ul id="navbar_main_fixed_up" class="tma_d7xhv">
-
-                
-                
-                <li>
-                    <a  href="/"
-                        class="lb48 ">
-                        Home
-                    </a>
-                </li>
-
-                
-                <li>
-                    <a  href="/contact"
-                        class=" lb48 ">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+        <div>
+            <a href="/" class="lb48" title="Go to Home Page">
+                <img src="/assets/images/logotype.png"
+                    alt="Mukimono Css Logo" class="img24" title="Mukimono CSS Logotype">
+            </a>
         </div>
 
+        
+        <div class="fx1">
 
-        <button type="button" class="bt48 wi48 tma_d7hv">
-            ☰
-        </button>
+            
+            <div id="navbar_main_top_hor" class="lih">
+                <ul class="tma_d7xhv mg0 pd0" title="Main Navigation Links">
+                    
+                    
+                    <li>
+                        <a href="/"
+                            class="lb48 pd8lr" title="Home">
+                            <i class="material-icons mg6r">home</i>
+                            Inicio
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/contact"
+                            class="lb48 pd8lr" title="Contact">
+                            <i class="material-icons mg6r">phone</i>
+                            Contacto
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/guide/home"
+                            class="lb48 pd8lr" title="Guide Home">
+                            <i class="material-icons mg6r">menu_book</i>
+                            Guía
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        <a href="/legal/donate"
+                            class="bt48 tma_d5hv tma_d7hv pd8lr tma_d9"
+                            title="Donar">
+                            <i class="material-icons mg6r">payment</i>
+                            Donar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            
+            
+            <div id="navbar_main_top_fixed" class="liv pst4 h100vh of1 tma_d5 mn280" style="display: none;">
+
+                
+                <button onclick="navbar_main_top_fixed_toggle('navbar_main_top_fixed')" type="button"
+                    class="bt48 wi48 tma_d7hv pd8lr fx" aria-label="Close Menu">
+                    <i class="material-icons mg6r">close</i>
+                </button>
+
+                <ul class="tma_d7xhv mg0 pd0 mg8t" title="Mobile Navigation Links">
+
+                    
+                    <li>
+                        <a href="/"
+                            class="lb48 pd8lr w100p fx1 fx8" title="Home">
+                            <i class="material-icons mg6r">home</i> Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact"
+                            class="lb48 pd8lr w100p fx1 fx8" title="Contact">
+                            <i class="material-icons mg6r">phone</i> Contacto
+                        </a>
+                    </li>
+                    <hr class="mg12">
+                    
+                    
+                    <h4 class="fs12 pd8lr pd8tb">DOCUMENTACIÓN DE UTILIDADES</h4>
+
+                    
+                                            <li>
+                            <a href="/guide/home"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Guide Home">
+                                
+                                <i class="fa fa-book mg6r"></i>
+                                Guide Home
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/alert"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Alerts">
+                                
+                                <i class="fa fa-bell mg6r"></i>
+                                Alerts
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/animation"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Animations">
+                                
+                                <i class="fa fa-play mg6r"></i>
+                                Animations
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/blur"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Blur">
+                                
+                                <i class="fa fa-eye-slash mg6r"></i>
+                                Blur
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/border"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Borders">
+                                
+                                <i class="fa fa-square mg6r"></i>
+                                Borders
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/button"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Buttons">
+                                
+                                <i class="fa fa-hand-pointer mg6r"></i>
+                                Buttons
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/color"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Colors &amp; BG">
+                                
+                                <i class="fa fa-palette mg6r"></i>
+                                Colors &amp; BG
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/container"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Containers">
+                                
+                                <i class="fa fa-inbox mg6r"></i>
+                                Containers
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/containerflex"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Flex Containers">
+                                
+                                <i class="fa fa-grip-lines mg6r"></i>
+                                Flex Containers
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/cursor"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Cursor">
+                                
+                                <i class="fa fa-mouse-pointer mg6r"></i>
+                                Cursor
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/dropdown"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Dropdowns">
+                                
+                                <i class="fa fa-caret-down mg6r"></i>
+                                Dropdowns
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/flex"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Flex Items">
+                                
+                                <i class="fa fa-grip-lines-vertical mg6r"></i>
+                                Flex Items
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/font"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Font &amp; Text">
+                                
+                                <i class="fa fa-font mg6r"></i>
+                                Font &amp; Text
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/height"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Height">
+                                
+                                <i class="fa fa-arrows-alt-v mg6r"></i>
+                                Height
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/hide"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Hide">
+                                
+                                <i class="fa fa-minus-circle mg6r"></i>
+                                Hide
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/image"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Images">
+                                
+                                <i class="fa fa-image mg6r"></i>
+                                Images
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/input"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Inputs">
+                                
+                                <i class="fa fa-keyboard mg6r"></i>
+                                Inputs
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/link"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Links">
+                                
+                                <i class="fa fa-link mg6r"></i>
+                                Links
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/list"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Lists">
+                                
+                                <i class="fa fa-list-ul mg6r"></i>
+                                Lists
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/margin"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Margin (m-)">
+                                
+                                <i class="fa fa-ruler-vertical mg6r"></i>
+                                Margin (m-)
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/menu"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Menu/Nav">
+                                
+                                <i class="fa fa-bars mg6r"></i>
+                                Menu/Nav
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/notes"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Notes/Tips">
+                                
+                                <i class="fa fa-sticky-note mg6r"></i>
+                                Notes/Tips
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/overflow"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Overflow">
+                                
+                                <i class="fa fa-window-maximize mg6r"></i>
+                                Overflow
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/padding"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Padding (p-)">
+                                
+                                <i class="fa fa-ruler-horizontal mg6r"></i>
+                                Padding (p-)
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/page"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Page Setup">
+                                
+                                <i class="fa fa-file-alt mg6r"></i>
+                                Page Setup
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/panel"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Panels/Cards">
+                                
+                                <i class="fa fa-clone mg6r"></i>
+                                Panels/Cards
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/position"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Position">
+                                
+                                <i class="fa fa-map-pin mg6r"></i>
+                                Position
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/responsive"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Responsive">
+                                
+                                <i class="fa fa-mobile-alt mg6r"></i>
+                                Responsive
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/round"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Round/Radius">
+                                
+                                <i class="fa fa-circle mg6r"></i>
+                                Round/Radius
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/scroll"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Scroll">
+                                
+                                <i class="fa fa-mouse-scroll mg6r"></i>
+                                Scroll
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/shadow"
+                                class="lb48 pd8lr w100p fx1 fx8 tma_d3 rd3" title="Shadows">
+                                
+                                <i class="fa fa-cloud mg6r"></i>
+                                Shadows
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/show"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Show">
+                                
+                                <i class="fa fa-plus-circle mg6r"></i>
+                                Show
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/textalign"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Text Align">
+                                
+                                <i class="fa fa-align-left mg6r"></i>
+                                Text Align
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/theme"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Themes">
+                                
+                                <i class="fa fa-brush mg6r"></i>
+                                Themes
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/verticalalign"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Vertical Align">
+                                
+                                <i class="fa fa-exchange-alt mg6r"></i>
+                                Vertical Align
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/width"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Width">
+                                
+                                <i class="fa fa-arrows-alt-h mg6r"></i>
+                                Width
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/guide/zindex"
+                                class="lb48 pd8lr w100p fx1 fx8" title="Z-Index">
+                                
+                                <i class="fa fa-layer-group mg6r"></i>
+                                Z-Index
+                            </a>
+                        </li>
+                                        <hr class="mg12">
+
+                    
+                    <li>
+                        <a href="/legal/donate"
+                            class="lb48 pd8lr w100p fx1 fx8 tma_d9"
+                            title="Donar">
+                            <i class="material-icons mg6r">payment</i> Donar
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            
+            <div>
+                <button onclick="navbar_main_top_fixed_toggle('navbar_main_top_fixed')" type="button"
+                    class="bt48 wi48 tma_d7hv pd8lr" aria-label="Open Menu">
+                    <i class="material-icons mg6r">menu</i> Menu
+                </button>
+            </div>
+
+        </div>
     </div>
 </nav>
-        <div class="pd12">
+
+
+<script>
+    /**
+     * Toggles the visibility of an element by its ID and hides/shows scroll on the body.
+     * @param {string} id The ID of the element to toggle.
+     */
+    const navbar_main_top_fixed_toggle = id => {
+        const el = document.getElementById(id);
+        const body = document.body;
+        if (el) {
+            const isHidden = el.style.display === 'none' || el.style.display === '';
+            el.style.display = isHidden ? 'block' : 'none';
+
+            // Use the remembered utility class .of4 for overflow: hidden
+            // Comentario: Oculta el scroll en móvil al abrir el menú (estética profesional y usabilidad).
+            if (isHidden) {
+                body.classList.add('of4'); // .of4 = overflow: hidden
+            } else {
+                body.classList.remove('of4');
+            }
+        }
+    };
+</script>        <div class="pd12">
             <h1>Sombra de Caja (`bsd`)</h1>
             <p>
                 Clases para aplicar el efecto **`box-shadow`**. Se utilizan para dar profundidad (sombras funcionales) o para simular bordes de color y grosor específicos (bordes simulados).
@@ -132,51 +525,103 @@
         </div>
     </main>
             </div>
+            
             <footer class="pd12tb tma_d3">
-    <div class="fx10">
+    
+    <div class="fx10 mg12t wa256x">
+
         
-        
-        <div class="pd12 liv">
+        <div class="pd12 ifx13 mg12">
+            <div class="tac">
+                <h3 class="fs22 tac pd12tb fs28">Comunidad</h3>
+                <p class="fs14 mg12b">
+                    Únete a nuestro desarrollo.
+                </p>
+            </div>
             
-            <img src="/assets/images/logotype.png" 
-                 alt="Logotipo Mukimono" 
-                 class="h40 mg6b">
-            <h3 class="fs22">Mukimono Css</h3>
-            <p class="fs14">
-                Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
-            </p>
-        </div>
-        
-        
-        <div class="pd12 liv">
-            <h3 class="fs22">Navegación</h3>
-            
-            <ul class="tma_d7xhv">
-                            </ul>
-        </div>
-        
-        
-        <div class="pd12 liv">
-            <h3 class="fs22">Contacto</h3>
-            <p class="fs14">Email: info@mukimono.com</p>
-            
-            <p>Soporte: +507 555-5555</p> 
+            <div class="mg8t fx10">
+                <a href="https://github.com/Alejandroffff/Mukimono-css" target="_blank" title="Repositorio de Mukimono en GitHub"
+                    class="bt40 tma_d7hv tma_d5 rd3 lb48 pd8lr">
+                    <i class="fab fa-github mg6r fs18"></i> Ir a Github
+                </a>
+            </div>
         </div>
 
+        
+        <div class="pd12 ifx13 mg12 fx fxfc">
+            <h3 class="fs22 tac pd12tb tac">Contacto y Soporte</h3>
+
+            
+                            <div class="pd12 rd3 liv mg8b fx fxfc">
+
+                    
+                    <div class="fx fxac w100p mg4b">
+                        <div class="fx fx10">
+                            <img src="/assets/images/admin/logo_alejandro.png"
+                                alt="Logo de Alejandro F.C.S." class="img40 rd50p mg8r img48">
+                        </div>
+                        <div class="fs16">Administrador: **Alejandro F.C.S.**</div>
+                    </div>
+
+                    
+                    <div class="w100p mg4t">
+                        <div class="mg6b">
+                            <div class="fs14 fs12 mg2b">Email:</div>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alejandroffff11@gmail.is"
+                                target="_blank" title="Enviar correo a Alejandro F.C.S. vía Gmail"
+                                class="tma_d7h lb16 fs14">
+                                <i class="fas fa-envelope mg6r"></i> alejandroffff11@gmail.is
+                            </a>
+                        </div>
+                        <div class="mg6b">
+                            <div class="fs14 fs12 mg2b">Celular:</div>
+                            <a href="https://wa.me/+50769632402"
+                                target="_blank" title="Chatear con Alejandro F.C.S. vía WhatsApp"
+                                class="tma_d7h lb16 fs14 fx fxac">
+                                <i class="fab fa-whatsapp mg6r"></i> +507 6963-2402
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+        
+        <div class="pd12 ifx13 mg12 liv">
+            <h3 class="fs22 tac pd12tb tac">Información Legal</h3>
+            <ul class="tma_d7xhv">
+                <li>
+                    <a href="/legal/privacy" class="lb40 tma_d7h lb-force w100p">
+                        Política de Privacidad
+                    </a>
+                </li>
+                <li>
+                    <a href="/legal/terms" class="lb40 tma_d7h lb-force w100p">
+                        Términos de Servicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/legal/cookies" class="lb40 tma_d7h lb-force w100p">
+                        Política de Cookies
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     
-    <div class="pd12 tac">
+    <div class="pd12 tac mg12t">
+        <hr class="mg12">
         <p class="fs14">
-            &copy; 2025 MUKIMONO. Todos los derechos reservados.
+            &copy; 2025 **MUKIMONO**. Todos los derechos reservados.
         </p>
     </div>
-</footer>        </div>
+</footer>
+        </div>
     </div>
 
     
     <script defer
-        src="/assets/build/js/main.js?v=1762589379">
+        src="/assets/build/js/main.js?v=1762842687">
     </script>
 </body>
 

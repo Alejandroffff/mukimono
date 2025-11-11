@@ -97,7 +97,6 @@ foreach ($mukimonoUtilityKeys as $key) {
     $secondaryLinks[] = [
         'name' => $data['name'],
         // Construye la ruta /guide/{key}
-        // Nota: Si usas rutas con nombre (ej. Laravel), esto debería ser un nombre de ruta.
         // Asumiendo rutas basadas en path para Jigsaw:
         'route' => '/guide/' . $key,
         'icon' => $data['icon'],
@@ -120,6 +119,9 @@ $NAV_LINKS = [
         // Rutas específicas para el tutorial Mukimono CSS
         'tutorial_images'   => '/assets/images/mukimono-tutorial/',
 
+        // Ruta del logo de administrador
+        'admin'      => '/assets/images/admin/logo_alejandro.png',
+
         'compiled_assets' => [
             'css' => '/assets/build/css/main.css',
             'js'  => '/assets/build/js/main.js',
@@ -141,6 +143,12 @@ $NAV_LINKS = [
             'route' => '/contact',
             'icon'  => 'phone',
         ],
+        // ENLACE DE DONACIÓN AGREGADO
+        [
+            'name'  => 'Donar',
+            'route' => '/legal/donate',
+            'icon'  => 'hand-holding-usd', 
+        ],
     ],
 
     /**
@@ -158,9 +166,25 @@ $NAV_LINKS = [
 
     /**
      * Links for the site footer.
+     * Incluye enlaces legales esenciales para una plataforma profesional.
      */
     'link_footer' => [
-        // Footer routes would be added here.
+        // Enlaces Legales 
+        [
+            'name'  => 'Política de Privacidad',
+            'route' => '/legal/privacy',
+            'icon'  => 'user-secret', 
+        ],
+        [
+            'name'  => 'Términos de Servicio',
+            'route' => '/legal/terms',
+            'icon'  => 'gavel', 
+        ],
+        [
+            'name'  => 'Política de Cookies',
+            'route' => '/legal/cookies',
+            'icon'  => 'cookie-bite', 
+        ],
     ],
 ];
 

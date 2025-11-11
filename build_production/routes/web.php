@@ -1,11 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// La Facade Response no es necesaria para Route::view o para la función global response().
-// use Illuminate\Support\Facades\Response; // ¡Esta línea es innecesaria y eliminada!
 
 /**
- * Rutas de la Aplicación Principal
+ * Rutas de la Aplicación Principal y Páginas de Nivel Superior
  */
 
 // Ruta principal: / (Vista: src/views/index.blade.php)
@@ -14,6 +12,23 @@ Route::view('/', 'index')->name('home');
 // Ruta de contacto: /contact (Vista: src/views/contact.blade.php)
 Route::view('/contact', 'contact')->name('contact.index');
 
+// --------------------------------------------------------------------------
+// Rutas Legales (views/legal)
+// --------------------------------------------------------------------------
+Route::prefix('legal')->group(function () {
+    // Ruta de Política de Privacidad: /legal/privacy
+    Route::view('/privacy', 'legal.privacy')->name('legal.privacy');
+
+    // Ruta de Términos de Servicio: /legal/terms
+    Route::view('/terms', 'legal.terms')->name('legal.terms');
+
+    // Ruta de Política de Cookies: /legal/cookies
+    Route::view('/cookies', 'legal.cookies')->name('legal.cookies');
+
+    // Ruta de donación: /donate (Vista: src/views/legal/donate.blade.php)
+    Route::view('/donate', 'legal.donate')->name('legal.donate');
+});
+
 
 // --------------------------------------------------------------------------
 // Rutas de la Guía y Documentación (views)
@@ -21,7 +36,7 @@ Route::view('/contact', 'contact')->name('contact.index');
 
 // Define todas las utilidades de Mukimono CSS, incluyendo 'home' al principio.
 $mukimonoUtilities = [
-    'home', 
+    'home',
     'alert',
     'animation',
     'blur',

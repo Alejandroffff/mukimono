@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="/contact">
-    <meta name="description" content="Vías directas para contacto, soporte, redes sociales y donaciones para MUKIMONO CSS.">
-    <title>Contacto y Soporte - MUKIMONO CSS</title>
+    <meta name="description" content="Canales de soporte directo.">
+    <title>Contacto - MUKIMONO CSS</title>
 
     
     <link rel="icon" type="image/x-icon"
@@ -28,16 +27,18 @@
 
     
     <link rel="stylesheet"
-        href="/assets/build/css/main.css?v=1762589379">
+        href="/assets/build/css/main.css?v=1762842687">
 </head>
 
-<body class="mukimono tma_d1">
-    <div class="fx2">
-        <div class="pg1440 h100vh of1">
-            <div class="h100vh">
-                    
-    <div>
 
+<body class="mukimono tma_d1 h100vh of4"> 
+    
+    <div class="fx2 h100p"> 
+        
+        <div class="pg1440 h100p of1">
+            <div class="ha100p">
+                
+                    <main class="">
         
         <header>
             <nav id="navbar_main_top" class="tma_d2 pd8lr pst9" title="Main Navigation Bar">
@@ -46,7 +47,6 @@
         
         <div>
             <a href="/" class="lb48" title="Go to Home Page">
-                
                 <img src="/assets/images/logotype.png"
                     alt="Mukimono Css Logo" class="img24" title="Mukimono CSS Logotype">
             </a>
@@ -58,12 +58,11 @@
             
             <div id="navbar_main_top_hor" class="lih">
                 <ul class="tma_d7xhv mg0 pd0" title="Main Navigation Links">
-
+                    
                     
                     <li>
                         <a href="/"
-                            class="lb48 pd8lr  "
-                            title="Home Page">
+                            class="lb48 pd8lr" title="Home">
                             <i class="material-icons mg6r">home</i>
                             Inicio
                         </a>
@@ -72,8 +71,7 @@
                     
                     <li>
                         <a href="/contact"
-                            class="lb48 pd8lr   tma_d3 rd3 "
-                            title="Contact Us">
+                            class="lb48 pd8lr tma_d3 rd3" title="Contact">
                             <i class="material-icons mg6r">phone</i>
                             Contacto
                         </a>
@@ -82,35 +80,41 @@
                     
                     <li>
                         <a href="/guide/home"
-                            class="lb48 pd8lr  "
-                            title="Mukimono CSS Documentation Guide">
-                            <i class="material-icons mg6r">book</i>
+                            class="lb48 pd8lr" title="Guide Home">
+                            <i class="material-icons mg6r">menu_book</i>
                             Guía
                         </a>
                     </li>
-                </ul>
 
+                    
+                    <li>
+                        <a href="/legal/donate"
+                            class="bt48 tma_d5hv tma_d7hv pd8lr tma_d9"
+                            title="Donar">
+                            <i class="material-icons mg6r">payment</i>
+                            Donar
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            
             
             <div id="navbar_main_top_fixed" class="liv pst4 h100vh of1 tma_d5 mn280" style="display: none;">
 
                 
-                <button onclick="navbar_main_top_fixed_show('navbar_main_top_fixed')" type="button"
-                    class="bt48 wi48 tma_d7hv" id="navbar_main_top_button_close" aria-expanded="false"
-                    aria-controls="navbar_main_top_fixed" title="Toggle Navigation Menu">
-                    
+                <button onclick="navbar_main_top_fixed_toggle('navbar_main_top_fixed')" type="button"
+                    class="bt48 wi48 tma_d7hv pd8lr" aria-label="Close Menu">
                     <i class="material-icons mg6r">close</i>
                 </button>
 
-                <ul class="tma_d7xhv mg0 pd0" title="Main Navigation Links">
+                <ul class="tma_d7xhv mg0 pd0" title="Mobile Navigation Links">
 
                     
                     <li>
+                        
                         <a href="/"
-                            class="lb48 pd8lr w100p fx1 fx8 "
-                            title="Home Page">
+                            class="lb48 pd8lr w100p fx1 fx8"
+                            title="Home">
                             <i class="material-icons mg6r">home</i>
                             Inicio
                         </a>
@@ -119,8 +123,8 @@
                     
                     <li>
                         <a href="/contact"
-                            class="lb48 pd8lr w100p fx1 fx8  tma_d3 rd3 "
-                            title="Contact Us">
+                            class="lb48 pd8lr w100p fx1 fx8 tma_d3 rd3"
+                            title="Contact">
                             <i class="material-icons mg6r">phone</i>
                             Contacto
                         </a>
@@ -129,24 +133,33 @@
                     
                     <li>
                         <a href="/guide/home"
-                            class="lb48 pd8lr w100p fx1 fx8 "
-                            title="Mukimono CSS Documentation Guide">
-                            <i class="material-icons mg6r">book</i>
+                            class="lb48 pd8lr w100p fx1 fx8"
+                            title="Guide Home">
+                            <i class="material-icons mg6r">menu_book</i>
                             Guía
                         </a>
                     </li>
 
-                </ul>
+                    
+                    <li>
+                        
+                        <a href="/legal/donate"
+                            class="lb48 pd8lr w100p fx1 fx8 tma_d9"
+                            title="Donar">
+                            <i class="material-icons mg6r">payment</i>
+                            Donar
+                        </a>
+                    </li>
 
+                </ul>
             </div>
 
 
             
             <div>
-                <button onclick="navbar_main_top_fixed_show('navbar_main_top_fixed')" type="button"
-                    class="bt48 wi48 tma_d7hv" id="navbar_main_top_button_menu" aria-expanded="false"
-                    aria-controls="navbar_main_top_fixed" title="Toggle Navigation Menu">
-                    <i class="material-icons mg6r">menu</i>
+                <button onclick="navbar_main_top_fixed_toggle('navbar_main_top_fixed')" type="button"
+                    class="bt48 wi48 tma_d7hv pd8lr" aria-label="Open Menu">
+                    <i class="material-icons mg6r">menu</i>Menu
                 </button>
             </div>
 
@@ -157,116 +170,153 @@
 
 <script>
     /**
-     * Alterna la visibilidad (muestra u oculta) de un elemento HTML por su ID.
-     * @param {string} id - El ID del elemento a alternar.
+     * Alterna la visibilidad de un elemento por su ID.
      */
-    const navbar_main_top_fixed_show = id => {
+    const navbar_main_top_fixed_toggle = id => {
         const el = document.getElementById(id);
         if (el) {
-            // Alterna entre 'none' y 'block' (o 'flex', si es necesario, 
-            // pero 'block' funciona bien para el menú fijo).
+            // Nota: Se recomienda cambiar 'display' a una clase CSS para transiciones.
+            // Para ocultar el scroll del body en móvil al abrir el menú, se debería
+            // añadir la clase .of4 (overflow: hidden) al body.
             el.style.display = (el.style.display === 'none' ? 'block' : 'none');
         }
     };
-</script>
-            <div class="pd12">
-                <h1>
-                    Soporte y Colaboración
-                </h1>
-                <p>
-                    Conéctese con el equipo de MUKIMONO CSS y apoye nuestro desarrollo.
+</script>            <div class=" tac">
+                <h1 class="fs32 pd12tb">Contacto y Soporte</h1>
+                <p class="fs14 mg8b fs18">
+                    Conéctate con el equipo.
                 </p>
             </div>
-
         </header>
 
         
-        <section class="pd12tb fx10 pd12x">
+        <section>
+            <div class="fx10 wa256x">
+                                    
+                    <div class="pd12 rd3x liv">
+                        <h3 class="fs22 fw6 mg12t tac tdn">Soporte Directo</h3>
+                        <p class="fs14 mg8b tac fs12">Para consultas técnicas</p>
 
-            
-            <div>
-                <h3>Contacto Directo</h3>
-                <p>
-                    <span>✉️</span> info@mukimono.com
-                </p>
-                <p>
-                    <span>📞</span> +507 555-5555
-                </p>
-            </div>
-
-            
-            <div>
-                <h3>Comunidad y Código</h3>
-                <ul>
-                    <li>
-                        <a href="#" class="lb32">GitHub (Código Fuente)</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lb32">Twitter/X (Noticias Oficiales)</a>
-                    </li>
-                </ul>
-            </div>
-
-            
-            <div>
-                <h3>Apoyar el Proyecto</h3>
-                <p>
-                    MUKIMONO CSS es gratuito y de código abierto. Su apoyo es vital para mantener el proyecto.
-                </p>
-                <a href="#" class="lb32">
-                    Realizar una Donación
-                </a>
-            </div>
-
+                        <div class="rd3 tma_d3 pd12">
+                            <p class="fs14 mg8b fs16 fw6">Admin: Alejandro F.C.S.</p>
+                            <div class="mg8t">
+                                <span class="fs12 fw7 tdn">Correo:</span>
+                                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=alejandroffff11@gmail.com" target="_blank" title="Enviar correo vía Gmail"
+                                    class="lb40">
+                                    <i class="fab fa-google mg6r"></i> alejandroffff11@gmail.com
+                                </a>
+                            </div>
+                            <div class="mg8t">
+                                <span class="fs12 fw7 tdn">Móvil:</span>
+                                <a href="https://wa.me/50769632402" target="_blank" title="Chatear vía WhatsApp"
+                                    class="lb40">
+                                    <i class="fab fa-whatsapp mg6r"></i> +507 6963-2402
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
         </section>
 
-    </div>
+    </main>
             </div>
+            
             <footer class="pd12tb tma_d3">
-    <div class="fx10">
+    
+    <div class="fx10 mg12t wa256x">
+
         
-        
-        <div class="pd12 liv">
+        <div class="pd12 ifx13 mg12">
+            <div class="tac">
+                <h3 class="fs22 tac pd12tb fs28">Comunidad</h3>
+                <p class="fs14 mg12b">
+                    Únete a nuestro desarrollo.
+                </p>
+            </div>
             
-            <img src="/assets/images/logotype.png" 
-                 alt="Logotipo Mukimono" 
-                 class="h40 mg6b">
-            <h3 class="fs22">Mukimono Css</h3>
-            <p class="fs14">
-                Plataforma Profesional y Soluciones Empresariales de Alto Nivel.
-            </p>
-        </div>
-        
-        
-        <div class="pd12 liv">
-            <h3 class="fs22">Navegación</h3>
-            
-            <ul class="tma_d7xhv">
-                            </ul>
-        </div>
-        
-        
-        <div class="pd12 liv">
-            <h3 class="fs22">Contacto</h3>
-            <p class="fs14">Email: info@mukimono.com</p>
-            
-            <p>Soporte: +507 555-5555</p> 
+            <div class="mg8t fx10">
+                <a href="https://github.com/Alejandroffff/Mukimono-css" target="_blank" title="Repositorio de Mukimono en GitHub"
+                    class="bt40 tma_d7hv tma_d5 rd3 lb48 pd8lr">
+                    <i class="fab fa-github mg6r fs18"></i> Ir a Github
+                </a>
+            </div>
         </div>
 
+        
+        <div class="pd12 ifx13 mg12 fx fxfc">
+            <h3 class="fs22 tac pd12tb tac">Contacto y Soporte</h3>
+
+            
+                            <div class="pd12 rd3 liv mg8b fx fxfc">
+
+                    
+                    <div class="fx fxac w100p mg4b">
+                        <div class="fx fx10">
+                            <img src="/assets/images/admin/logo_alejandro.png"
+                                alt="Logo de Alejandro F.C.S." class="img40 rd50p mg8r img48">
+                        </div>
+                        <div class="fs16">Administrador: **Alejandro F.C.S.**</div>
+                    </div>
+
+                    
+                    <div class="w100p mg4t">
+                        <div class="mg6b">
+                            <div class="fs14 fs12 mg2b">Email:</div>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alejandroffff11@gmail.is"
+                                target="_blank" title="Enviar correo a Alejandro F.C.S. vía Gmail"
+                                class="tma_d7h lb16 fs14">
+                                <i class="fas fa-envelope mg6r"></i> alejandroffff11@gmail.is
+                            </a>
+                        </div>
+                        <div class="mg6b">
+                            <div class="fs14 fs12 mg2b">Celular:</div>
+                            <a href="https://wa.me/+50769632402"
+                                target="_blank" title="Chatear con Alejandro F.C.S. vía WhatsApp"
+                                class="tma_d7h lb16 fs14 fx fxac">
+                                <i class="fab fa-whatsapp mg6r"></i> +507 6963-2402
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+        
+        <div class="pd12 ifx13 mg12 liv">
+            <h3 class="fs22 tac pd12tb tac">Información Legal</h3>
+            <ul class="tma_d7xhv">
+                <li>
+                    <a href="/legal/privacy" class="lb40 tma_d7h lb-force w100p">
+                        Política de Privacidad
+                    </a>
+                </li>
+                <li>
+                    <a href="/legal/terms" class="lb40 tma_d7h lb-force w100p">
+                        Términos de Servicio
+                    </a>
+                </li>
+                <li>
+                    <a href="/legal/cookies" class="lb40 tma_d7h lb-force w100p">
+                        Política de Cookies
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
     
-    <div class="pd12 tac">
+    <div class="pd12 tac mg12t">
+        <hr class="mg12">
         <p class="fs14">
-            &copy; 2025 MUKIMONO. Todos los derechos reservados.
+            &copy; 2025 **MUKIMONO**. Todos los derechos reservados.
         </p>
     </div>
-</footer>        </div>
+</footer>
+        </div>
     </div>
 
     
     <script defer
-        src="/assets/build/js/main.js?v=1762589379">
+        src="/assets/build/js/main.js?v=1762842687">
     </script>
 </body>
 
