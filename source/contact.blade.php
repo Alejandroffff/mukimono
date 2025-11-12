@@ -4,21 +4,11 @@
     $page->title = 'Contacto - MUKIMONO CSS';
     $page->description = 'Canales de soporte directo.';
 
-    $design = [
-        'main_content' => '',
-        'title' => 'fs32 pd12tb', // Título con negrita fw7 reintroducido
-        'subtitle' => 'fs22 fw6 mg12t tac',
-        'paragraph' => 'fs14 mg8b',
-        'card' => 'pd12 rd3x liv',
-        'link_icon' => 'lb40',
-    ];
-
     // Datos Dinámicos de Contacto
     $contacts = [
         [
-            'title' => 'Soporte Directo',
-            'description' => 'Para consultas técnicas',
-            'admin_name' => 'Alejandro F.C.S.',
+            'title' => 'Administrador',
+            'admin_name' => 'Alejandro Cedeño',
             'email' => 'alejandroffff11@gmail.com',
             'phone' => '+507 6963-2402',
             'email_link' => 'https://mail.google.com/mail/?view=cm&fs=1&to=alejandroffff11@gmail.com',
@@ -29,47 +19,43 @@
 @endphp
 
 @section('body')
-    <main class="{{ $design['main_content'] }}">
-        {{-- Encabezado --}}
+    <main class="">
         <header>
             @include('_layouts.navbar_main_top')
-            <div class="{{ $design['main_content'] }} tac">
-                <h1 class="{{ $design['title'] }}">Contacto y Soporte</h1>
-                <p class="{{ $design['paragraph'] }} fs18">
+            <div class="pd24 tac">
+                <h1>Contacto y Soporte</h1>
+                <p>
                     Conéctate con el equipo.
                 </p>
             </div>
         </header>
 
-        {{-- Canales de Comunicación Directa --}}
-        <section>
-            <div class="fx10 wa256x">
+        <section class="fx10 pg320x tma_d4x rd3x pd24x mg12x">
                 @foreach ($contacts as $contact)
-                    {{-- Tarjeta de Contacto --}}
-                    <div class="{{ $design['card'] }}">
-                        <h3 class="{{ $design['subtitle'] }} tdn">{{ $contact['title'] }}</h3>
-                        <p class="{{ $design['paragraph'] }} tac fs12">{{ $contact['description'] }}</p>
+                    <div class="tac">
+                        <h3 class="pd12tb">{{ $contact['title'] }}</h3>
+                        <div>
+                            <div>
+                                <span> {{ $contact['admin_name'] }}</span>
+                            </div>
 
-                        <div class="rd3 tma_d3 pd12">
-                            <p class="{{ $design['paragraph'] }} fs16 fw6">Admin: {{ $contact['admin_name'] }}</p>
-                            <div class="mg8t">
-                                <span class="fs12 fw7 tdn">Correo:</span>
+                            <div>
+                                <span>Correo</span>
                                 <a href="{{ $contact['email_link'] }}" target="_blank" title="Enviar correo vía Gmail"
-                                    class="{{ $design['link_icon'] }}">
-                                    <i class="fab fa-google mg6r"></i> {{ $contact['email'] }}
+                                    class="lb24 w100p tma_d5hv rd3">
+                                    {{ $contact['email'] }}
                                 </a>
                             </div>
-                            <div class="mg8t">
-                                <span class="fs12 fw7 tdn">Móvil:</span>
+                            <div>
+                                <span>Móvil</span>
                                 <a href="{{ $contact['whatsapp_link'] }}" target="_blank" title="Chatear vía WhatsApp"
-                                    class="{{ $design['link_icon'] }}">
-                                    <i class="fab fa-whatsapp mg6r"></i> {{ $contact['phone'] }}
+                                    class="lb24 w100p tma_d5hv rd3">
+                                    {{ $contact['phone'] }}
                                 </a>
                             </div>
                         </div>
                     </div>
                 @endforeach
-            </div>
         </section>
 
     </main>

@@ -367,3 +367,28 @@
 .ha256x>* {
   max-height: 256px !important;
 }
+
+/* Alturas estándar en píxeles (Adición de 320px) */
+.h320 {
+  height: 320px !important;
+}
+
+.h320x>* {
+  height: 320px !important;
+}
+
+.hi320 {
+  min-height: 320px !important;
+}
+
+.hi320x>* {
+  min-height: 320px !important;
+}
+
+.ha320 {
+  max-height: 320px !important;
+}
+
+.ha320x>* {
+  max-height: 320px !important;
+}

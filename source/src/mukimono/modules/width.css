@@ -158,6 +158,19 @@
   min-width: 256px !important;
 }
 
+/* 320px */
+.wa320,
+.wa320x>* {
+  width: 100%;
+  max-width: 320px !important;
+}
+
+.wi320,
+.wi320x>* {
+  width: 100%;
+  min-width: 320px !important;
+}
+
 /* ANCHOS RELATIVOS A PANTALLA */
 /* ============================= */
 .w100p,
