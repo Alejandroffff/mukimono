@@ -1,54 +1,45 @@
 /*==============================
-=      LISTA VERTICAL (.liv)    =
+=       LISTA VERTICAL (.liv)  =
 ==============================*/
 .liv ul,
 .liv ol {
   list-style: none;
-  /* elimina viñetas o números */
   margin: 0;
   padding: 0;
   display: flex;
-  /* Flexbox */
   flex-direction: column;
-  /* elementos en columna */
-  gap: 10px;
-  /* espacio entre elementos */
   color: inherit;
 }
 
 .liv ul li,
 .liv ol li {
   display: flex;
-  /* flex para alinear hijos */
   align-items: center;
-  /* centra verticalmente contenido */
   width: 100%;
   color: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 /*==============================
-=      LISTA HORIZONTAL (.lih)  =
+=       LISTA HORIZONTAL (.lih) =
 ==============================*/
 .lih ul,
 .lih ol {
   list-style: none;
-  /* elimina viñetas o números */
   margin: 0;
   padding: 0;
   display: flex;
-  /* Flexbox para horizontal */
   flex-direction: row;
-  /* elementos en fila */
   align-items: center;
-  /* centra verticalmente los hijos */
   color: inherit;
 }
 
 .lih ul li,
 .lih ol li {
   display: flex;
-  /* flex para centrar hijos */
   align-items: center;
-  /* centra verticalmente contenido */
   color: inherit;
+  padding: 0;
+  margin: 0;
 }
