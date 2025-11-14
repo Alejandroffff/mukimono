@@ -36,7 +36,7 @@
     };
 @endphp
 
-<nav id="navbar_main_top" class="tma_d2 pd8lr pst9" title="Main Navigation Bar">
+<nav id="navbar_main_top" class="z9 tma_d2 pd8lr pst9" title="Main Navigation Bar">
     <div class="fx13">
 
         {{-- Área de Logo --}}
@@ -94,7 +94,7 @@
             </div>
 
             {{-- Menú Fijo (Móvil) --}}
-            <div id="navbar_main_top_fixed" class="liv pst4 h100vh of1 tma_d5 mn280" style="display: none;">
+            <div id="navbar_main_top_fixed" class="z10 liv pst4 h100vh of1 tma_d5 mn280" style="display: none;">
 
                 {{-- Botón de Cerrar --}}
                 <button onclick="navbar_main_top_fixed_toggle('navbar_main_top_fixed')" type="button"

@@ -4,47 +4,41 @@
 @section('description', 'Ejemplos de las utilidades de filtro de desenfoque (blur) abreviadas de Mukimono CSS.')
 
 @section('body')
+    <style>
+        .mk-1 {
+            width: 80px; /* Más grande para que el desenfoque sea visible */
+            height: 24px;
+            background-color: #24292e; /* Color oscuro para contraste */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-left: 8px;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+    </style>
     <header>
-        {{-- Se asume que _layouts.navbar_guide_top existe y gestiona sus propias rutas --}}
         @include('_layouts.navbar_guide_top')
-        <div class="pd12">
-            <h1>Filtro Blur (`b`)</h1>
+        <div class="pd24 tac">
+            <h1>Filtro Blur</h1>
             <p>
-                Clases abreviadas para aplicar el filtro CSS `blur()`.
+                Clases abreviadas para aplicar el filtro CSS`.
             </p>
         </div>
     </header>
 
     <main class="pd12">
-        <h2>Ejemplos de Desenfoque</h2>
-        <p class="mg6">Aplica la clase directamente sobre la imagen o el contenedor para ver el efecto.</p>
-
-        <div class="mg6x pd6">
-            {{-- CORRECCIÓN DE RUTA: Acceder a NAV_LINKS como array a través de $page --}}
-            @php
-                $logotypePath =
-                    $page->baseUrl . ($page->NAV_LINKS['asset_paths']['logotype'] ?? '/assets/images/logotype.png');
-            @endphp
-
-            <div class="mg6 pd6">
-                <h3>.b0 (0px)</h3>
-                {{-- La ruta $logotypePath ya está corregida arriba --}}
-                <img class="b0" src="{{ $logotypePath }}" alt="Imagen nítida">
-            </div>
-
-            <div class="mg6 pd6">
-                <h3>.b1 (1px)</h3>
-                <img class="b1" src="{{ $logotypePath }}" alt="Imagen con blur de 1px">
-            </div>
-
-            <div class="mg6 pd6">
-                <h3>.b2 (2px)</h3>
-                <img class="b2" src="{{ $logotypePath }}" alt="Imagen con blur de 2px">
-            </div>
-
-            <div class="mg6 pd6">
-                <h3>.b3 (3px)</h3>
-                <img class="b3" src="{{ $logotypePath }}" alt="Imagen con blur de 3px">
+        <div class="pd24x liv fx10">
+            <div>
+                <h3>1. Desenfoque</h3>
+                <ul class="rd3x tma_d4x pd6x mg1x">
+                    <li>b0 <div class="mk-1 b0">A</div></li>
+                    <li>b1 <div class="mk-1 b1">A</div></li>
+                    <li>b2 <div class="mk-1 b2">A</div></li>
+                    <li>b3 <div class="mk-1 b3">A</div></li>
+                </ul>
             </div>
         </div>
     </main>

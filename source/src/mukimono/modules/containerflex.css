@@ -3,21 +3,14 @@
 ============================*/
 .cf1 {
   display: flex;
-  /* Enable flexbox */
   flex-direction: row;
-  /* Horizontal direction */
   flex-wrap: nowrap;
-  /* Prevent items from wrapping */
   justify-content: flex-start;
-  /* Align items to the start horizontally */
   align-items: stretch;
-  /* Stretch items to fill container height */
   width: 100%;
-  /* Container takes full available width */
   color: inherit;
 }
 
-/* Make all children occupy full width of the flex container */
 .cf1>* {
   width: 100%;
   color: inherit;

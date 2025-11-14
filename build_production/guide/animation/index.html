@@ -27,7 +27,7 @@
 
     
     <link rel="stylesheet"
-        href="/assets/build/css/main.css?v=1762934384">
+        href="/assets/build/css/main.css?v=1763015826">
 </head>
 
 
@@ -38,7 +38,22 @@
         <div class="pg1440 h100p of1">
             <div class="ha100p">
                 
-                    <header>
+                    <style>
+        .mk-1 {
+            width: 24px;
+            height: 24px;
+            background-color: red;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-left: 8px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+    <header>
         <nav id="navbar_main_top" class="tma_d2 pd8lr pst9" title="Guide Navigation Bar">
     <div class="fx13">
 
@@ -472,7 +487,7 @@
             }
         }
     };
-</script>        <div class="pd12">
+</script>        <div class="pd24 tac">
             <h1>Animaciones (`ani_`)</h1>
             <p>
                 Clases predefinidas Rotación, Desteñir y Escala con tiempos estandarizados (0.5s, 1s, 1.5s).
@@ -480,82 +495,99 @@
         </div>
     </header>
 
-    <main class="pd12">
-        <h2>Rotaciones Automáticas</h2>
-        <div class="mg6x">
-            <h3>Rotación Derecha (Clockwise)</h3>
-            <div class="pd6x rd3x  tma_d3x">
-                <div class="ani_rtr05">0.5s</div>
-                <div class="ani_rtr1">1s</div>
-                <div class="ani_rtr15">1.5s</div>
-            </div>
-
-            <h3 class="mg6tb">Rotación Izquierda (Counter-Clockwise)</h3>
-            <div class="pd6x rd3x  tma_d3x">
-                <div class="ani_rtl05">0.5s</div>
-                <div class="ani_rtl1">1s</div>
-                <div class="ani_rtl15">1.5s</div>
-            </div>
+    <main class="pd24x liv fx10">
+        <div>
+            <h3>1. Rotaciones Continuas (Ani)</h3>
+            <ul class="rd3x tma_d4x pd6x mg1x">
+                <li>ani_rtr05 <div class="mk-1 ani_rtr05">A</div>
+                </li>
+                <li>ani_rtr1 <div class="mk-1 ani_rtr1">A</div>
+                </li>
+                <li>ani_rtr15 <div class="mk-1 ani_rtr15">A</div>
+                </li>
+                <li>ani_rtl05 <div class="mk-1 ani_rtl05">A</div>
+                </li>
+                <li>ani_rtl1 <div class="mk-1 ani_rtl1">A</div>
+                </li>
+                <li>ani_rtl15 <div class="mk-1 ani_rtl15">A</div>
+                </li>
+            </ul>
         </div>
 
-        ---
-
-        <h2>Fade Automáticos</h2>
-        <div class="mg6x">
-            <h3>Fade In (Entrada)</h3>
-            <div class="pd6x rd3x  tma_d3x">
-                <div class="ani_fdi05">Aparece (0.5s)</div>
-                <div class="ani_fdi1">Aparece (1s)</div>
-                <div class="ani_fdi15">Aparece (1.5s)</div>
-            </div>
-
-            <h3 class="mg6tb">Fade Out (Salida) ⬅️ NUEVO</h3>
-            <div class="pd6x rd3x  tma_d3x">
-                <div class="ani_fdo05">Desaparece (0.5s)</div>
-                <div class="ani_fdo1">Desaparece (1s)</div>
-                <div class="ani_fdo15">Desaparece (1.5s)</div>
-            </div>
+        <div>
+            <h3>2. Efectos Desteñir (Fade)</h3>
+            <ul class="rd3x tma_d4x pd6x mg1x">
+                <li>ani_fdi05 <div class="mk-1 ani_fdi05">A</div>
+                </li>
+                <li>ani_fdi1 <div class="mk-1 ani_fdi1">A</div>
+                </li>
+                <li>ani_fdi15 <div class="mk-1 ani_fdi15">A</div>
+                </li>
+                <li>ani_fdo05 <div class="mk-1 ani_fdo05">A</div>
+                </li>
+                <li>ani_fdo1 <div class="mk-1 ani_fdo1">A</div>
+                </li>
+                <li>ani_fdo15 <div class="mk-1 ani_fdo15">A</div>
+                </li>
+            </ul>
         </div>
 
-        ---
+        <div class="w100p">
+            <h3 class="tac">3. Escalas al Pasar el Ratón (Hover)</h3>
+            <div class="fx10 wa320x mg3x">
+                <div>
+                    <h4>Agrandar (Scale Out)</h4>
+                    <div>
+                        <ul class="rd3x tma_d4x pd6x mg1x liv">
+                            <li>ani_sco_sm05 <div class="mk-1 ani_sco_sm05">A</div>
+                            </li>
+                            <li>ani_sco_sm1 <div class="mk-1 ani_sco_sm1">A</div>
+                            </li>
+                            <li>ani_sco_sm15 <div class="mk-1 ani_sco_sm15">A</div>
+                            </li>
+                            <li>ani_sco_md05 <div class="mk-1 ani_sco_md05">A</div>
+                            </li>
+                            <li>ani_sco_md1 <div class="mk-1 ani_sco_md1">A</div>
+                            </li>
+                            <li>ani_sco_md15 <div class="mk-1 ani_sco_md15">A</div>
+                            </li>
+                            <li>ani_sco_lg05 <div class="mk-1 ani_sco_lg05">A</div>
+                            </li>
+                            <li>ani_sco_lg1 <div class="mk-1 ani_sco_lg1">A</div>
+                            </li>
+                            <li>ani_sco_lg15 <div class="mk-1 ani_sco_lg15">A</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-        <h2>Escalas en Hover</h2>
-        <p>Pasa el ratón sobre los elementos para ver el efecto de transición.</p>
-
-        <div class="mg6x">
-            <h3>Agrandar (+10% - Mediano)</h3>
-            <div class="pd6x rd3x  tma_d3x">
-                <div class="ani_sco_md05">Agrandar (0.5s)</div>
-                <div class="ani_sco_md1">Agrandar (1s)</div>
-                <div class="ani_sco_md15">Agrandar (1.5s)</div>
+                <div>
+                    <h4>Reducir (Scale In)</h4>
+                    <div>
+                        <ul class="rd3x tma_d4x pd6x mg1x liv">
+                            <li>ani_sci_sm05 <div class="mk-1 ani_sci_sm05">A</div>
+                            </li>
+                            <li>ani_sci_sm1 <div class="mk-1 ani_sci_sm1">A</div>
+                            </li>
+                            <li>ani_sci_sm15 <div class="mk-1 ani_sci_sm15">A</div>
+                            </li>
+                            <li>ani_sci_md05 <div class="mk-1 ani_sci_md05">A</div>
+                            </li>
+                            <li>ani_sci_md1 <div class="mk-1 ani_sci_md1">A</div>
+                            </li>
+                            <li>ani_sci_md15 <div class="mk-1 ani_sci_md15">A</div>
+                            </li>
+                            <li>ani_sci_lg05 <div class="mk-1 ani_sci_lg05">A</div>
+                            </li>
+                            <li>ani_sci_lg1 <div class="mk-1 ani_sci_lg1">A</div>
+                            </li>
+                            <li>ani_sci_lg15 <div class="mk-1 ani_sci_lg15">A</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="mg6x mg6tb">
-            <h3>Agrandar (+15% - Grande)</h3>
-            <div class="pd6x rd3x  tma_d3x">
-                <div class="ani_sco_lg05">Máximo (0.5s)</div>
-                <div class="ani_sco_lg1">Máximo (1s)</div>
-                <div class="ani_sco_lg15">Máximo (1.5s)</div>
-            </div>
-        </div>
-
-        <div class="mg6x mg6tb">
-            <h3>Reducir (-5% - Pequeño)</h3>
-            <div class="pd6x rd3x  tma_d3x">
-                <div class="ani_sci_sm05">Reducir (0.5s)</div>
-                <div class="ani_sci_sm1">Reducir (1s)</div>
-                <div class="ani_sci_sm15">Reducir (1.5s)</div>
-            </div>
-        </div>
-
-        <div class="mg6x mg6tb">
-            <h3>Reducir (-15% - Grande)</h3>
-            <div class="pd6x rd3x  tma_d3x">
-                <div class="ani_sci_lg05">Mínimo (0.5s)</div>
-                <div class="ani_sci_lg1">Mínimo (1s)</div>
-                <div class="ani_sci_lg15">Mínimo (1.5s)</div>
-            </div>
         </div>
     </main>
             </div>
@@ -642,7 +674,7 @@
 
     
     <script defer
-        src="/assets/build/js/main.js?v=1762934384">
+        src="/assets/build/js/main.js?v=1763015826">
     </script>
 </body>
 

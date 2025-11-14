@@ -6,59 +6,118 @@
 @section('body')
     <header>
         @include('_layouts.navbar_guide_top')
-        <div class="pd12">
+        <div class="pd24 tac">
             <h1>Variantes de Color</h1>
             <p>
-                Clases para aplicar colores de texto (`clN`) y fondo (`bgN`) fijos (1 a 10), útiles para acentos visuales específicos.
+                Clases para aplicar colores.
             </p>
         </div>
     </header>
 
-    <main class="pd12">
-        <h2>Fondos de Variantes (`bgN`)</h2>
-        <p class="mg6">Aplica el color de fondo y el color de texto de contraste predefinido.</p>
-
-        <div class="mg6x pd6 tma_d1">
-            <div class="mg6 pd6 bg1">bg1 (Teal)</div>
-            <div class="mg6 pd6 bg2">bg2 (Soft Coral)</div>
-            <div class="mg6 pd6 bg3">bg3 (Muted Gold)</div>
-            <div class="mg6 pd6 bg4">bg4 (Slate Blue)</div>
-            <div class="mg6 pd6 bg5">bg5 (Olive Green)</div>
-            <div class="mg6 pd6 bg6">bg6 (Mauve)</div>
-            <div class="mg6 pd6 bg7">bg7 (Soft Orange)</div>
-            <div class="mg6 pd6 bg8">bg8 (Dusty Pink)</div>
-            <div class="mg6 pd6 bg9">bg9 (Soft Cyan)</div>
-            <div class="mg6 pd6 bg10">bg10 (Muted Brown)</div>
-        </div>
-
-        ---
-
-        <h2>Color de Texto de Variantes (`clN`)</h2>
-        <p class="mg6">Utiliza `clN` para aplicar solo el color de texto. Se demuestra sobre un fondo oscuro para visibilidad.</p>
-        
-        <div class="mg6x pd6 bd1 tma_d3">
-            <p class="mg6 cl1">Texto en cl1 (Teal)</p>
-            <p class="mg6 cl2">Texto en cl2 (Soft Coral)</p>
-            <p class="mg6 cl3">Texto en cl3 (Muted Gold)</p>
-            <p class="mg6 cl4">Texto en cl4 (Slate Blue)</p>
-            <p class="mg6 cl5">Texto en cl5 (Olive Green)</p>
-            <p class="mg6 cl6">Texto en cl6 (Mauve)</p>
-            <p class="mg6 cl7">Texto en cl7 (Soft Orange)</p>
-            <p class="mg6 cl8">Texto en cl8 (Dusty Pink)</p>
-            <p class="mg6 cl9">Texto en cl9 (Soft Cyan)</p>
-            <p class="mg6 cl10">Texto en cl10 (Muted Brown)</p>
-        </div>
-        
-        ---
-        
-        <h2>Variantes de Hijos y Hover (`bgNx`, `bgN:hover`)</h2>
-        <p class="mg6">Demostración de cómo aplicar estilos a hijos directos y al pasar el cursor.</p>
-
-        <div class="mg6x pd6 bd1 tma_d3">
-            <div class="mg6 pd6 bg4 bg2:hover">Elemento con **bg4** y hover **bg2**</div>
-            <div class="mg6 pd6 bg5x bd1">
-                <p class="pd6 bd1">El padre es **bg5x**: Hijo 1</p>
+    <main>
+        <h2 class="w100p tac pd12">Si agregas x al final afectas a hijos.</h2>
+        <div class="pd24 fx10 mg2x pd12x wa256x">
+            
+            {{-- Color 1: Teal (Soft) --}}
+            <div>
+                <h2>cl1 y bg1</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Teal (Soft)</div>
+                    <p class="cl1 pd2tb">Texto con .cl1</p>
+                    <div class="bg1 pd12">Fondo con .bg1</div>
+                </div>
             </div>
+
+            {{-- Color 2: Soft Coral --}}
+            <div>
+                <h2>cl2 y bg2</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Soft Coral</div>
+                    <p class="cl2 pd2tb">Texto con .cl2</p>
+                    <div class="bg2 pd12">Fondo con .bg2</div>
+                </div>
+            </div>
+
+            {{-- Color 3: Muted Gold --}}
+            <div>
+                <h2>cl3 y bg3</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Muted Gold</div>
+                    <p class="cl3 pd2tb">Texto con .cl3</p>
+                    <div class="bg3 pd12">Fondo con .bg3</div>
+                </div>
+            </div>
+
+            {{-- Color 4: Slate Blue --}}
+            <div>
+                <h2>cl4 y bg4</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Slate Blue</div>
+                    <p class="cl4 pd2tb">Texto con .cl4</p>
+                    <div class="bg4 pd12">Fondo con .bg4</div>
+                </div>
+            </div>
+
+            {{-- Color 5: Olive Green --}}
+            <div>
+                <h2>cl5 y bg5</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Olive Green</div>
+                    <p class="cl5 pd2tb">Texto con .cl5</p>
+                    <div class="bg5 pd12">Fondo con .bg5</div>
+                </div>
+            </div>
+
+            {{-- Color 6: Mauve --}}
+            <div>
+                <h2>cl6 y bg6</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Mauve</div>
+                    <p class="cl6 pd2tb">Texto con .cl6</p>
+                    <div class="bg6 pd12">Fondo con .bg6</div>
+                </div>
+            </div>
+
+            {{-- Color 7: Soft Orange --}}
+            <div>
+                <h2>cl7 y bg7</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Soft Orange</div>
+                    <p class="cl7 pd2tb">Texto con .cl7</p>
+                    <div class="bg7 pd12">Fondo con .bg7</div>
+                </div>
+            </div>
+
+            {{-- Color 8: Dusty Pink --}}
+            <div>
+                <h2>cl8 y bg8</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Dusty Pink</div>
+                    <p class="cl8 pd2tb">Texto con .cl8</p>
+                    <div class="bg8 pd12">Fondo con .bg8</div>
+                </div>
+            </div>
+
+            {{-- Color 9: Soft Cyan --}}
+            <div>
+                <h2>cl9 y bg9</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Soft Cyan</div>
+                    <p class="cl9 pd2tb">Texto con .cl9</p>
+                    <div class="bg9 pd12">Fondo con .bg9</div>
+                </div>
+            </div>
+
+            {{-- Color 10: Muted Brown --}}
+            <div>
+                <h2>cl10 y bg10</h2>
+                <div class="pd12 tma_d3 rd3">
+                    <div class="pd2tb">Color Muted Brown</div>
+                    <p class="cl10 pd2tb">Texto con .cl10</p>
+                    <div class="bg10 pd12">Fondo con .bg10</div>
+                </div>
+            </div>
+
         </div>
     </main>
 @endsection
